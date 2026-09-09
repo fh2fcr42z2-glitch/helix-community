@@ -46,6 +46,8 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 - [MEME-MARKET-NATURE.md](docs/MEME-MARKET-NATURE.md) — launchpad nature vs MM (mass mint; skip-as-edge; bot PnL DARK)
 - [TRENCH-NARRATIVE.md](docs/TRENCH-NARRATIVE.md) — Trench hull + Narrative panel (RSS free first; X API paid; social heat ≠ size; no secrets)
 - [READER.md](docs/READER.md) — headline judge (FREE ingest map + Alpha handoff; five-force + myth filter + tape check → JSON); upstream of Alpha Writer; no fake headlines
+- [LEARNING-PATH.md](docs/LEARNING-PATH.md) — teaching skill: Helix desk onboarding (phases + rubric; no secrets)
+- [AGENTS.md](AGENTS.md) — continual-learning memory (public-safe bullets only)
 - [GROK-PROMPTS.md](docs/GROK-PROMPTS.md) — Grok copy-paste packs
 - [QUANT-CONFIDENCE.md](docs/QUANT-CONFIDENCE.md) · [RISK-GATES.md](docs/RISK-GATES.md) · [FLEET-OS.md](docs/FLEET-OS.md)
 
