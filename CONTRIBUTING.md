@@ -13,21 +13,21 @@ If you only read one other file, read [docs/SENSITIVE-INTEGRATIONS.md](docs/SENS
 | **Adapter** | One vendor, one port, DARK when unkeyed, tests with mocks | Kitchen-sink client, live key in CI, silent fake bars |
 | **Test** | Fixtures + DARK/timeout cases | Recorded HAR files with cookies |
 | **Docs** | Corrects a claim, marks DARK, adds a worked paper example | Vendor tutorial that is really a key drop |
-| **Paper idea** | Three legs + invalidation + DARK list | “Buy this,” live sizing, guaranteed edge |
+| **Paper idea** | Three legs + FLOW rung + invalidation + DARK list | “Buy this,” live sizing, guaranteed edge, auto-post |
 | **Interface RFC** | Short, named port, how mocks work | Rewrite the private tree |
 
-Architecture names live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
+Architecture names live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). FLOW and NOTE: [docs/FLOW.md](docs/FLOW.md), [docs/ALPHA-WRITER.md](docs/ALPHA-WRITER.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
 
 ## How to propose an adapter
 
 1. **Open an issue** with the Adapter template (or a short issue titled `adapter: <vendor> → <port>`).
-2. State the **port**: `Tape`, `SearchInterest`, `Chatter`, or a gated port (`WalletIdentity`, `CexFlow`, `EquitySip`, `OptionsFlow`).
+2. State the **port**: `Tape`, `SearchInterest`, `Chatter`, `ChainFlow`, `DexVolume`, `TokenBoard`, or a gated read-only port (`WalletIdentity`, `CexFlow`, `EquitySip`, `OptionsFlow`). There is no community `Swap` / `CreateOrder` port.
 3. State the **vendor** and whether it is free or optional/paid.
 4. State **DARK behavior** when the key is missing, the pair is missing, or the vendor 429s.
 5. Wait for a maintainer or another contributor to say the port shape is right — then PR.
 6. In the PR: adapter + mock fixtures + a README paragraph. No live calls required to merge.
 
-Do not implement five vendors in one PR. Do not add a live order method “for completeness.”
+Do not implement five vendors in one PR. Do not add a live order, swap, or auto-post method “for completeness.”
 
 ## How to open issues
 
@@ -60,6 +60,7 @@ A maintainer may ask you to split a PR. That is success, not a brush-off.
 - [ ] DARK / empty / timeout behavior is explicit
 - [ ] Docs updated if I changed a capability claim
 - [ ] Paper-only language; no live-trading encouragement
+- [ ] No swap, trading, X, or WordPress credentials (not even placeholders-with-values)
 - [ ] I did not copy files out of helix-cx
 
 ## Local secrets

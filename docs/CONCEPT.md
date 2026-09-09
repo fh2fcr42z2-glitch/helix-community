@@ -69,13 +69,16 @@ The public CX direction is **crypto first**:
 - Search + chatter around coin names is observable on free tools.
 - The desk can stay honest with a short free-tier list (see [sensitive integrations](SENSITIVE-INTEGRATIONS.md)).
 
-**Equities are a sidecar.** A full US tape (SIP), options flow, and broker connectivity sit behind licenses and keys. They are out of scope for a free public bench. Mentioning Interactive Brokers or Tiingo in the capability matrix means “this is what a keyed sidecar *would* unlock,” not “equities are live.”
+**Equities are a sidecar.** A full US tape (SIP), options flow, and broker connectivity sit behind licenses and keys. They are out of scope for a free public bench. **Swap and trading connectors stay off.** Mentioning Interactive Brokers or Tiingo in the capability matrix means “this is what a keyed *read-only* sidecar *would* unlock,” not “equities or orders are live.”
+
+Crypto-first intake is **FLOW** (chain → DEX → token, wallets DARK). See [FLOW.md](FLOW.md). Publication is an evidence-gated **NOTE**, never auto-post. See [ALPHA-WRITER.md](ALPHA-WRITER.md).
 
 ## What Helix will not pretend
 
 - That Google Trends is high-frequency.
 - That CoinGecko replaces a matching engine.
 - That DEX screenshots are wallet identity.
+- That DefiLlama TVL is bridge netflow or CEX entity flow.
 - That a mock in a unit test is a production feed.
 - That the private build’s unpublished adapters exist for you to call.
 

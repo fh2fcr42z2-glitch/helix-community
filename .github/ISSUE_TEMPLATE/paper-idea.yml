@@ -7,12 +7,24 @@ body:
     attributes:
       value: |
         Education / research only. **Not financial advice.** Do not size a live order. Do not paste secrets.
+        Name a FLOW rung ([docs/FLOW.md](https://github.com/fh2fcr42z2-glitch/helix-community/blob/main/docs/FLOW.md)). A NOTE is not an auto-post.
         Skeleton: [docs/CONCEPT.md](https://github.com/fh2fcr42z2-glitch/helix-community/blob/main/docs/CONCEPT.md).
   - type: input
     id: instrument
     attributes:
       label: Instrument
       description: Pair / market. Public names only.
+    validations:
+      required: true
+  - type: dropdown
+    id: flow_rung
+    attributes:
+      label: FLOW rung
+      options:
+        - Chain (stables / TVL / DEX vol)
+        - DEX (Llama volume + screener pair)
+        - Token (board + trending)
+        - Wallets (must be DARK unless you can cite a public, license-clean source — do not paste keys)
     validations:
       required: true
   - type: textarea
@@ -75,4 +87,6 @@ body:
         - label: This is not a recommendation to buy or sell.
           required: true
         - label: I did not invent bars or wallet prints.
+          required: true
+        - label: I am not asking anyone to auto-post this to X or WordPress.
           required: true

@@ -17,45 +17,51 @@ Think of Helix as a small research floor. Each surface answers a different quest
 
 | Surface | Question it answers | Community-visible job |
 | --- | --- | --- |
-| **Desk** | What is in front of me *right now*? | Candidates, three-leg disagreement, next research action |
-| **Process** | How did this idea earn a place? | Lifecycle: intake → thesis → evidence → review → paper or reject |
+| **Desk** | What is in front of me *right now*? | FLOW rung, three-leg disagreement, next research action |
+| **Process** | How did this idea earn a place? | Scout → Researcher → Market Ops → paper book or reject |
 | **Book** | What are we hypothetically on? | Paper positions, marks, notes — no live orders |
-| **Risk** | What is the book not allowed to do? | Limits, concentration, thesis expiry, veto |
+| **Risk** | What is the book not allowed to do? | Limits, vetoes, kill switches (research halts — not live orders) |
 | **Fleet** *(future)* | What else is running in parallel? | Isolated experiments that cannot silently join the book |
 | **Lab** *(future)* | Did this idea survive a harder test? | Walk-forward, holdout, replay — still paper |
-| **Alpha Writer** *(future)* | What did we learn that is worth publishing? | Write-ups, not a signal blast |
+| **Alpha Writer** | What did we learn that is worth publishing? | An evidence-gated **NOTE** — not a signal blast, not auto-post |
 
-**Desk** is the attention surface. **Process** is the memory of how attention was justified. **Book** is the only place a “position” exists, and it is paper. **Risk** can say no. **Fleet** and **Lab** stay quarantined until a human process promotes a result. **Alpha Writer** publishes *method and outcome*, not an order ticket.
+**Desk** is the attention surface. **Process** is the memory of how attention was justified. **Book** is the only place a “position” exists, and it is paper. **Risk** can say no. **Fleet** and **Lab** stay quarantined until a human process promotes a result. **Alpha Writer** publishes a **NOTE** (method, evidence, DARK list) — never an order ticket and never an auto-post. See [ALPHA-WRITER.md](ALPHA-WRITER.md).
 
 Nothing in this table is a trading venue.
 
+Crypto-first CX reads markets through **FLOW** before it argues about a coin: chain → DEX → token → wallets (DARK). See [FLOW.md](FLOW.md).
+
 ## Data flow
 
-The public flow is short on purpose:
+Crypto-first intake is **FLOW**, then the three social-arbitrage legs, then paper, then a NOTE:
 
 ```
-free market APIs
+FLOW  chain → DEX → token → wallets DARK
+        + tape / search / chatter   (free APIs)
         ↓
-research lifecycle          (Process)
+Scout → Researcher → Market Ops     (Process)
         ↓
-paper book                  (Book)  ←  Risk may veto
+paper book                          (Book)  ← Risk + kill switches
         ↓
-(future) Alpha Writer       publish what was learned
+Alpha Writer NOTE                   no auto-post; WordPress draft-only future
 ```
 
-1. **Intake** — public, free-tier market and interest data. Today that means the free column in [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md): Coinbase, Kraken, CoinGecko, DefiLlama, DEX Screener, GeckoTerminal, Google Trends. If a feed is not in that column and no key is present, the field is **DARK**.
-2. **Research lifecycle** — a Scout-shaped question becomes a dated thesis with an invalidation. Process keeps the artifacts. No silent edits to the story after the tape moved.
-3. **Paper book** — optional hypothetical entry. Marks come from the same real bars as intake, or the position is marked DARK. **No synthetic fill prices.**
-4. **Publish layer (future)** — Alpha Writer turns a closed research cycle into a public note. It does not place orders and it does not become a newsletter of picks.
+1. **FLOW intake** — climb [FLOW.md](FLOW.md). Free rung data: DefiLlama (stables / TVL / DEX vol), Llama volume + screener pair, token board + trending, plus CEX tapes and Trends. If a feed is not in the free column of [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md), the field is **DARK**.
+2. **Scout → Researcher** — a candidate becomes a dated thesis with evidence and a verification level per claim. Process keeps the artifacts. No silent edits after the tape moved.
+3. **Market Ops** — kill switches (stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX liquidity) and real-bar marks. Switches halt *promotion*, not live orders (there are none).
+4. **Paper book** — optional hypothetical entry. Marks come from the same real bars as intake, or the position is marked DARK. **No synthetic fill prices.**
+5. **Alpha Writer NOTE** — evidence-gated write-up. **No X auto-post.** WordPress, if ever, is draft-only. See [ALPHA-WRITER.md](ALPHA-WRITER.md).
 
-Paid or keyed feeds (wallet identity, smart money, CEX flow, SIP, options) attach at **intake only**, behind interfaces, in private environments. They do not change the rule that the book is paper.
+Read-only research keys (wallet labels, Llama Pro bridge netflow, unpaid CEX entity feeds) attach at **intake only**, behind interfaces, in private environments. They do not change the paper book, Sentinel, or the no-auto-post rule. **Swap and trading connectors stay off.**
 
 ```
-[optional keyed adapters] ──┐
-                            ├─→ intake → Process → Book (paper) → Alpha Writer (future)
-[free adapters] ────────────┘              ↑
-                                         Risk
-                                         Sentinel (nothing live)
+[optional read-only keys] ──┐
+                            ├─→ FLOW + legs → Scout → Researcher → Market Ops
+[free adapters] ────────────┘                              ↑
+                                                    Risk, kill switches
+                                                    Sentinel (nothing live)
+                                                                   ↓
+                                                         Alpha Writer NOTE
 ```
 
 ## Specialist roles (conceptual)
@@ -68,7 +74,15 @@ Owns the queue. Decides what gets time this week, what is parked, and what is ne
 
 ### Search / Scout
 
-Hunts disagreements across tape, search, and chatter. Surfaces candidates with sources and a DARK list. Does not size the book. Does not hide a missing leg behind a blended score.
+Hunts disagreements across tape, search, and chatter, on a named **FLOW** rung. Surfaces candidates with sources and a DARK list. Does not size the book. Does not hide a missing wallet leg behind a blended score.
+
+### Researcher
+
+Turns a Scout scrap into a thesis. Attaches evidence and a **verification level** to each claim ([ALPHA-WRITER.md](ALPHA-WRITER.md)). If the reason changed, that is a new thesis, not a quiet edit.
+
+### Market Ops
+
+Tape hygiene and **kill switches** before anything is promoted to the paper book or a NOTE. Owns stale BTC, Coinbase-vs-Kraken ≥ 25 bp, and thin DEX liquidity as *research halts*. Does not trade.
 
 ### Process
 
@@ -82,13 +96,15 @@ The paper ledger. What we are hypothetically on, when it was opened, where the m
 
 Constraints on the paper book: gross, concentration, single-name, thesis age, drawdown of the *hypothetical* ledger. Risk may veto an entry that Process already likes. Paper risk is still risk to the research process — a book that can do anything teaches nothing.
 
+**Kill switches** (Market Ops; paper promotion only): stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX liquidity. Full table: [FLOW.md](FLOW.md). They never place orders.
+
 ### Sentinel
 
-The permanent execution gate. **Sentinel’s job is to keep Helix paper-first**, including in futures where a broker or CEX key exists in some private environment. Community code must assume Sentinel can block anything that looks like `submit`, `create_order`, or “just a test live pin.” There is no community path to unsupervised live trading.
+The permanent execution gate. **Sentinel’s job is to keep Helix paper-first**, including in futures where a broker or CEX key exists in some private environment. Community code must assume Sentinel can block anything that looks like `submit`, `create_order`, swap/router calls, or “just a test live pin.” **Swap and trading connectors stay off.** There is no community path to unsupervised live trading.
 
-### Alpha Writer *(future)*
+### Alpha Writer
 
-Publishes after the cycle, not during it. Audience is other researchers. Output is a note: question, data, disagreement, result, what stayed DARK. Not a blast of tickers.
+Publishes after the cycle, not during it. Output is a **NOTE**: FLOW rung, claims with verification levels, kill-switch status, DARK list, paper action. Audience is other researchers. **No auto-post** to X. WordPress is draft-only future. Not a blast of tickers. Full page: [ALPHA-WRITER.md](ALPHA-WRITER.md).
 
 ### Fleet / Lab *(future)*
 
@@ -98,7 +114,7 @@ Fleet: many small research runs that cannot write the main book. Lab: harder val
 
 Community adapters should look like this, even if the private code does not:
 
-- **Ports** — `Tape`, `SearchInterest`, `Chatter`, later `WalletIdentity`, `CexFlow`, `EquitySip`, `OptionsFlow`.
+- **Ports** — `Tape`, `SearchInterest`, `Chatter`, `ChainFlow`, `DexVolume`, `TokenBoard`; later, only with read-only keys, `WalletIdentity`, `CexFlow`, `EquitySip`, `OptionsFlow`. No `Swap` / `CreateOrder` ports in this community.
 - **One vendor per adapter** — `coingecko_tape.py` is fine; `everything.py` is not.
 - **Mocks in tests** — the port is satisfied by a fixture. CI never holds a vendor key.
 - **DARK on failure** — timeout, 401, missing key, unsupported pair: return a labeled empty/DARK, do not interpolate a bar.

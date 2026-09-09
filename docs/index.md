@@ -13,8 +13,8 @@ nav: home
   <li>Paper-only</li>
   <li>Not a broker</li>
   <li>Not financial advice</li>
-  <li>Crypto-first</li>
-  <li>Equities later</li>
+  <li>Crypto-first FLOW</li>
+  <li>NOTE, no auto-post</li>
   <li>DARK &gt; fake</li>
 </ul>
 
@@ -32,7 +32,7 @@ The three legs disagree. Helix’s job is to **write the disagreement down**, no
 - Search: what people queried.
 - Chatter: what people said.
 
-A thesis names all three, plus a DARK list for what you could not observe. Full note: [Concept]({{ '/concept/' | relative_url }}).
+A thesis names all three, plus a DARK list for what you could not observe. Full note: [Concept]({{ '/concept/' | relative_url }}). Crypto-first CX then places that thesis on a **FLOW** rung — chain → DEX → token, wallets DARK — and only then may Alpha Writer emit a **NOTE**. [FLOW]({{ '/flow/' | relative_url }}) · [Alpha Writer]({{ '/note/' | relative_url }}).
 
 ## Desk map
 
@@ -43,7 +43,7 @@ A thesis names all three, plus a DARK list for what you could not observe. Full 
   </article>
   <article>
     <h2>Process</h2>
-    <p>Thesis → evidence → review → paper book or reject.</p>
+    <p>Scout → Researcher → Market Ops → paper book or reject.</p>
   </article>
   <article>
     <h2>Book</h2>
@@ -54,20 +54,26 @@ A thesis names all three, plus a DARK list for what you could not observe. Full 
     <p>Limits and vetoes on that ledger.</p>
   </article>
   <article>
-    <h2>Fleet / Lab</h2>
-    <p>Future isolated runs and walk-forward. Still paper.</p>
+    <h2>FLOW</h2>
+    <p>Chain → DEX → token. Wallets DARK. Kill switches halt promotion.</p>
   </article>
   <article>
     <h2>Alpha Writer</h2>
-    <p>Future publish layer: what was learned, not a pick blast.</p>
+    <p>Evidence-gated NOTE. No X auto-post. WordPress draft-only future.</p>
   </article>
 </div>
 
-Roles (Head of Desk, Search/Scout, Sentinel, and the rest) are **conceptual hats**. Sentinel-gated execution stays paper-first **forever** in this community. [Architecture]({{ '/architecture/' | relative_url }}).
+Roles (Scout, Researcher, Market Ops, Sentinel, Alpha Writer, and the rest) are **conceptual hats**. Sentinel-gated execution stays paper-first **forever**. Swap connectors stay **off**. [Architecture]({{ '/architecture/' | relative_url }}).
+
+## FLOW, then a NOTE
+
+Crypto-first CX climbs **chain → DEX → token** on free DefiLlama + screener data. Wallets stay DARK until a read-only research key exists privately. Kill switches (stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX liquidity) halt *promotion*, not live orders.
+
+A NOTE is assembled only after Scout → Researcher → Market Ops. Claims carry verification levels. **No auto-post.**
 
 ## What is gated (and why that helps you)
 
-Wallet identity, smart-money labels, CEX flow, full SIP tape, and options flow sit behind licenses or keys. Until a key exists in a *private* environment, those ports are **DARK**. The free desk still runs on Coinbase, Kraken, CoinGecko, DefiLlama, DEX Screener, GeckoTerminal, and Google Trends.
+Standing DARK: bridge netflow (Llama Pro), labeled wallets (GMGN/Helius/Birdeye), CEX entity flow (CryptoQuant/Glassnode unpaid), X auto-post, WordPress live publish. The free desk still runs on Coinbase, Kraken, CoinGecko, DefiLlama, DEX Screener, GeckoTerminal, and Google Trends.
 
 The matrix — one line per vendor, no credentials — is [Sensitive integrations]({{ '/integrations/' | relative_url }}).
 
@@ -78,7 +84,7 @@ The matrix — one line per vendor, no credentials — is [Sensitive integration
 3. Fix **docs** that over-claim a capability.
 4. File a **paper strategy** idea with invalidation and a DARK list.
 
-Rules: [Contribute]({{ '/contribute/' | relative_url }}). North star: [Roadmap]({{ '/roadmap/' | relative_url }}) — real bars, kill synthetics, walk-forward, wallet data only when keyed, Sentinel on.
+Rules: [Contribute]({{ '/contribute/' | relative_url }}). North star: [Roadmap]({{ '/roadmap/' | relative_url }}) — real bars, kill synthetics, FLOW on free Llama, NOTE with no auto-post, Sentinel on.
 
 ## Private implementation
 

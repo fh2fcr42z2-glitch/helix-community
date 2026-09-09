@@ -125,8 +125,8 @@ body {
   flex-wrap: wrap;
   gap: 0.35rem 1rem;
   font-family: var(--mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
+  font-size: 0.74rem;
+  letter-spacing: 0.03em;
 }
 
 .nav a {

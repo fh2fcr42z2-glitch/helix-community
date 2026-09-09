@@ -16,8 +16,11 @@ body:
         - Tape
         - SearchInterest
         - Chatter
-        - WalletIdentity (gated)
-        - CexFlow (gated)
+        - ChainFlow
+        - DexVolume
+        - TokenBoard
+        - WalletIdentity (gated, read-only)
+        - CexFlow (gated, read-only)
         - EquitySip (gated)
         - OptionsFlow (gated)
         - Other (describe below)
@@ -67,5 +70,7 @@ body:
       options:
         - label: I will not commit secrets or copy private helix-cx source.
           required: true
-        - label: I will not add a live order path.
+        - label: I will not add a live order, swap, or auto-post path.
+          required: true
+        - label: Any key this adapter might use is read-only research, and I will not paste it.
           required: true

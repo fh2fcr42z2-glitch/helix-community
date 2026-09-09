@@ -16,7 +16,7 @@ Those three streams disagree all the time. Sometimes the tape has already moved 
 
 It is **not a broker**. It is **not financial advice**. It does not place live orders. Nothing here is an invitation to trade.
 
-**Crypto-first.** The customer experience is built around crypto markets first. Equities are a future sidecar, not the present desk.
+**Crypto-first.** The customer experience is built around crypto markets first: **FLOW** (chain → DEX → token, wallets DARK) plus the three social-arbitrage legs, then an evidence-gated **NOTE**. Equities are a future sidecar, not the present desk. Swap and trading connectors stay **off**.
 
 ## Stance
 
@@ -35,8 +35,10 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 | Doc | What it covers |
 | --- | --- |
 | [Social arbitrage](docs/CONCEPT.md) | The gap between tape, Trends/search, and chatter |
-| [Architecture](docs/ARCHITECTURE.md) | Desk surfaces, data flow, specialist roles (conceptual) |
-| [Sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) | What paid feeds unlock — no credentials |
+| [Architecture](docs/ARCHITECTURE.md) | Desk surfaces, FLOW intake, specialist hats (conceptual) |
+| [FLOW](docs/FLOW.md) | Chain → DEX → token → wallets DARK; kill switches |
+| [Alpha Writer NOTE](docs/ALPHA-WRITER.md) | Evidence-gated pipeline; no auto-post; WordPress draft-only future |
+| [Sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) | Standing DARK list, capability matrix — no credentials |
 | [Roadmap](docs/ROADMAP.md) | Public bars, no synthetics, walk-forward, paper-first |
 | [Contributing](CONTRIBUTING.md) | Adapters, issues, PR hygiene, secrets rules |
 | [Code of conduct](CODE_OF_CONDUCT.md) | Light-touch community rules |
@@ -50,14 +52,14 @@ Enable it with **Settings → Pages → Deploy from a branch → `main` → `/do
 
 Surfaces the community should recognize — names, not private source:
 
-- **Desk** — what is in front of you: candidates, disagreement, next action
-- **Process** — thesis → evidence → review → paper book or reject
+- **Desk** — what is in front of you: FLOW rung, disagreement, next action
+- **Process** — Scout → Researcher → Market Ops → paper book or reject
 - **Book** — paper ledger only
-- **Risk** — constraints and vetoes on that ledger
+- **Risk** — constraints, vetoes, kill switches (research halts)
 - **Fleet / Lab** — future isolated experiments
-- **Alpha Writer** — future publish layer for what the desk learned
+- **Alpha Writer** — evidence-gated **NOTE**; no auto-post
 
-Roles are conceptual (Head of Desk, Search/Scout, Risk, Sentinel, and others). See [architecture](docs/ARCHITECTURE.md). Sentinel-gated execution stays **paper-first forever** in this community framing.
+Roles are conceptual (Head of Desk, Scout, Researcher, Market Ops, Risk, Sentinel, Alpha Writer). See [architecture](docs/ARCHITECTURE.md) and [FLOW](docs/FLOW.md). Sentinel-gated execution stays **paper-first forever**. Swap/trading connectors stay off.
 
 ## What this repo needs
 
@@ -76,9 +78,10 @@ Do not paste API keys, cookies, wallet seeds, or vendor dashboards into issues o
 
 Helix would rather show **DARK** than a plausible fake.
 
-- **Free public APIs** can support a thin, honest desk: Coinbase, Kraken, CoinGecko, DefiLlama, DEX Screener, GeckoTerminal, Google Trends.
-- **Wallet identity, smart-money labels, CEX flow, full SIP tape, and options flow** need licenses or keys. Until a key exists *in a private environment*, those capabilities are **DARK**.
+- **Free public APIs** can support a thin, honest FLOW desk: Coinbase, Kraken, CoinGecko, DefiLlama (stables/TVL/DEX vol), DEX Screener, GeckoTerminal, Google Trends.
+- **Standing DARK:** bridge netflow (Llama Pro), labeled wallets (GMGN/Helius/Birdeye), CEX entity flow (CryptoQuant/Glassnode unpaid), X auto-post, WordPress live publish. Full SIP tape and options flow stay DARK on this crypto-first bench.
 - **Synthetic bars are a temporary shame**, not a feature. The public roadmap is to kill them.
+- **Read-only research keys** (private env only) may light a gated port. They never go in this repo. Swap/trading connectors remain off.
 
 A placeholder matrix (what each feed *would* unlock, not what is secretly shipped) lives in [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md).
 
