@@ -88,7 +88,7 @@ Turns a Scout scrap into a thesis. Attaches evidence and a **verification level*
 
 ### Technical Analysis
 
-Pattern recognition, setups, and **Chart shots**. Reads Tape overlays (SuperTrend, %B, RSI) from real bars. Never invents levels: evidence + as-of, or **DARK**. Does not place orders. Does not own Market Maker screenshots. **SOL / ETH** primary; **HYPE DARK** until adapter. Full page: [TECHNICAL-ANALYSIS.md](TECHNICAL-ANALYSIS.md). Lexicon: [PATTERN-SETUPS.md](PATTERN-SETUPS.md).
+Pattern recognition, setups, and **Chart shots**. Critique pack **PASS** (pins: pivot N=2, VWAP UTC day, ATR pack defaults, BOS alone ≠ confluent). Sidecar JSON required; missing sidecar → DARK metadata. Reads Tape overlays from real bars. Never invents levels. Does not place orders. Does not own Market Maker screenshots. **SOL / ETH** primary; **HYPE** reject until adapter. Full page: [TECHNICAL-ANALYSIS.md](TECHNICAL-ANALYSIS.md). Lexicon: [PATTERN-SETUPS.md](PATTERN-SETUPS.md).
 
 ### Market Ops
 
