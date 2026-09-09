@@ -2,7 +2,7 @@
 
 File-based retros for the Chart bot. **Not** silent model-weight updates. **Not** a PnL scoreboard.
 
-Public contract: [docs/CHART-BOT.md](../docs/CHART-BOT.md) · [docs/TECHNICAL-ANALYSIS.md](../docs/TECHNICAL-ANALYSIS.md).
+Public contract: [docs/CHART-BOT.md](../docs/CHART-BOT.md) · [docs/TECHNICAL-ANALYSIS.md](../docs/TECHNICAL-ANALYSIS.md). Desk-wide teaching path (not this log): [docs/LEARNING-PATH.md](../docs/LEARNING-PATH.md).
 
 Paper-only. No secrets. No fake charts. No fabricated macro.
 

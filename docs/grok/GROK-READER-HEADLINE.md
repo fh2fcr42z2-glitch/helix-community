@@ -123,4 +123,4 @@ Do not fetch prices. Do not write example news.
 - [ ] viral_pnl is DARK  
 - [ ] No book excerpts; no unsupervised live orders / no auto-tweet  
 
-Related: [READER.md](../READER.md) · [TRENCH-NARRATIVE.md](../TRENCH-NARRATIVE.md) · [FLOW.md](../FLOW.md) · [ALPHA-WRITER.md](../ALPHA-WRITER.md) · [STATUS.md](../STATUS.md).
+Related: [READER.md](../READER.md) · [TRENCH-NARRATIVE.md](../TRENCH-NARRATIVE.md) · [CORE-FIT.md](../CORE-FIT.md) · [FLOW.md](../FLOW.md) · [ALPHA-WRITER.md](../ALPHA-WRITER.md) · [STATUS.md](../STATUS.md) · [GROK-TRENCH-NARRATIVE.md](./GROK-TRENCH-NARRATIVE.md) · [GROK-CORE-FIT.md](./GROK-CORE-FIT.md).

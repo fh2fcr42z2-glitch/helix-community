@@ -24,9 +24,10 @@ Think of Helix as a small research floor. Each surface answers a different quest
 | **Fleet** *(future)* | What else is running in parallel? | Isolated experiments that cannot silently join the book |
 | **Lab** *(future)* | Did this idea survive a harder test? | Walk-forward, holdout, replay — still paper |
 | **Reader** | What does this *cited* headline survive? | Force tag + myth filter + tape check → JSON, then Writer |
+| **Trench** | What are people *saying* around this FLOW name? | Supporting posts/headlines; same desk chrome; heat ≠ size |
 | **Alpha Writer** | What did we learn that is worth publishing? | An evidence-gated **NOTE** — not a signal blast, not auto-post |
 
-**Desk** is the attention surface. **Process** is the memory of how attention was justified. **Book** is the only place a “position” exists, and it is paper. **Risk** can say no. **Fleet** and **Lab** stay quarantined until a human process promotes a result. **Reader** judges a cited headline before Writer sees it. **Alpha Writer** publishes a **NOTE** (method, evidence, DARK list) — never an order ticket and never an auto-post. See [READER.md](READER.md) · [ALPHA-WRITER.md](ALPHA-WRITER.md).
+**Desk** is the attention surface. **Process** is the memory of how attention was justified. **Book** is the only place a “position” exists, and it is paper. **Risk** can say no. **Fleet** and **Lab** stay quarantined until a human process promotes a result. **Trench** displays chatter; **Reader** judges a cited headline; **Alpha Writer** publishes a **NOTE** (method, evidence, DARK list) — never an order ticket and never an auto-post. See [TRENCH-NARRATIVE.md](TRENCH-NARRATIVE.md) · [READER.md](READER.md) · [ALPHA-WRITER.md](ALPHA-WRITER.md). Later CX wiring: [CORE-FIT.md](CORE-FIT.md).
 
 Nothing in this table is a trading venue.
 
@@ -46,15 +47,17 @@ paper book                          (Book)  ← Risk + kill switches
         ↓
 Alpha Writer NOTE                   no auto-post; WordPress draft-only future
         ↑
-FREE RSS → Reader JSON ─────────────┘   (headlines; tape wins vs psychology)
+FREE RSS / public posts → Trench display → Reader JSON ─┘
+                          (Trench shows; Reader judges; tape wins)
 ```
 
 1. **FLOW intake** — climb [FLOW.md](FLOW.md). Free rung data: DefiLlama (stables / TVL / DEX vol), Llama volume + screener pair, token board + trending, plus CEX tapes and Trends. If a feed is not in the free column of [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md), the field is **DARK**.
 2. **Scout → Researcher** — a candidate becomes a dated thesis with evidence and a verification level per claim. Process keeps the artifacts. No silent edits after the tape moved.
 3. **Market Ops** — kill switches (stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX liquidity) and real-bar marks. Switches halt *promotion*, not live orders (there are none).
 4. **Paper book** — optional hypothetical entry. Marks come from the same real bars as intake, or the position is marked DARK. **No synthetic fill prices.**
-5. **Reader** *(headlines)* — ingest a cited lede (FREE RSS first), five-force tag, rhetoric/myth filter, tape check (tape wins vs psychology). Output is READER JSON, not a NOTE. No fake headlines. See [READER.md](READER.md).
-6. **Alpha Writer NOTE** — evidence-gated write-up. **No X auto-post.** WordPress, if ever, is draft-only. See [ALPHA-WRITER.md](ALPHA-WRITER.md).
+5. **Trench** *(chatter display)* — supporting posts/headlines on the same desk chrome. RSS/public APIs first. Does not size or clip. [TRENCH-NARRATIVE.md](TRENCH-NARRATIVE.md).
+6. **Reader** *(headline judge)* — ingest a cited lede (FREE RSS first), five-force tag, rhetoric/myth filter, tape check (tape wins vs psychology). Output is READER JSON, not a NOTE. No fake headlines. See [READER.md](READER.md).
+7. **Alpha Writer NOTE** — evidence-gated write-up. **No X auto-post.** WordPress, if ever, is draft-only. See [ALPHA-WRITER.md](ALPHA-WRITER.md).
 
 Facts the desk must remember (INVENTORY, cowork notes, SQL warehouse, Parquet cold) follow [DATA-AND-MEMORY.md](DATA-AND-MEMORY.md): **DARK > invention**, no secrets in any layer.
 
@@ -64,7 +67,7 @@ Read-only research keys (wallet labels, Llama Pro bridge netflow, unpaid CEX ent
 [optional read-only keys] ──┐
                             ├─→ FLOW + legs → Scout → Researcher → Market Ops
 [free adapters] ────────────┘                              ↑
-[FREE RSS headlines] ─→ Reader JSON ─→ Alpha Writer NOTE   │
+[FREE RSS / public posts] ─→ Trench ─→ Reader JSON ─→ Alpha Writer NOTE
                                                     Risk, kill switches
                                                     Sentinel (nothing live)
 ```
@@ -115,6 +118,10 @@ Constraints on the paper book: gross, concentration, single-name, thesis age, dr
 
 The permanent execution gate. **Sentinel’s job is to keep Helix paper-first**, including in futures where a broker or CEX key exists in some private environment. Community code must assume Sentinel can block anything that looks like `submit`, `create_order`, swap/router calls, or “just a test live pin.” **Swap and trading connectors stay off.** There is no community path to unsupervised live trading.
 
+### Trench
+
+Displays supporting posts and headlines for the FLOW name on the desk. Same Helix chrome as Chart shots / PnL. Prefer ≥1000 followers / verified **when the source provides those fields**. RSS first; official X API PAID. Never invent tweets. Social heat ≠ clip/size. CX hull on helix-cx PR #1. Full page: [TRENCH-NARRATIVE.md](TRENCH-NARRATIVE.md). Grok: [GROK-TRENCH-NARRATIVE.md](grok/GROK-TRENCH-NARRATIVE.md). Core later: [CORE-FIT.md](CORE-FIT.md).
+
 ### Reader
 
 Judges a **cited** headline before Alpha Writer. Pipeline: ingest → five forces → rhetoric/myth filter → tape check → READER JSON. Force tags match Chart bot / NOTE. **Believe tape over conflicting headline psychology.** Social heat ≠ size. Viral PnL DARK. Never invent a lede. FREE RSS first. CX bay on helix-cx PR #1. Full page: [READER.md](READER.md).
@@ -147,4 +154,4 @@ Exact type names are up to the language of the contribution. The rule is the sea
 - Claims about unpublished performance
 - Encouragement to flip Sentinel off
 
-If you need a capability that is DARK, document it in an issue as a **needed adapter**, not as a request for someone else’s key. See [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md).
+If you need a capability that is DARK, document it in an issue as a **needed adapter**, not as a request for someone else’s key. See [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md). Grok implementing CX later: [CORE-FIT.md](CORE-FIT.md).

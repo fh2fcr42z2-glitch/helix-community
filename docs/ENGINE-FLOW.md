@@ -31,7 +31,7 @@ Nothing skips a stage because it felt urgent. A NOTE, MM ticket, or Chart shot s
 1. **One owner per artifact.** Contributors OK; one named owner. Two “owners” = clog.
 2. **Handoffs via files**, not memory. Path + decision + source + as-of. If it only exists in a chat, it has not been handed off.
 3. **Grok reads community `main` only.** Auto-pull sees [helix-community `main`](https://github.com/fh2fcr42z2-glitch/helix-community). Do not treat private **helix-cx GitHub `main`** as the live desk. Do not paste private Grok transcripts back into this repo.
-4. **CX PR #1 is desk code.** Private [helix-cx PR #1](https://github.com/fh2fcr42z2-glitch/helix-cx/pull/1) is the paper desk + Fleet OS + Chart shots tab. Community PRs are docs/adapters/mocks. Do not ask Grok to “merge the desk” because a community doc landed.
+4. **CX PR #1 is desk code.** Private [helix-cx PR #1](https://github.com/fh2fcr42z2-glitch/helix-cx/pull/1) is the paper desk + Fleet OS + Chart shots / Trench / Reader / wallet / PnL tabs. Community PRs are docs/adapters/mocks. Do not ask Grok to “merge the desk” because a community doc landed. Fit map: [CORE-FIT.md](./CORE-FIT.md).
 5. **Unknown → DARK.** Missing venue, overlay, wallet, PnL, or panel → DARK / NULL. Never invent to keep the path moving.
 6. **Skip and veto are first-class.** A documented SKIP or named veto is a *completed* handoff, not a hole. Do not re-queue a veto without new evidence. Crew: every veto names the failed criterion and the owner to fix it.
 
@@ -55,11 +55,14 @@ Prepare ≠ execute. Live money still needs explicit human approval (MM path: [M
 | Research loop | Research → code → backtest → (paper) live → post-mortem → fine-tune. Promote code/docs through CoS PR; store failures with `quality_flag`. [RESEARCH-LOOP.md](./RESEARCH-LOOP.md) |
 | Alpha Writer NOTE | Scout → Researcher → Market Ops → NOTE. Engine flow is how a NOTE-worthy idea reaches that pipeline without clogging chat. |
 | MM / TA | MM journal ≠ Chart shot folder. Separate owners; same promotion discipline. |
+| Teaching | [`teaching/`](../teaching/) sessions stay community files. They do not flip a CX tab LIVE. |
+| Core later | Public contract + Grok pack → CoS PR: community docs/mocks **or** helix-cx PR #1 desk code — [CORE-FIT.md](./CORE-FIT.md) |
 
 ## Do not tell Grok / agents
 
 - That private `helix-cx` `main` is the desk (it is a hull; **PR #1** is desk code until Call Me X merges it).
 - That a chat idea is INVENTORY.
+- That a community doc merge implements helix-cx. Core later = **PR #1** against the contract in [CORE-FIT.md](./CORE-FIT.md).
 - That skip/veto means “try again louder.”
 - That Fleet tiles may be filled with plausible numbers to look LIVE.
 - Secrets, keys, or helix-cx source dumps into community notes.

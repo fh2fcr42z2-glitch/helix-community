@@ -12,4 +12,5 @@ vendor/bundle/
 node_modules/
 *.duckdb
 *.duckdb.wal
+.cursor/hooks/state/*.json
 

@@ -66,6 +66,10 @@ A thesis names all three, plus a DARK list for what you could not observe. Full 
     <p>Evidence-gated NOTE. Optional five-force tags; DARK if unclear. No X auto-post.</p>
   </article>
   <article>
+    <h2>Trench</h2>
+    <p>Supporting posts/headlines. Same desk chrome. Heat ≠ size. RSS first.</p>
+  </article>
+  <article>
     <h2>Reader</h2>
     <p>Cited headline → JSON. Five-force + myth filter. Tape wins vs psychology.</p>
   </article>

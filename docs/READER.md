@@ -43,7 +43,7 @@ Alpha Writer NOTE        (evidence-gated; no auto-post)
 
 Trench **displays**. Reader **judges**. Writer **publishes**. Chatter does not skip FLOW.
 
-Related: [FLOW.md](FLOW.md) · [TRENCH-NARRATIVE.md](TRENCH-NARRATIVE.md) · [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md) · [ALPHA-WRITER.md](ALPHA-WRITER.md).
+Related: [FLOW.md](FLOW.md) · [TRENCH-NARRATIVE.md](TRENCH-NARRATIVE.md) · [CORE-FIT.md](CORE-FIT.md) · [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md) · [ALPHA-WRITER.md](ALPHA-WRITER.md) · Grok: [GROK-READER-HEADLINE.md](grok/GROK-READER-HEADLINE.md) · [GROK-TRENCH-NARRATIVE.md](grok/GROK-TRENCH-NARRATIVE.md).
 
 ## Pipeline
 

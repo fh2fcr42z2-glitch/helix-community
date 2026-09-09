@@ -4,7 +4,7 @@
 **Use:** Copy a block into Grok (or Helix Alpha compose).  
 **Hard rules:** Never invent market data or macro facts. Cite only provided evidence / desk JSON. If the driver is unclear → `primary_force: "DARK"`. No live orders. No auto-post.
 
-Chart bot theses and **Reader JSON** use these **same six strings** on `primary_force`. Readable cards and the file-based learning loop: [CHART-BOT.md](../CHART-BOT.md) · [TECHNICAL-ANALYSIS.md](../TECHNICAL-ANALYSIS.md). Headline judge: [READER.md](../READER.md) · [GROK-READER-HEADLINE.md](./GROK-READER-HEADLINE.md). NOTE lens: [ALPHA-FIVE-FORCES.md](../ALPHA-FIVE-FORCES.md).
+Chart bot theses and **Reader JSON** use these **same six strings** on `primary_force`. Readable cards and the file-based learning loop: [CHART-BOT.md](../CHART-BOT.md) · [TECHNICAL-ANALYSIS.md](../TECHNICAL-ANALYSIS.md). Headline judge: [READER.md](../READER.md) · [GROK-READER-HEADLINE.md](./GROK-READER-HEADLINE.md). Trench display: [GROK-TRENCH-NARRATIVE.md](./GROK-TRENCH-NARRATIVE.md). NOTE lens: [ALPHA-FIVE-FORCES.md](../ALPHA-FIVE-FORCES.md). Core later: [CORE-FIT.md](../CORE-FIT.md).
 
 ---
 
