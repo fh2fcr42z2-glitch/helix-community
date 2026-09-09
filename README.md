@@ -36,6 +36,7 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 | --- | --- |
 | [Social arbitrage](docs/CONCEPT.md) | The gap between tape, Trends/search, and chatter |
 | [Architecture](docs/ARCHITECTURE.md) | Desk surfaces, FLOW intake, specialist hats (conceptual) |
+| [Crew handoff gates (signal pipeline)](docs/CREW-HANDOFF.md) | Helix role map; no unverified PnL |
 | [FLOW](docs/FLOW.md) | Chain → DEX → token → wallets DARK; kill switches |
 | [Alpha Writer NOTE](docs/ALPHA-WRITER.md) | Evidence-gated pipeline; no auto-post; WordPress draft-only future |
 | [Five-force lens](docs/ALPHA-FIVE-FORCES.md) | Dalio five-force **tags** for NOTEs; DARK if unclear; evidence required; World Monitor MCP future Pro/API |
