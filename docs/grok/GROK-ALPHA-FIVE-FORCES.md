@@ -4,6 +4,8 @@
 **Use:** Copy a block into Grok (or Helix Alpha compose).  
 **Hard rules:** Never invent market data or macro facts. Cite only provided evidence / desk JSON. If the driver is unclear → `primary_force: "DARK"`. No live orders. No auto-post.
 
+Chart bot theses use these **same six strings** on the sidecar. Readable cards and the file-based learning loop: [CHART-BOT.md](../CHART-BOT.md) · [TECHNICAL-ANALYSIS.md](../TECHNICAL-ANALYSIS.md). NOTE lens: [ALPHA-FIVE-FORCES.md](../ALPHA-FIVE-FORCES.md).
+
 ---
 
 ## Prompt A — Force-tag a headline (fast)

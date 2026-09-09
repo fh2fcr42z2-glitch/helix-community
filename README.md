@@ -35,8 +35,10 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 - [STATUS.md](docs/STATUS.md) — Grok: current LIVE/DARK truth (read first)
 - [RESEARCH-LOOP.md](docs/RESEARCH-LOOP.md) — six-stage quant cycle for Helix (process only)
 - [ENGINE-FLOW.md](docs/ENGINE-FLOW.md) — anti-clog promotion path (idea → cowork → Scout flag → CoS PR → Fleet)
-- [TECHNICAL-ANALYSIS.md](docs/TECHNICAL-ANALYSIS.md) — TA specialist + Chart shots (critique PASS; sidecar JSON; no invented levels; no fake charts; no orders)
+- [TECHNICAL-ANALYSIS.md](docs/TECHNICAL-ANALYSIS.md) — TA specialist + Chart shots (critique PASS; readable cards; five-force spine; sidecar JSON; no invented levels; no fake charts; no orders)
+- [CHART-BOT.md](docs/CHART-BOT.md) — short public contract (readable annotations, five-force spine, ta-learning loop, CX tab on PR #1)
 - [PATTERN-SETUPS.md](docs/PATTERN-SETUPS.md) — `pattern_id` enum + setup_grade (invalidation required; hype PnL reject)
+- [ta-learning/](ta-learning/) — file-based Chart bot retros + PATTERN-EDGE-LOG (not silent weights; viral PnL never a training label)
 - [MARKET-MAKER.md](docs/MARKET-MAKER.md) — LIVE-authorized (fee vault only; principal locked)
 - [MM-SOL-ETH-HYPE.md](docs/MM-SOL-ETH-HYPE.md) — multi-sleeve SOL / ETH / HYPE desk map (HYPE DARK until adapter)
 - [WALLET-LOGIN.md](docs/WALLET-LOGIN.md) — SIWS/SIWE connect + DEX view (no key custody; HYPE DARK)
@@ -53,7 +55,7 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 | [Crew handoff gates (signal pipeline)](docs/CREW-HANDOFF.md) | Helix role map; no unverified PnL |
 | [FLOW](docs/FLOW.md) | Chain → DEX → token → wallets DARK; kill switches |
 | [Alpha Writer NOTE](docs/ALPHA-WRITER.md) | Evidence-gated pipeline; no auto-post; WordPress draft-only future |
-| [Five-force lens](docs/ALPHA-FIVE-FORCES.md) | Dalio five-force **tags** for NOTEs; DARK if unclear; evidence required; World Monitor MCP future Pro/API |
+| [Five-force lens](docs/ALPHA-FIVE-FORCES.md) | Dalio five-force **tags** for NOTEs and Chart bot; DARK if unclear; evidence required; World Monitor MCP future Pro/API; Grok pack [GROK-ALPHA-FIVE-FORCES.md](docs/grok/GROK-ALPHA-FIVE-FORCES.md) |
 | [Sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) | **Living Free Market Data Scout** catalog — FREE in Helix now vs Top-to-add, DARK list, GitHub shells; **no credentials** |
 | [Data and memory](docs/DATA-AND-MEMORY.md) | Flexible layers (agent/project memory, INVENTORY, cowork notes, SQL warehouse, Parquet cold); SQL/prompt discipline — DARK>invention, no secrets |
 | [Roadmap](docs/ROADMAP.md) | Public bars, no synthetics, walk-forward, paper-first |

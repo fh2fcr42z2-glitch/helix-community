@@ -12,10 +12,10 @@ Sleeves: **SOL / ETH** primary. **HYPE** → **reject** until a mocked Hyperliqu
 
 ## How to use a row
 
-A Chart shot sidecar names **one** `pattern_id`, **bias** (`long` / `short` / `none`), **tf**, **invalidation**, **asof**, **source_id**, **setup_grade**. Confluence is a **grade**, not a second id.
+A Chart shot sidecar names **one** `pattern_id`, **bias** (`long` / `short` / `none`), **tf**, **levels**, **invalidation**, **thesis_blurb**, **primary_force**, **asof**, **source_id**, **setup_grade**. Confluence is a **grade**, not a second id. Unclear force → `DARK`. Viral PnL is a **reject** and is never a training label.
 
 `setup_grade`: `sketch` | `setup` | `confluent` | `reject` — [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md).  
-**BOS alone ≠ confluent.** Missing sidecar → **DARK metadata**.
+**BOS alone ≠ confluent.** Missing sidecar → **DARK metadata**. Readable cards: [CHART-BOT.md](./CHART-BOT.md).
 
 Tape overlays TA may read (must be computed from real bars, or they are **invisible** → reject): **SuperTrend**, Bollinger **%B**, **RSI**, **VWAP (UTC day)**, **ATR** (pack defaults).
 
@@ -92,4 +92,4 @@ Full table: [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md#reject-first-class).
 
 This page does not catalog harmonic patterns, ICT jargon, or a 20-rule playbook. Do not grow the enum from tweets. A new id needs a later critique **PASS**, not a Discord nickname.
 
-CX wiring: Chart shots tab on helix-cx PR #1. First SOL/ETH pack **sketch**; overlays DARK — [STATUS.md](./STATUS.md).
+CX wiring: Chart shots tab on helix-cx PR #1. First SOL/ETH pack **sketch**; overlays DARK — [STATUS.md](./STATUS.md). Readable cards + five-force spine + `ta-learning/` loop: [CHART-BOT.md](./CHART-BOT.md).

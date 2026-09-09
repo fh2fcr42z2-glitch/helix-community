@@ -88,7 +88,7 @@ Turns a Scout scrap into a thesis. Attaches evidence and a **verification level*
 
 ### Technical Analysis
 
-Pattern recognition, setups, and **Chart shots**. Critique pack **PASS** (pins: pivot N=2, VWAP UTC day, ATR pack defaults, BOS alone ≠ confluent). Sidecar JSON required; missing sidecar → DARK metadata. Reads Tape overlays from real bars. Never invents levels. Does not place orders. Does not own Market Maker screenshots. **SOL / ETH** primary; **HYPE** reject until adapter. Full page: [TECHNICAL-ANALYSIS.md](TECHNICAL-ANALYSIS.md). Lexicon: [PATTERN-SETUPS.md](PATTERN-SETUPS.md).
+Pattern recognition, setups, and **Chart shots** (Chart bot). Critique pack **PASS** (pins: pivot N=2, VWAP UTC day, ATR pack defaults, BOS alone ≠ confluent). Sidecar JSON required; missing sidecar → DARK metadata. Readable card fields: **levels**, **invalidation**, **thesis_blurb**. Every thesis carries a five-force spine (**DARK if unclear**; never invent macro). Learning via `ta-learning/` retros, not silent weights. Reads Tape overlays from real bars. Never invents levels. Does not place orders. Does not own Market Maker screenshots. **SOL / ETH** primary; **HYPE** reject until adapter. Full page: [TECHNICAL-ANALYSIS.md](TECHNICAL-ANALYSIS.md). Public contract: [CHART-BOT.md](CHART-BOT.md). Lexicon: [PATTERN-SETUPS.md](PATTERN-SETUPS.md). Lens: [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md).
 
 ### Market Ops
 

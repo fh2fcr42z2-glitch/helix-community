@@ -6,18 +6,19 @@
 
 | Piece | Truth |
 |---|---|
-| Public docs (this repo `main`) | LIVE — PoR/OFAC (+Binance sample), five-forces, data/memory, crew, research loop, Market Maker, quant/risk/fleet, TA / Chart shots / engine flow, **Grok prompt packs** |
+| Public docs (this repo `main`) | LIVE — PoR/OFAC (+Binance sample), five-forces, data/memory, crew, research loop, Market Maker, quant/risk/fleet, TA / Chart shots / Chart bot / engine flow, wallet login, PnL honesty, Trench Narrative, **Grok prompt packs**, ta-learning contract (empty log) |
 | Private `helix-cx` GitHub `main` | Hull / early stub — **not** the Fleet preview |
 | Private `helix-cx` PR #1 | Paper desk + Fleet OS work in flight — merge only when Call Me X says |
 | Execution | paper · `liveOrders` false · no unsupervised live orders |
 | Fleet OS ridge | LIVE only for real metrics (print share, tape age, kills, FREE venues). **In Review / agent success stay DARK** — never invent a success % |
 | Warehouse | stub + docs · tile DARK until enabled |
 | PoR / OFAC | seed **counts only** · RPC join DARK |
-| Five-force tags | default DARK until evidence assigns a force |
+| Five-force tags | default DARK until evidence assigns a force · Chart bot: `debt_cycle` / `internal_order` / `geopolitics` / `nature` / `inventiveness` / `DARK` |
 | Risk gates | library present, flag off · never a live go-ahead by itself |
 | World Monitor | DARK without a key |
 | Market Maker | LIVE authorized (X 2026-09-09) · fee_income only · principal locked · venue DARK blocks · **SOL primary · ETH try-now · HYPE DARK until adapter** · Scout 2026-09-09: **Phoenix SOL CLOB PASS · ETH CEX+gas PASS · HYPE HL WARN** · CX wiring on PR #1 |
 | Technical Analysis | TA critique **PASS**; first SOL/ETH Chart shot pack on desk (4 shots: SOL/ETH × 1h/4h) · all `setup_grade` **sketch** (TradingView guest = candles+volume only; SuperTrend/%B/RSI/VWAP **DARK**) · not `setup`/`confluent` · **HYPE** still DARK · CX Chart shots tab still wiring on helix-cx PR #1 · contract [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) · files `helix-cowork/chart-shots/` (**may be unmounted**) |
+| Chart bot | readable annotations + five-force spine · learning via ta-learning retros · CX tab on PR #1 · [CHART-BOT.md](./CHART-BOT.md) · log [`ta-learning/PATTERN-EDGE-LOG.md`](../ta-learning/PATTERN-EDGE-LOG.md) (empty — no fabricated edges) |
 | Wallet login | wiring on helix-cx PR #1 · connect+DEX view · HYPE DARK · no key custody |
 | PnL panel | wiring on helix-cx PR #1 · Coinbase+wallets · viral PnL DARK · no fabricated totals |
 | Trench Narrative | wiring on helix-cx PR #1 · RSS free first · X API paid for scale · social heat ≠ size |
@@ -28,13 +29,15 @@
 3. Prepare ≠ execute. Live money needs **explicit human approval** — MM tickets were authorized by X on 2026-09-09 (journal `approval_ref`; `needs_human_approval=false` for that path).
 4. If a PR is open and `main` is behind, say so once, then use **this STATUS** and community docs — don’t loop on “not merged” as if the desk doesn’t exist.
 5. Launchpad nature (mass mint / skip-as-edge) ≠ MM fee-vault loop — [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md). Unverified bot PnL stays DARK.
-6. TA critique pack lives on the desk box (`helix-cowork` briefs/notes — **may be unmounted**). Chart shots live under `helix-cowork/chart-shots/` (**may be unmounted** — do not invent PNGs or overlays). Public contract: [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) + [PATTERN-SETUPS.md](./PATTERN-SETUPS.md). Do not invent the pack file. Pins: pivot **N=2**, VWAP **UTC day**, ATR **pack defaults**, **BOS alone ≠ confluent**. Missing sidecar → DARK metadata. Guest candles+volume = **sketch**, never `setup`/`confluent`.
+6. TA critique pack lives on the desk box (`helix-cowork` briefs/notes — **may be unmounted**). Chart shots live under `helix-cowork/chart-shots/` (**may be unmounted** — do not invent PNGs or overlays). Public contract: [CHART-BOT.md](./CHART-BOT.md) + [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) + [PATTERN-SETUPS.md](./PATTERN-SETUPS.md). Do not invent the pack file. Pins: pivot **N=2**, VWAP **UTC day**, ATR **pack defaults**, **BOS alone ≠ confluent**. Missing sidecar → DARK metadata. Guest candles+volume = **sketch**, never `setup`/`confluent`. Readable cards need **levels**, **invalidation**, **thesis_blurb**. Unclear macro → **DARK**. Learning is file-based (`ta-learning/` + PATTERN-EDGE-LOG), not silent weights. Viral PnL is never a training label.
 
 ## Canonical docs on this `main`
 - [CREW-HANDOFF.md](./CREW-HANDOFF.md) — one job per lane, veto/don’t-chase gates
 - [ENGINE-FLOW.md](./ENGINE-FLOW.md) — anti-clog promotion (idea → cowork → Scout flag → CoS PR → warehouse/Fleet)
-- [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) — TA specialist, Chart shots; critique PASS; first pack **sketch**; sidecar JSON; no invented levels; no orders
+- [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) — TA specialist, Chart shots; critique PASS; first pack **sketch**; readable cards; five-force spine; sidecar JSON; no invented levels; no orders
+- [CHART-BOT.md](./CHART-BOT.md) — short public contract (readable shots, five-force spine, ta-learning loop, CX tab on PR #1)
 - [PATTERN-SETUPS.md](./PATTERN-SETUPS.md) — `pattern_id` enum + setup_grade; invalidation required; hype PnL reject
+- [`ta-learning/`](../ta-learning/) — file-based Chart bot retros + [PATTERN-EDGE-LOG](../ta-learning/PATTERN-EDGE-LOG.md) (empty; no fabricated edges)
 - [DATA-AND-MEMORY.md](./DATA-AND-MEMORY.md)
 - [ALPHA-FIVE-FORCES.md](./ALPHA-FIVE-FORCES.md)
 - [POR-OFAC-SEEDS.md](./POR-OFAC-SEEDS.md)

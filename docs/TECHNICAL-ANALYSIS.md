@@ -7,6 +7,8 @@ Paper-only language for patterns. MM live rails stay in [MARKET-MAKER.md](./MARK
 
 **TA critique pack = PASS** (doctrine). First SOL/ETH Chart shot pack is **sketch** only (TradingView guest = candles+volume; SuperTrend/%B/RSI/VWAP **DARK**) — not `setup` / not `confluent`. Desk truth: [STATUS.md](./STATUS.md).
 
+Public Chart bot contract (readable cards, five-force spine, file-based learning): [CHART-BOT.md](./CHART-BOT.md). Force tags: [ALPHA-FIVE-FORCES.md](./ALPHA-FIVE-FORCES.md) · Grok pack: [grok/GROK-ALPHA-FIVE-FORCES.md](./grok/GROK-ALPHA-FIVE-FORCES.md).
+
 ## Job
 
 | Does | Does not |
@@ -15,6 +17,8 @@ Paper-only language for patterns. MM live rails stay in [MARKET-MAKER.md](./MARK
 | Attach a **Chart shot** with sidecar JSON (evidence + **as-of**) | Draw on a synthetic / remembered candle and call it tape |
 | Name a `pattern_id` from [PATTERN-SETUPS.md](./PATTERN-SETUPS.md) plus **invalidation** | Place, size, or “just send” an order |
 | Grade `setup_grade` honestly; **DARK metadata** if the sidecar is missing | Own MM quotes, fee vaults, or stub fills |
+| Put a **five-force spine** on every thesis (`DARK` if unclear) | Invent macro because the candle moved |
+| File retros in `ta-learning/` + [PATTERN-EDGE-LOG](../ta-learning/PATTERN-EDGE-LOG.md) | Silent weight magic; viral PnL as a training label |
 | Prefer **SOL** and **ETH** sleeves | Quote or pattern-call **HYPE** until a mocked Hyperliquid adapter exists |
 
 One owner per shot. Handoffs via files — [ENGINE-FLOW.md](./ENGINE-FLOW.md), [CREW-HANDOFF.md](./CREW-HANDOFF.md).
@@ -26,7 +30,7 @@ The desk **TA critique** concluded **PASS**. That pack is the assumption source.
 | Pointer | Honest note |
 | --- | --- |
 | **Conceptual path** | Desk box `helix-cowork` TA critique pack (briefs/notes). **May be unmounted** on a Cloud Agent or clone |
-| **Public contract** | This page + [PATTERN-SETUPS.md](./PATTERN-SETUPS.md) + Chart shots sidecar below |
+| **Public contract** | This page + [CHART-BOT.md](./CHART-BOT.md) + [PATTERN-SETUPS.md](./PATTERN-SETUPS.md) + Chart shots sidecar below |
 | **If the pack file is missing** | Do not invent a gist. Use these pages. Numeric ATR windows you cannot cite stay unlabeled — do not retune |
 
 Treat the pins as **frozen** until a later critique **re-PASSes**. Silent retunes are a bug.
@@ -53,7 +57,7 @@ Viral chart PnL and “I called the wick” posts are **DARK** — not Helix evi
 
 ## Chart shots
 
-CX **notes** tab labeled **Chart shots**. Wiring lives on private **helix-cx PR #1** (desk code). This community repo documents the contract; it does **not** ship candles.
+CX **notes** tab labeled **Chart shots** (Chart bot). Wiring lives on private **helix-cx PR #1** (desk code). This community repo documents the contract; it does **not** ship candles. Humans read the **card**, not the PNG pixels — [Readable Chart shot cards](#readable-chart-shot-cards).
 
 **Files** live under `helix-cowork/chart-shots/` on the desk workspace (cowork / CX allowlist — **may be unmounted**; not this public git tree). Sidecar sits next to the image: `chart-shots/<stem>.json` (same stem as the PNG/WebP). Do not commit PNGs here. Do not paste broker UI, keys, or account balances into a shot. Do not invent a chart if the dir is missing.
 
@@ -86,7 +90,16 @@ Required fields. No secrets. No PnL fields.
   "tf": "1h",
   "pattern_id": "bos_retest",
   "bias": "none",
+  "levels": [
+    {
+      "name": "broken_level",
+      "asof": "2026-09-09T00:00:00Z",
+      "evidence": "labeled from the shot; price DARK if not printed on the sidecar"
+    }
+  ],
   "invalidation": "close back through broken level on 1h",
+  "thesis_blurb": "BOS then retest on 1h. Overlays DARK until Tape computes them. Force DARK — no macro invented from the candle.",
+  "primary_force": "DARK",
   "asof": "2026-09-09T00:00:00Z",
   "source_id": "coinbase",
   "path": "chart-shots/sol-usd_1h_2026-09-09.png",
@@ -100,13 +113,18 @@ Required fields. No secrets. No PnL fields.
 }
 ```
 
+Schema illustration only — not a live SOL thesis and not a fabricated macro story. First desk pack remains **sketch**; overlays DARK.
+
 | Field | Type | Required | Notes |
 | --- | --- | --- | --- |
 | **symbol** | string | yes | Pair / sleeve (`SOL…`, `ETH…`). **HYPE** → reject until adapter |
 | **tf** | string | yes | Timeframe the pattern is claimed on (real bars, one TF per claim) |
 | **pattern_id** | enum | yes | See enum above |
 | **bias** | `long` \| `short` \| `none` | yes | Research stance, not an order |
-| **invalidation** | string | yes | Price or condition that kills the setup |
+| **levels** | array | yes | Human-readable S/R / structure from **real bars**. Each item: `name` + `asof` + evidence. Unclear price → omit the number and say DARK — do not invent |
+| **invalidation** | string | yes | Price or condition that kills the setup. Humans read this on the card |
+| **thesis_blurb** | string | yes | One short English paragraph: what the picture claims. Not a ticker dump, not indicator soup |
+| **primary_force** | enum | yes | Dalio spine: `debt_cycle` \| `internal_order` \| `geopolitics` \| `nature` \| `inventiveness` \| `DARK`. **Unclear → `DARK`.** Never invent macro |
 | **asof** | ISO-8601 | yes | Shot / bar time |
 | **source_id** | string | yes | Venue / adapter that printed the bars |
 | **path** | string | yes | `chart-shots/…` file the tab can open |
@@ -122,11 +140,51 @@ Wrong `pattern_id`, missing field, or pins that disagree with doctrine → DARK 
 | Reject | Why |
 | --- | --- |
 | **Synthetic MTF** | Higher-TF structure mashed from interpolated / synthetic bars, or mixed TFs without a real bar + as-of **per TF** |
-| **Hype PnL** | Viral “I banked it” charts, Discord call-outs, unverified bot PnL as evidence |
+| **Hype PnL** | Viral “I banked it” charts, Discord call-outs, unverified bot PnL as evidence **or as a learning label** |
 | **Invisible indicators** | Claiming SuperTrend / %B / RSI / VWAP / ATR / pivots that are **not** on the shot **and** not computed from Tape |
 | **HYPE until adapter** | Hyperliquid sleeve DARK until a mocked adapter — [MM-SOL-ETH-HYPE.md](./MM-SOL-ETH-HYPE.md) |
+| **Fabricated macro** | A force tag without evidence; geopolitics because Twitter said “war”; inventiveness because the candle is green |
 
 Reject is a completed handoff. Do not re-label as `sketch` to keep the tab busy.
+
+## Readable Chart shot cards
+
+A Chart shot is a **card humans can read**, not a PNG dump. The CX tab may show the image; the contract is the sidecar fields a person (or Grok) can check without staring at pixels.
+
+| Field humans read | Job | DARK / fail when |
+| --- | --- | --- |
+| **levels** | Named S/R or structure that actually printed, each with as-of + evidence | Remembered pivots, round numbers you like, prices not on the shot |
+| **invalidation** | The condition that kills the thesis, in English a reviewer can test | Vibes (“if it looks weak”); wallet/whale clauses; missing field |
+| **thesis_blurb** | One short paragraph: what this picture claims *now* | Indicator soup, ticker spam, a copy-paste from a viral thread |
+
+Missing any of the three → the card is not readable → **DARK metadata**, even if the PNG is pretty. `setup_grade` stays `sketch` (or `reject`) until the card is complete.
+
+Do not hide the thesis in the filename. Do not make the human reverse-engineer SuperTrend from a screenshot. Short public contract: [CHART-BOT.md](./CHART-BOT.md).
+
+## Five-force macro spine
+
+Every Chart-bot thesis carries a **Dalio five-force spine**. The tag answers “which force is actually driving it?” — it is a **label**, not a forecast and not a buy list.
+
+Exact strings (same as the Grok Alpha pack):
+
+`debt_cycle` | `internal_order` | `geopolitics` | `nature` | `inventiveness` | `DARK`
+
+| Chart bot `primary_force` | Alpha Writer tag | Force (plain language) |
+| --- | --- | --- |
+| `debt_cycle` | `force:credit` | Money, credit, debt, liquidity, leverage |
+| `internal_order` | `force:internal` | Domestic politics, policy, social cohesion |
+| `geopolitics` | `force:external` | War, sanctions, trade/currency blocs — **no invented wallets** |
+| `nature` | `force:nature` | Disaster, pandemic, climate / physical shock |
+| `inventiveness` | `force:tech` | Protocol, hardware, model, or market-structure change |
+| `DARK` | `force:DARK` | Unclear — **do not guess** |
+
+**Never invent macro.** A dump is not `geopolitics`. A green candle is not `inventiveness`. A coin moving is not `debt_cycle`. If you cannot cite which force, or the force is a vibe, **`primary_force` is `DARK`.**
+
+Same honesty as Alpha Writer: each non-DARK tag needs a claim + verification level + source. Missing source → DARK, not a quieter font. World Monitor stays DARK unpaid — do not paste MCP tokens.
+
+Lens: [ALPHA-FIVE-FORCES.md](./ALPHA-FIVE-FORCES.md). Copy-paste Grok pack: [grok/GROK-ALPHA-FIVE-FORCES.md](./grok/GROK-ALPHA-FIVE-FORCES.md). There is **no** private Grok chat dump in this repo.
+
+A Chart shot still needs FLOW / Tape hygiene. Forces do not replace bars.
 
 ## Fit with Tape (SuperTrend / %B / RSI)
 
@@ -144,6 +202,21 @@ TA **reads** Tape overlays; it does not replace them and does not invent their v
 
 Tape / Scout still owns *volume-before-price* and FLOW rungs. TA owns the **picture + invalidation**. Plan/Setup (crew) writes reset conditions; TA does not steal that lane — it supplies the shot those conditions refer to.
 
+## Learning loop (files, not silent weights)
+
+Chart bot **learns in the open**. After a thesis resolves — invalidated, still standing, or rejected — write a file. Do not quietly retune ATR, pivot N, or overlay weights. Do not hide a “the model updated” in a checkpoint.
+
+| Artifact | Where | Job |
+| --- | --- | --- |
+| **Retro** | [`ta-learning/`](../ta-learning/) dated notes (template: [`RETRO.template.md`](../ta-learning/RETRO.template.md)) | What was claimed, what printed, whether invalidation hit, force tag, DARK list, what to keep or drop |
+| **PATTERN-EDGE-LOG** | [`ta-learning/PATTERN-EDGE-LOG.md`](../ta-learning/PATTERN-EDGE-LOG.md) | Running log of pattern observations. Not a scoreboard. Not a backtest report |
+
+Desk copies may also live under `helix-cowork/ta-learning/` (**may be unmounted**). If the dir is missing, do not invent retros. This repo holds the **public contract + empty log** — no fabricated edges, no fake charts, no fabricated macro.
+
+**Viral PnL is never a training label.** Influencer screenshots, Discord “I called it,” unverified bot PnL, and hype-thread dollar claims do not enter a retro as evidence that a `pattern_id` works. They are already a Chart-shot **reject**. They are also forbidden as fine-tune fuel. Hypothetical paper P&L is not a license to skip walk-forward + DARK list — [RESEARCH-LOOP.md](./RESEARCH-LOOP.md) · [RISK-GATES.md](./RISK-GATES.md).
+
+Stage 6 (fine-tune) for TA = **append a retro and a log row**, with `quality_flag`. Negative results are first-class. Silent weight magic is a bug.
+
 ## Market Maker does not own screenshots
 
 [MARKET-MAKER.md](./MARKET-MAKER.md) is the fee-vault rotate loop (quotes, kill, journal). **MM does not own Chart shots.**
@@ -156,9 +229,10 @@ Sleeve map matches MM: **SOL primary · ETH try-now · HYPE DARK until adapter**
 
 ## CX / Fleet
 
-- **Notes tab:** Chart shots (CX PR #1).
+- **Notes tab:** Chart shots / Chart bot (CX tab on helix-cx **PR #1**).
+- **Readable card:** `levels` + `invalidation` + `thesis_blurb` on the sidecar — not PNG-only.
 - **Fleet card (when wired):** artifact as-of on `helix-cowork/chart-shots/` **and** sidecar presence — never “TA online.” Missing dir or missing sidecar → DARK. See [FLEET-OS.md](./FLEET-OS.md).
-- Critique **PASS**; first SOL/ETH pack **sketch** (overlays DARK). CX tab still wiring on PR #1. [STATUS.md](./STATUS.md).
+- Critique **PASS**; first SOL/ETH pack **sketch** (overlays DARK). CX tab still wiring on PR #1. Learning via `ta-learning/` retros, not weights. [STATUS.md](./STATUS.md) · [CHART-BOT.md](./CHART-BOT.md).
 
 ## Do not tell Grok / agents
 
@@ -166,8 +240,10 @@ Sleeve map matches MM: **SOL primary · ETH try-now · HYPE DARK until adapter**
 - That HYPE patterns are LIVE before a mocked adapter.
 - That MM owns or needs the screenshot folder.
 - That a Chart shot is an order.
-- That viral / hype PnL charts are Helix backtests.
+- That viral / hype PnL charts are Helix backtests **or training labels**.
 - That BOS alone is `confluent`.
 - That synthetic MTF is structure.
 - To invent SuperTrend / %B / RSI / VWAP / ATR when the overlay is uncomputed or invisible.
+- To invent a five-force tag because the coin moved — unclear → **`DARK`**.
+- That Chart bot silently updates model weights instead of filing a `ta-learning/` retro.
 - That helix-cowork TA files exist on this clone — summarize from **this** page if the pack is unmounted.

@@ -14,7 +14,7 @@ Source inspiration: public multi-agent trading crew writeups (@immortalhowwl / G
 | Tape / Scout | TOKYO | Find fresh names where **volume builds before price**; pass evidence, not vibes |
 | Sentinel / Risk | PALERMO | **Block** entries without enough liquidity for a safe exit |
 | Plan / Setup | BERLIN | Write **exact conditions** that reset or re-arm the setup |
-| Technical Analysis | — | Chart shot + pattern + **invalidation**; never invent levels; no orders |
+| Technical Analysis | — | Chart shot + pattern + **invalidation** + readable card + five-force spine (`DARK` if unclear); never invent levels or macro; no orders; learn via `ta-learning/` files |
 | Entry timing | RIO | Catch **pullbacks**, mark **invalidation**; never chase a flying chart |
 | Alpha / Social | DENVER | Compare X/Telegram mentions to **on-chain volume**; filter paid noise |
 | Data quality | LISBON | Reject **stale** snapshots (holders, liquidity, bars); send setup back |
