@@ -31,12 +31,13 @@ A pretty PNG without those three is **not** a readable Chart shot. Sidecar JSON 
 
 ## Five-force spine
 
-Same buckets as Alpha Writer and the Grok pack. Chart bot uses the **Grok strings** on the sidecar (`primary_force`). Unclear → **`DARK`**. Never invent rates, wars, polls, or protocol stories to fill a tag.
+Same buckets as Alpha Writer, Reader, and the Grok pack. Chart bot uses the **Grok strings** on the sidecar (`primary_force`). Unclear → **`DARK`**. Never invent rates, wars, polls, or protocol stories to fill a tag.
 
 | Docs | Role |
 | --- | --- |
 | [ALPHA-FIVE-FORCES.md](./ALPHA-FIVE-FORCES.md) | Alpha Writer NOTE tags (`force:credit` … `force:DARK`) |
-| [grok/GROK-ALPHA-FIVE-FORCES.md](./grok/GROK-ALPHA-FIVE-FORCES.md) | Copy-paste pack; exact Chart bot enum |
+| [READER.md](./READER.md) | Same six Grok strings on READER JSON; myth filter + tape check before Writer |
+| [grok/GROK-ALPHA-FIVE-FORCES.md](./grok/GROK-ALPHA-FIVE-FORCES.md) | Copy-paste pack; exact Chart bot / Reader enum |
 
 There is no public dump of a private Grok five-force chat in this repo. World Monitor stays DARK unpaid.
 

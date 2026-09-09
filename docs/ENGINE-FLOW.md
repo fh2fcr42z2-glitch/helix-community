@@ -39,7 +39,7 @@ Prepare ≠ execute. Live money still needs explicit human approval (MM path: [M
 
 ## What each hop is for
 
-**Cowork note** — durable enough for another hat to read tomorrow. Template: owner, claim, evidence URL/as-of, DARK list, next owner. Chart shots use the notes tab + `chart-shots/` **sidecar JSON** (readable card: levels, invalidation, thesis_blurb; five-force spine) — [CHART-BOT.md](./CHART-BOT.md) · [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md). Missing sidecar → DARK metadata. TA learning: `ta-learning/` retros + PATTERN-EDGE-LOG, not silent weights. TA critique pack is desk `helix-cowork` (may be unmounted); community docs are the public contract. Not a Grok paste.
+**Cowork note** — durable enough for another hat to read tomorrow. Template: owner, claim, evidence URL/as-of, DARK list, next owner. Reader JSON is a cowork-class artifact (FREE ingest map + Alpha handoff on [READER.md](READER.md); desk `helix-cowork` notes may be unmounted). Chart shots use the notes tab + `chart-shots/` **sidecar JSON** (readable card: levels, invalidation, thesis_blurb; five-force spine) — [CHART-BOT.md](./CHART-BOT.md) · [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md). Missing sidecar → DARK metadata. TA learning: `ta-learning/` retros + PATTERN-EDGE-LOG, not silent weights. TA critique pack is desk `helix-cowork` (may be unmounted); community docs are the public contract. Not a Grok paste.
 
 **Scout INVENTORY flag** — classification, not collection of keys. When cowork learns a class, **patch INVENTORY in the same promotion** so catalog and note do not lag. Named ≠ wired.
 

@@ -80,7 +80,7 @@ Every catalog row belongs to one (or more) of these. Crypto-first CX does not ow
 | **FRED** | Macro (equity/macro sidecar) | **FREE-TIER** (API key often required, no paywall) | **Not crypto tape.** Sidecar context only |
 | **EDGAR** | Filings (equity sidecar) | **FREE** public SEC filings | **Not crypto.** Not a whale feed |
 | **Alchemy free tier** | On-chain RPC | **FREE-TIER**, **`eth_call` only** | Read-only contract calls. **Not** `eth_send*`, **not** entity labels, **not** bridges. Labels stay **DARK** |
-| **News RSS** | Sentiment / chatter | **FREE** public feeds (typical) | Headlines, not a paid firehose. Cite the feed; do not scrape a paywall. Not wallet flow |
+| **News RSS** | Sentiment / chatter | **FREE** public feeds (typical) | Headlines, not a paid firehose. Cite the feed; do not scrape a paywall. Not wallet flow. Reader ingest: [READER.md](READER.md) — no fake ledes |
 | **PoR seeds** | Venue solvency context | **FREE** *if* the exchange publishes a public Proof-of-Reserves attestation | A published merkle/attestation page is not a wallet cluster. Missing PoR = **DARK**, not “insolvent” |
 | **OFAC seeds** | Public sanctions lists | **FREE** public Treasury SDN (and similar published lists) | Research seed only — not a compliance product, not live blocking, not a smart-money label |
 
@@ -138,7 +138,7 @@ Paid *or* public-but-unwired. Unpaid/unverified = **DARK**. Swap/trading connect
 | **Birdeye** | Token-level analytics / possible wallet reads |
 | **GMGN** | Labeled-wallet style screens |
 | **Tiingo** | Equities/news-style paid coverage — sidecar, not crypto tape |
-| **News RSS (public)** | Headline ingest for the chatter/search gap — not a paid newswire; mocks required |
+| **News RSS (public)** | Headline ingest for the chatter/search gap — not a paid newswire; mocks required. Reader JSON, not a NOTE — [READER.md](READER.md) |
 | **PoR seeds** | Public Proof-of-Reserves attestations as context — not labeled wallets |
 | **OFAC seeds** | Public SDN (and similar) as a research seed — not a live compliance engine, not smart money |
 | **Alchemy `eth_call` only** | FREE-TIER read-only calls — never send, never treat as labels |

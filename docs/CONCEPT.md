@@ -71,7 +71,7 @@ The public CX direction is **crypto first**:
 
 **Equities are a sidecar.** A full US tape (SIP), options flow, and broker connectivity sit behind licenses and keys. They are out of scope for a free public bench. **Swap and trading connectors stay off.** Mentioning Interactive Brokers or Tiingo in the capability matrix means “this is what a keyed *read-only* sidecar *would* unlock,” not “equities or orders are live.”
 
-Crypto-first intake is **FLOW** (chain → DEX → token, wallets DARK). See [FLOW.md](FLOW.md). Publication is an evidence-gated **NOTE**, never auto-post. See [ALPHA-WRITER.md](ALPHA-WRITER.md).
+Crypto-first intake is **FLOW** (chain → DEX → token, wallets DARK). See [FLOW.md](FLOW.md). Cited headlines pass [READER.md](READER.md) before publication. Publication is an evidence-gated **NOTE**, never auto-post. See [ALPHA-WRITER.md](ALPHA-WRITER.md).
 
 ## What Helix will not pretend
 

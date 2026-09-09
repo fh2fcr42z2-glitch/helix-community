@@ -32,7 +32,7 @@ The three legs disagree. Helix’s job is to **write the disagreement down**, no
 - Search: what people queried.
 - Chatter: what people said.
 
-A thesis names all three, plus a DARK list for what you could not observe. Full note: [Concept]({{ '/concept/' | relative_url }}). Crypto-first CX then places that thesis on a **FLOW** rung — chain → DEX → token, wallets DARK — and only then may Alpha Writer emit a **NOTE**. [FLOW]({{ '/flow/' | relative_url }}) · [Alpha Writer]({{ '/note/' | relative_url }}).
+A thesis names all three, plus a DARK list for what you could not observe. Full note: [Concept]({{ '/concept/' | relative_url }}). Crypto-first CX then places that thesis on a **FLOW** rung — chain → DEX → token, wallets DARK. Cited headlines pass [Reader]({{ '/reader/' | relative_url }}) (force tag, myth filter, tape check) and only then may Alpha Writer emit a **NOTE**. [FLOW]({{ '/flow/' | relative_url }}) · [Alpha Writer]({{ '/note/' | relative_url }}).
 
 ## Desk map
 
@@ -65,6 +65,10 @@ A thesis names all three, plus a DARK list for what you could not observe. Full 
     <h2>Alpha Writer</h2>
     <p>Evidence-gated NOTE. Optional five-force tags; DARK if unclear. No X auto-post.</p>
   </article>
+  <article>
+    <h2>Reader</h2>
+    <p>Cited headline → JSON. Five-force + myth filter. Tape wins vs psychology.</p>
+  </article>
 </div>
 
 Roles (Scout, Researcher, Market Ops, Sentinel, Alpha Writer, and the rest) are **conceptual hats**. Sentinel-gated execution stays paper-first **forever**. Swap connectors stay **off**. [Architecture]({{ '/architecture/' | relative_url }}).
@@ -73,7 +77,7 @@ Roles (Scout, Researcher, Market Ops, Sentinel, Alpha Writer, and the rest) are 
 
 Crypto-first CX climbs **chain → DEX → token** on free DefiLlama + screener data. Wallets stay DARK until a read-only research key exists privately. Kill switches (stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX liquidity) halt *promotion*, not live orders.
 
-A NOTE is assembled only after Scout → Researcher → Market Ops. Claims carry verification levels. Optional [five-force tags]({{ '/forces/' | relative_url }}) need evidence; unclear force = **DARK**. **No auto-post.**
+A NOTE is assembled only after Scout → Researcher → Market Ops (and Reader JSON, if the artifact started as a headline). Claims carry verification levels. Optional [five-force tags]({{ '/forces/' | relative_url }}) need evidence; unclear force = **DARK**. **No auto-post.** Reader doctrine: [Helix Reader]({{ '/reader/' | relative_url }}).
 
 ## What is gated (and why that helps you)
 

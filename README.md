@@ -45,6 +45,7 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 - [PNL.md](docs/PNL.md) — cross-source PnL honesty (Coinbase + wallets; viral PnL DARK; no fabricated totals)
 - [MEME-MARKET-NATURE.md](docs/MEME-MARKET-NATURE.md) — launchpad nature vs MM (mass mint; skip-as-edge; bot PnL DARK)
 - [TRENCH-NARRATIVE.md](docs/TRENCH-NARRATIVE.md) — Trench hull + Narrative panel (RSS free first; X API paid; social heat ≠ size; no secrets)
+- [READER.md](docs/READER.md) — headline judge (FREE ingest map + Alpha handoff; five-force + myth filter + tape check → JSON); upstream of Alpha Writer; no fake headlines
 - [GROK-PROMPTS.md](docs/GROK-PROMPTS.md) — Grok copy-paste packs
 - [QUANT-CONFIDENCE.md](docs/QUANT-CONFIDENCE.md) · [RISK-GATES.md](docs/RISK-GATES.md) · [FLEET-OS.md](docs/FLEET-OS.md)
 
@@ -55,7 +56,8 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 | [Crew handoff gates (signal pipeline)](docs/CREW-HANDOFF.md) | Helix role map; no unverified PnL |
 | [FLOW](docs/FLOW.md) | Chain → DEX → token → wallets DARK; kill switches |
 | [Alpha Writer NOTE](docs/ALPHA-WRITER.md) | Evidence-gated pipeline; no auto-post; WordPress draft-only future |
-| [Five-force lens](docs/ALPHA-FIVE-FORCES.md) | Dalio five-force **tags** for NOTEs and Chart bot; DARK if unclear; evidence required; World Monitor MCP future Pro/API; Grok pack [GROK-ALPHA-FIVE-FORCES.md](docs/grok/GROK-ALPHA-FIVE-FORCES.md) |
+| [Helix Reader](docs/READER.md) | Upstream of Alpha Writer: headline ingest → five forces → rhetoric/myth filter → tape check → READER JSON; tape over psychology; FREE RSS first; Grok pack [GROK-READER-HEADLINE.md](docs/grok/GROK-READER-HEADLINE.md) |
+| [Five-force lens](docs/ALPHA-FIVE-FORCES.md) | Dalio five-force **tags** for NOTEs, Reader, and Chart bot; DARK if unclear; evidence required; World Monitor MCP future Pro/API; Grok pack [GROK-ALPHA-FIVE-FORCES.md](docs/grok/GROK-ALPHA-FIVE-FORCES.md) |
 | [Sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) | **Living Free Market Data Scout** catalog — FREE in Helix now vs Top-to-add, DARK list, GitHub shells; **no credentials** |
 | [Data and memory](docs/DATA-AND-MEMORY.md) | Flexible layers (agent/project memory, INVENTORY, cowork notes, SQL warehouse, Parquet cold); SQL/prompt discipline — DARK>invention, no secrets |
 | [Roadmap](docs/ROADMAP.md) | Public bars, no synthetics, walk-forward, paper-first |
@@ -77,6 +79,7 @@ Surfaces the community should recognize — names, not private source:
 - **Risk** — constraints, vetoes, kill switches (research halts)
 - **Fleet / Lab** — future isolated experiments
 - **Alpha Writer** — evidence-gated **NOTE**; no auto-post
+- **Reader** — cited headline → JSON (five-force + myth filter + tape check); then Writer
 - **Memory** — agent/project notes, INVENTORY, cowork notes, SQL warehouse, Parquet cold (DARK>invention, no secrets)
 
 Roles are conceptual (Head of Desk, Scout, **Free Market Data Scout**, Researcher, Market Ops, Risk, Sentinel, Alpha Writer). See [architecture](docs/ARCHITECTURE.md), [FLOW](docs/FLOW.md), and the [Scout catalog](docs/SENSITIVE-INTEGRATIONS.md#free-market-data-scout-charter). Sentinel-gated execution stays **paper-first forever**. Swap/trading connectors stay off.

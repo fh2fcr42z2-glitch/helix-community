@@ -84,4 +84,4 @@ Market Ops owns the check. Risk may still veto after a switch is clear. Sentinel
 - That funding/OI exists because spot volume exists.
 - That Llama Pro, GMGN, Helius, Birdeye, CryptoQuant, Glassnode, Coinglass Pro, or UW API are on because they appear in a sentence. **Named ≠ wired.** Absent a key and an adapter test, the field is DARK.
 
-Next: evidence-gated publication is [ALPHA-WRITER.md](ALPHA-WRITER.md). Adapter rules: [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md).
+Next: headline judge is [READER.md](READER.md) (upstream of Writer). Evidence-gated publication is [ALPHA-WRITER.md](ALPHA-WRITER.md). Adapter rules: [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md).

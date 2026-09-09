@@ -2,7 +2,7 @@
 
 Public contract for the **Trench** hull and **Narrative** panel. Private wiring lives on helix-cx **PR #1**. This repo documents the rules — not the client.
 
-Trench is the desk’s **chatter / headline** surface for a named FLOW rung. It is not a Twitter clone, not a scrape farm, and not a size ticket.
+Trench is the desk’s **chatter / headline** surface for a named FLOW rung. It is not a Twitter clone, not a scrape farm, and not a size ticket. Headlines that need a force tag, myth filter, and tape check hand off to **Reader** — [READER.md](./READER.md) — then Alpha Writer. Trench **displays**; Reader **judges**.
 
 **Social heat ≠ clip. Social heat ≠ size.** Unknown → **DARK**. Never invent tweets. No secrets.
 
@@ -20,7 +20,7 @@ If the panel cannot reuse Helix chrome, it is not ready. Wiring stays on helix-c
 
 ## Narrative panel
 
-The panel shows **supporting posts and headlines** for the name on the desk — evidence for the chatter / search legs, not a blended sentiment score.
+The panel shows **supporting posts and headlines** for the name on the desk — evidence for the chatter / search legs, not a blended sentiment score. Do not invent tweets or ledes. Promotion toward a NOTE goes through Reader JSON, not a heat count.
 
 | Prefers | When the source does **not** provide the field |
 |---|---|
@@ -31,7 +31,7 @@ Prefer high-follower and verified **when those fields exist**. A verified 200-fo
 
 Every item needs **source + as-of + URL** (or an explicit DARK reason). No date/link → DARK. Paid promo, copied headlines, and bot swarms are noise to filter, not size.
 
-Crew lane: Alpha / Social compares mentions to **on-chain volume** — [CREW-HANDOFF.md](./CREW-HANDOFF.md). Tape still leads. Chatter does not size MM or a Chart-shot clip.
+Crew lane: Alpha / Social compares mentions to **on-chain volume** — [CREW-HANDOFF.md](./CREW-HANDOFF.md). Tape still leads. Chatter does not size MM or a Chart-shot clip. If the lede conflicts with the print, Reader believes the tape — [READER.md](./READER.md).
 
 ## Nature sense
 
@@ -107,7 +107,9 @@ Do **not** add X posting tokens, WordPress passwords, or scrape-session cookies 
 - That social heat is a Chart-shot **clip**, an MM **size**, or Helix PnL.
 - That Nitter, a scrape, or a remembered tweet is a PASS feed.
 - That the official X API, Google CSE, World Monitor, LunarCrush, Santiment, or CryptoPanic API is LIVE without a private key + adapter.
-- To invent tweets, follower counts, verified badges, or viral PnL.
+- To invent tweets, follower counts, verified badges, viral PnL, or headlines for Reader.
 - Secrets, cookies, or private helix-cx paths.
+
+Headlines that need a force tag, myth filter, and tape check: [READER.md](./READER.md).
 
 Paper-only language for research. Not financial advice. Not a broker.
