@@ -6,7 +6,7 @@
 
 | Piece | Truth |
 |---|---|
-| Public docs (this repo `main`) | LIVE — PoR/OFAC seeds, five-forces, data/memory, sensitive integrations, crew handoff |
+| Public docs (this repo `main`) | LIVE — PoR/OFAC (+Binance sample), five-forces, data/memory, crew, research loop, Market Maker, quant/risk/fleet, **Grok prompt packs** |
 | Private `helix-cx` GitHub `main` | Hull / early stub — **not** the Fleet preview |
 | Private `helix-cx` PR #1 | Paper desk + Fleet OS work in flight — merge only when Call Me X says |
 | Execution | paper · `liveOrders` false · no unsupervised live orders |
@@ -31,4 +31,8 @@
 - [POR-OFAC-SEEDS.md](./POR-OFAC-SEEDS.md)
 - [RESEARCH-LOOP.md](./RESEARCH-LOOP.md) — research→code→backtest→live→post-mortem→fine-tune (Helix version)
 - [MARKET-MAKER.md](./MARKET-MAKER.md) — fee-vault rotate loop (paper-first fork)
+- [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) — R/Python/math confidence pack
+- [RISK-GATES.md](./RISK-GATES.md) — walk-forward / DSR / Kelly (paper)
+- [FLEET-OS.md](./FLEET-OS.md) — Ops Ridge REAL vs DARK
+- [GROK-PROMPTS.md](./GROK-PROMPTS.md) — copy-paste Grok packs (`docs/grok/`)
 - [SENSITIVE-INTEGRATIONS.md](./SENSITIVE-INTEGRATIONS.md)
