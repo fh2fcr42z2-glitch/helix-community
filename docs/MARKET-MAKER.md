@@ -33,5 +33,9 @@ Forbid pnl/fees/mids without source_id.
 ## Vocabulary
 Helix labels only (Sentinel / Sizing / Ops). No city/heist UI names.
 
+## Multi-sleeve (SOL / ETH / HYPE)
+
+Desk map: [MM-SOL-ETH-HYPE.md](./MM-SOL-ETH-HYPE.md). **SOL** primary (lower fees) · **ETH** try-now (wider spread + gas budget) · **HYPE** DARK until adapter. Discovery/sniper six lanes stay on a **separate journal** — do not mix with MM.
+
 ## Out of scope
-Viral PnL as evidence; trading principal; stub fills when venue/liq/holders/fees are DARK.
+Viral PnL as evidence; trading principal; stub fills when venue/liq/holders/fees are DARK; quoting HYPE before a mocked adapter; collapsing sleeves into one ledger.
