@@ -34,7 +34,9 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 
 - [STATUS.md](docs/STATUS.md) — Grok: current LIVE/DARK truth (read first)
 - [RESEARCH-LOOP.md](docs/RESEARCH-LOOP.md) — six-stage quant cycle for Helix (process only)
-- [MARKET-MAKER.md](docs/MARKET-MAKER.md) — fee-vault rotate loop (paper-first fork)
+- [MARKET-MAKER.md](docs/MARKET-MAKER.md)
+- [GROK-PROMPTS.md](docs/GROK-PROMPTS.md) — Grok copy-paste packs
+- [QUANT-CONFIDENCE.md](docs/QUANT-CONFIDENCE.md) · [RISK-GATES.md](docs/RISK-GATES.md) · [FLEET-OS.md](docs/FLEET-OS.md) — fee-vault rotate loop (paper-first fork)
 
 | Doc | What it covers |
 | --- | --- |
