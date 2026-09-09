@@ -15,9 +15,11 @@ Paper-only. Not financial advice. Not a broker.
 
 ## Pipeline (evidence-gated)
 
-Hats, not private class names. One person may wear several. The **gate** still has four desks:
+Hats, not private class names. One person may wear several. The **gate** still has four desks. **Reader** sits **upstream** of this gate for headlines: ingest → five forces → rhetoric/myth filter → tape check → READER JSON, then Writer. [READER.md](READER.md).
 
 ```
+FREE RSS  →  Reader  →  Alpha Writer
+                          ↑
 Scout  →  Researcher  →  Market Ops  →  Alpha Writer
   ↑                         ↑
  FLOW                    kill switches
@@ -31,11 +33,12 @@ Scout  →  Researcher  →  Market Ops  →  Alpha Writer
 | **Scout** | Surface a candidate: FLOW rung (chain / DEX / token), three legs (tape / search / chatter), DARK list | Size a book, hide a missing wallet leg, “just post it” |
 | **Researcher** | Turn the candidate into a dated thesis. Attach **evidence**. Assign a **verification level** to each claim | Quietly edit the thesis after the tape moved; fill DARK with color |
 | **Market Ops** | Check tape hygiene and **kill switches**. Confirm marks would come from real bars | Flip a switch off to save a narrative; place an order |
+| **Reader** *(upstream, headlines)* | Ingest a cited headline; force-tag; myth-filter; tape-check; emit READER JSON | Invent a lede; treat heat as size; auto-post; skip tape when psychology conflicts |
 | **Alpha Writer** | Assemble a NOTE only when claims are publishable and no switch is tripped | Auto-post to X; publish WordPress live; strip the DARK list to look confident |
 
 Head of Desk still owns the queue. Risk may veto the paper book. Sentinel forbids live execution. Alpha Writer does not outrank any of them.
 
-Detail on FLOW and switches: [FLOW.md](FLOW.md). Desk map: [ARCHITECTURE.md](ARCHITECTURE.md).
+Detail on FLOW and switches: [FLOW.md](FLOW.md). Headline judge: [READER.md](READER.md). Desk map: [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Claim verification levels
 
@@ -62,7 +65,7 @@ Do not invent extra levels (“alpha confirmed”, “high conviction”) that s
 5. **DARK list** — including the standing public list (bridge netflow, labeled wallets, unpaid CEX entity flow, X auto-post, WordPress live publish).
 6. **Paper action** — watch, hypothetical book, or explicit do-not-enter. Never a live instruction.
 7. **Invalidation** — what would make the NOTE wrong.
-8. **Force tags (optional on a NOTE; required spine on a Chart bot thesis)** — Dalio five-force lens; **DARK if unclear**; each tag needs evidence. NOTE tags: [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md). Chart bot uses Grok strings (`debt_cycle` … `DARK`): [CHART-BOT.md](CHART-BOT.md) · [grok/GROK-ALPHA-FIVE-FORCES.md](grok/GROK-ALPHA-FIVE-FORCES.md).
+8. **Force tags (optional on a NOTE; required spine on a Chart bot thesis; required on Reader JSON)** — Dalio five-force lens; **DARK if unclear**; each tag needs evidence. NOTE tags: [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md). Reader and Chart bot use Grok strings (`debt_cycle` … `DARK`): [READER.md](READER.md) · [CHART-BOT.md](CHART-BOT.md) · [grok/GROK-ALPHA-FIVE-FORCES.md](grok/GROK-ALPHA-FIVE-FORCES.md).
 
 If a draft is missing (4) or (5), it is not a NOTE yet. It is a Scout scrap.
 
@@ -81,6 +84,7 @@ Alpha Writer’s output is a document, not a distribution network. If you want d
 - Place or suggest live orders.
 - Strip DARK lines to sound more certain.
 - Treat a keyed-read wallet label as a public fact.
+- Treat Reader JSON as a finished NOTE (Writer still runs the full gates).
 - Auto-post because a switch is green.
 - Use WordPress, X, Telegram, or Discord tokens from `.env`.
 

@@ -7,7 +7,7 @@ nav: note
 
 # Alpha Writer: five-force lens
 
-Helix Alpha Writer may **tag** a NOTE with Ray Dalio’s public **five-force** lens (money/credit, internal order, external order, nature, technology). The lens is a **labeling aid**, not a forecast engine and not a buy list.
+Helix Alpha Writer may **tag** a NOTE with Ray Dalio’s public **five-force** lens (money/credit, internal order, external order, nature, technology). **Reader** and **Chart bot** use the same six Grok strings on JSON (`debt_cycle` … `DARK`). The lens is a **labeling aid**, not a forecast engine and not a buy list.
 
 Paper-only. Not financial advice. Not a broker. **DARK if unclear. Evidence required.**
 
@@ -25,7 +25,7 @@ A NOTE may carry zero or more of:
 | `force:nature` | Acts of nature | Disaster, pandemic, climate shock as a cited event |
 | `force:tech` | Human inventiveness / technology | Protocol, hardware, or model-shift as a cited change |
 
-Tag the **NOTE**, not the whole desk. Crypto-first CX still climbs [FLOW.md](FLOW.md) first. Forces do not replace tape / search / chatter.
+Tag the **NOTE** (or the Reader JSON / Chart bot sidecar), not the whole desk. Crypto-first CX still climbs [FLOW.md](FLOW.md) first. Forces do not replace tape / search / chatter. Headline ingest: [READER.md](READER.md).
 
 ## DARK if unclear
 
@@ -44,11 +44,11 @@ Same ladder as [ALPHA-WRITER.md](ALPHA-WRITER.md):
 
 A tagged NOTE still needs FLOW rung, three legs, DARK list, paper action, invalidation.
 
-## Chart bot (same five buckets, Grok strings)
+## Chart bot and Reader (same five buckets, Grok strings)
 
-Chart shots / Chart bot theses use the **Grok pack strings** on the sidecar (`primary_force`), not the `force:` prefix. Same five buckets. **Unclear → `DARK`. Never invent macro.**
+Chart shots / Chart bot theses and **Reader JSON** use the **Grok pack strings** on `primary_force`, not the `force:` prefix. Same five buckets. **Unclear → `DARK`. Never invent macro.** Reader still runs a rhetoric/myth filter and a tape check after the tag — [READER.md](READER.md).
 
-| Chart bot / Grok | This page (NOTE) |
+| Chart bot / Reader / Grok | This page (NOTE) |
 | --- | --- |
 | `debt_cycle` | `force:credit` |
 | `internal_order` | `force:internal` |
@@ -57,7 +57,7 @@ Chart shots / Chart bot theses use the **Grok pack strings** on the sidecar (`pr
 | `inventiveness` | `force:tech` |
 | `DARK` | `force:DARK` |
 
-Readable cards (`levels`, `invalidation`, `thesis_blurb`) and the learning loop: [CHART-BOT.md](CHART-BOT.md) · [TECHNICAL-ANALYSIS.md](TECHNICAL-ANALYSIS.md). Grok copy-paste: [grok/GROK-ALPHA-FIVE-FORCES.md](grok/GROK-ALPHA-FIVE-FORCES.md).
+Readable cards (`levels`, `invalidation`, `thesis_blurb`) and the learning loop: [CHART-BOT.md](CHART-BOT.md) · [TECHNICAL-ANALYSIS.md](TECHNICAL-ANALYSIS.md). Grok copy-paste: [grok/GROK-ALPHA-FIVE-FORCES.md](grok/GROK-ALPHA-FIVE-FORCES.md). Headline judge: [READER.md](READER.md) · [grok/GROK-READER-HEADLINE.md](grok/GROK-READER-HEADLINE.md).
 
 ## World Monitor MCP (future, optional)
 

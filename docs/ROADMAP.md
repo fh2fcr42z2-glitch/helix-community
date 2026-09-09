@@ -56,14 +56,15 @@ Walk-forward is still **paper**. It does not become a live allocator. Overfit no
 
 ## Alpha Writer NOTE, no auto-post
 
-A NOTE is the public artifact: Scout → Researcher → Market Ops → Alpha Writer, with claim verification levels.
+A NOTE is the public artifact: Scout → Researcher → Market Ops → Alpha Writer, with claim verification levels. Cited headlines pass **Reader** first (ingest → five forces → myth filter → tape check → JSON).
 
 - **No X auto-post** (stays DARK / off).
 - **WordPress is draft-only future** — not live publish, not in this repo’s secrets.
 - A NOTE without a DARK list or kill-switch status is not a NOTE.
 - Optional **five-force tags**; **DARK if unclear**; evidence required. World Monitor MCP is a future Pro/API substrate, not a free firehose.
+- **No fake headlines.** Reader does not invent ledes to feed Writer.
 
-See [ALPHA-WRITER.md](ALPHA-WRITER.md) and [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md).
+See [READER.md](READER.md), [ALPHA-WRITER.md](ALPHA-WRITER.md), and [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md).
 
 ## Wallet-level data when keys are available
 

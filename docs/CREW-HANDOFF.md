@@ -16,7 +16,7 @@ Source inspiration: public multi-agent trading crew writeups (@immortalhowwl / G
 | Plan / Setup | BERLIN | Write **exact conditions** that reset or re-arm the setup |
 | Technical Analysis | — | Chart shot + pattern + **invalidation** + readable card + five-force spine (`DARK` if unclear); never invent levels or macro; no orders; learn via `ta-learning/` files |
 | Entry timing | RIO | Catch **pullbacks**, mark **invalidation**; never chase a flying chart |
-| Alpha / Social | DENVER | Compare X/Telegram mentions to **on-chain volume**; filter paid noise |
+| Alpha / Social | DENVER | Compare X/Telegram mentions to **on-chain volume**; filter paid noise; headlines go through **Reader** (force + myth + tape) before Writer |
 | Data quality | LISBON | Reject **stale** snapshots (holders, liquidity, bars); send setup back |
 | Sizing | STOCKHOLM | Test pool depth / slippage; **size to fit the exit** |
 | Brief | NAIROBI | Compress cleared signals into **one brief** for the decision gate |
@@ -43,7 +43,7 @@ A signal advances **only after every filter**. If the chart flies without the cr
 - Wire these as named gates in Fleet OS / Ops Ridge (real counts only; DARK if unverified).
 - Reject handoffs missing: owner, evidence URL/as-of, invalidation, exit liquidity note.
 - Keep Money Heist names out of the product UI; Helix lane names above are enough.
-- Promotion of artifacts (idea → cowork → Scout flag → CoS PR → Fleet): [ENGINE-FLOW.md](./ENGINE-FLOW.md). Chart shots: [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md).
+- Promotion of artifacts (idea → cowork → Scout flag → CoS PR → Fleet): [ENGINE-FLOW.md](./ENGINE-FLOW.md). Chart shots: [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md). Headlines: [READER.md](./READER.md).
 
 ## Do not tell Grok / agents
 - That unsupervised live trading is allowed.
