@@ -23,6 +23,7 @@
 2. Viral trading posts are **inspiration for process**, not Helix performance evidence.
 3. Prepare ≠ execute. Live money needs **explicit human approval** — MM tickets were authorized by X on 2026-09-09 (journal `approval_ref`; `needs_human_approval=false` for that path).
 4. If a PR is open and `main` is behind, say so once, then use **this STATUS** and community docs — don’t loop on “not merged” as if the desk doesn’t exist.
+5. Launchpad nature (mass mint / skip-as-edge) ≠ MM fee-vault loop — [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md). Unverified bot PnL stays DARK.
 
 ## Canonical docs on this `main`
 - [CREW-HANDOFF.md](./CREW-HANDOFF.md) — one job per lane, veto/don’t-chase gates
@@ -32,6 +33,7 @@
 - [RESEARCH-LOOP.md](./RESEARCH-LOOP.md) — research→code→backtest→live→post-mortem→fine-tune (Helix version)
 - [MARKET-MAKER.md](./MARKET-MAKER.md) — LIVE-authorized fee-vault rotate loop (X 2026-09-09; principal locked)
 - [MM-SOL-ETH-HYPE.md](./MM-SOL-ETH-HYPE.md) — multi-sleeve desk map (SOL primary · ETH try-now · HYPE DARK until adapter) · Scout venue grades 2026-09-09 (no invented depth)
+- [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md) — launchpad nature vs MM (skip-as-edge; bot PnL DARK)
 - [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) — R/Python/math confidence pack
 - [RISK-GATES.md](./RISK-GATES.md) — walk-forward / DSR / Kelly (paper)
 - [FLEET-OS.md](./FLEET-OS.md) — Ops Ridge REAL vs DARK

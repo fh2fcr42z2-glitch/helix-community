@@ -36,6 +36,7 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 - [RESEARCH-LOOP.md](docs/RESEARCH-LOOP.md) — six-stage quant cycle for Helix (process only)
 - [MARKET-MAKER.md](docs/MARKET-MAKER.md) — LIVE-authorized (fee vault only; principal locked)
 - [MM-SOL-ETH-HYPE.md](docs/MM-SOL-ETH-HYPE.md) — multi-sleeve SOL / ETH / HYPE desk map (HYPE DARK until adapter)
+- [MEME-MARKET-NATURE.md](docs/MEME-MARKET-NATURE.md) — launchpad nature vs MM (mass mint; skip-as-edge; bot PnL DARK)
 - [GROK-PROMPTS.md](docs/GROK-PROMPTS.md) — Grok copy-paste packs
 - [QUANT-CONFIDENCE.md](docs/QUANT-CONFIDENCE.md) · [RISK-GATES.md](docs/RISK-GATES.md) · [FLEET-OS.md](docs/FLEET-OS.md)
 
