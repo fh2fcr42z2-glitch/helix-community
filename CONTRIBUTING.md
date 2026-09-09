@@ -17,7 +17,7 @@ If you only read one other file, read [docs/SENSITIVE-INTEGRATIONS.md](docs/SENS
 | **Paper idea** | Three legs + FLOW rung + invalidation + DARK list | “Buy this,” live sizing, guaranteed edge, auto-post |
 | **SQL / memory** | Warehouse/ETL/gate tests with mocks; DARK rows; no secrets | Invented bars in SQL; prompt dumps; keys in Parquet metadata |
 
-Architecture names live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). FLOW and NOTE: [docs/FLOW.md](docs/FLOW.md), [docs/ALPHA-WRITER.md](docs/ALPHA-WRITER.md), [docs/ALPHA-FIVE-FORCES.md](docs/ALPHA-FIVE-FORCES.md). Scout catalog: [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md). Memory layers: [docs/DATA-AND-MEMORY.md](docs/DATA-AND-MEMORY.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
+Architecture names live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). FLOW and NOTE: [docs/FLOW.md](docs/FLOW.md), [docs/ALPHA-WRITER.md](docs/ALPHA-WRITER.md), [docs/ALPHA-FIVE-FORCES.md](docs/ALPHA-FIVE-FORCES.md). Chart bot: [docs/CHART-BOT.md](docs/CHART-BOT.md), [docs/TECHNICAL-ANALYSIS.md](docs/TECHNICAL-ANALYSIS.md). Scout catalog: [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md). Memory layers: [docs/DATA-AND-MEMORY.md](docs/DATA-AND-MEMORY.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
 
 ## How to propose an adapter
 

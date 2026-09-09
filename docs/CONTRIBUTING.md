@@ -26,7 +26,7 @@ The same guide lives at the repository root as `CONTRIBUTING.md` (GitHub’s con
 | **Paper idea** | Three legs + FLOW rung + invalidation + DARK list | “Buy this,” live sizing, guaranteed edge, auto-post |
 | **SQL / memory** | Warehouse/ETL/gate tests with mocks; DARK rows; no secrets | Invented bars in SQL; prompt dumps; keys in Parquet metadata |
 
-Architecture names live in [ARCHITECTURE.md](ARCHITECTURE.md). FLOW and NOTE: [FLOW.md](FLOW.md), [ALPHA-WRITER.md](ALPHA-WRITER.md), [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md). Scout catalog: [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md). Memory layers: [DATA-AND-MEMORY.md](DATA-AND-MEMORY.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
+Architecture names live in [ARCHITECTURE.md](ARCHITECTURE.md). FLOW and NOTE: [FLOW.md](FLOW.md), [ALPHA-WRITER.md](ALPHA-WRITER.md), [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md). Chart bot: [CHART-BOT.md](CHART-BOT.md), [TECHNICAL-ANALYSIS.md](TECHNICAL-ANALYSIS.md). Scout catalog: [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md). Memory layers: [DATA-AND-MEMORY.md](DATA-AND-MEMORY.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
 
 ## How to propose an adapter
 

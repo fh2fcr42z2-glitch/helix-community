@@ -24,7 +24,7 @@ Private CX wiring may lag; use [STATUS.md](./STATUS.md) for LIVE/DARK truth.
 | **Alpha Writer** | `/api/alpha` evidence packet / last compose |
 | **Sentinel** | Desk `risk` + KillStrip flags from `/api/quotes` |
 | **Quant** (future) | DARK until risk-gates modules land (`brief-risk-gates-wf-dsr-kelly.md`) |
-| **Technical Analysis** | `helix-cowork/chart-shots/` mtime + **sidecar JSON**. Critique PASS as doctrine. First SOL/ETH pack **sketch** (TV guest candles+volume; SuperTrend/%B/RSI/VWAP DARK). Missing sidecar → DARK metadata. CX tab still PR #1 |
+| **Technical Analysis** | `helix-cowork/chart-shots/` mtime + **sidecar JSON** (readable card: levels, invalidation, thesis_blurb; `primary_force` or DARK). Critique PASS as doctrine. First SOL/ETH pack **sketch** (TV guest candles+volume; SuperTrend/%B/RSI/VWAP DARK). Missing sidecar → DARK metadata. Learning: `ta-learning/` files, not weights. CX tab still PR #1 |
 
 Prefer these labels over Klaus/Mara/Cole/Vince unless X asks otherwise.
 
@@ -117,7 +117,7 @@ HELIX_FLEET_GITHUB_REPO=fh2fcr42z2-glitch/helix-cx
 
 ```
 Tabs: CX | FLOW | Alpha | Fleet OS
-CX notes: Chart shots tab (TA; files under helix-cowork/chart-shots/ + sidecar JSON; first SOL/ETH pack sketch, overlays DARK; tab still wiring on PR #1)
+CX notes: Chart shots tab (Chart bot; readable card + five-force spine; files under helix-cowork/chart-shots/ + sidecar JSON; first SOL/ETH pack sketch, overlays DARK; learning via ta-learning files; tab still wiring on PR #1)
 Fleet OS (phase 1): Ops Ridge | Specialist row | Persistent Workspace
 (Defer graph/chord/full lattice/question pane to phase 2+ unless trivial DARK stubs)
 ```

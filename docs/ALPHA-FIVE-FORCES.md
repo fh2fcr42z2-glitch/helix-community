@@ -44,6 +44,21 @@ Same ladder as [ALPHA-WRITER.md](ALPHA-WRITER.md):
 
 A tagged NOTE still needs FLOW rung, three legs, DARK list, paper action, invalidation.
 
+## Chart bot (same five buckets, Grok strings)
+
+Chart shots / Chart bot theses use the **Grok pack strings** on the sidecar (`primary_force`), not the `force:` prefix. Same five buckets. **Unclear → `DARK`. Never invent macro.**
+
+| Chart bot / Grok | This page (NOTE) |
+| --- | --- |
+| `debt_cycle` | `force:credit` |
+| `internal_order` | `force:internal` |
+| `geopolitics` | `force:external` |
+| `nature` | `force:nature` |
+| `inventiveness` | `force:tech` |
+| `DARK` | `force:DARK` |
+
+Readable cards (`levels`, `invalidation`, `thesis_blurb`) and the learning loop: [CHART-BOT.md](CHART-BOT.md) · [TECHNICAL-ANALYSIS.md](TECHNICAL-ANALYSIS.md). Grok copy-paste: [grok/GROK-ALPHA-FIVE-FORCES.md](grok/GROK-ALPHA-FIVE-FORCES.md).
+
 ## World Monitor MCP (future, optional)
 
 **World Monitor MCP** is a **future evidence substrate** for force tags — not in Helix now, not a free firehose.
