@@ -105,7 +105,7 @@ The inspiration pack also describes a **six-lane discovery** (launch / volume-be
 | Kill | Code kill on the quote loop | Promotion halt (FLOW kill switches) |
 | Output | ENTER / MANAGE / EXIT / SKIP | Candidate + evidence + DARK list |
 
-**Do not mix journals.** A sniper ticket is not an MM `ENTER`. An MM fill is not discovery alpha. Wallet-copy and labeled-flow lanes stay **DARK** without a verified free source ([SENSITIVE-INTEGRATIONS.md](./SENSITIVE-INTEGRATIONS.md)). Do not feed discovery PnL stories into the MM Observer brief.
+**Do not mix journals.** A sniper ticket is not an MM `ENTER`. An MM fill is not discovery alpha. Wallet-copy and labeled-flow lanes stay **DARK** without a verified free source ([SENSITIVE-INTEGRATIONS.md](./SENSITIVE-INTEGRATIONS.md)). Do not feed discovery PnL stories into the MM Observer brief. Launchpad **nature** (mass mint, rare graduation, skip-as-edge, curve vs post-curve) is [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md) — not this sleeve map and not an MM rotate.
 
 ## Next build (CX / Fleet — still fail-closed)
 

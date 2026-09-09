@@ -39,3 +39,5 @@ Desk map: [MM-SOL-ETH-HYPE.md](./MM-SOL-ETH-HYPE.md). **SOL** primary (lower fee
 
 ## Out of scope
 Viral PnL as evidence; trading principal; stub fills when venue/liq/holders/fees are DARK; quoting HYPE before a mocked adapter; collapsing sleeves into one ledger.
+
+Launchpad **nature** (mass mint, rare graduation, skip-as-edge) is not this fee-vault loop. Curve-snipe ≠ LaunchGate. See [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md).
