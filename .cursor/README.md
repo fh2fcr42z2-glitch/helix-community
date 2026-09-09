@@ -11,4 +11,4 @@ Vendored [continual-learning](https://github.com/cursor/plugins/tree/main/contin
 | `hooks.json` | Workspace stop hook (needs `bun` on the machine that runs hooks) |
 | `hooks/state/` | Cadence + transcript index — **gitignored JSON**, no secrets |
 
-Public contract: [docs/LEARNING-PATH.md](../docs/LEARNING-PATH.md). Chart bot retros stay in [`ta-learning/`](../ta-learning/). **No keys in any of these files.**
+Public contract: [docs/LEARNING-PATH.md](../docs/LEARNING-PATH.md). Live sessions: [`teaching/`](../teaching/). Chart bot retros stay in [`ta-learning/`](../ta-learning/). **No keys in any of these files.**
