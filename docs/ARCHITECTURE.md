@@ -86,6 +86,10 @@ Continuously catalogs sources as **FREE / FREE-TIER / PAID / DARK**. Owns the **
 
 Turns a Scout scrap into a thesis. Attaches evidence and a **verification level** to each claim ([ALPHA-WRITER.md](ALPHA-WRITER.md)). If the reason changed, that is a new thesis, not a quiet edit.
 
+### Technical Analysis
+
+Pattern recognition, setups, and **Chart shots**. Reads Tape overlays (SuperTrend, %B, RSI) from real bars. Never invents levels: evidence + as-of, or **DARK**. Does not place orders. Does not own Market Maker screenshots. **SOL / ETH** primary; **HYPE DARK** until adapter. Full page: [TECHNICAL-ANALYSIS.md](TECHNICAL-ANALYSIS.md). Lexicon: [PATTERN-SETUPS.md](PATTERN-SETUPS.md).
+
 ### Market Ops
 
 Tape hygiene and **kill switches** before anything is promoted to the paper book or a NOTE. Owns stale BTC, Coinbase-vs-Kraken ≥ 25 bp, and thin DEX liquidity as *research halts*. Does not trade.

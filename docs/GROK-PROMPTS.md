@@ -10,4 +10,4 @@ Copy-paste packs for main Grok / operators. **No secrets.** Market Maker is LIVE
 | PoR / OFAC | [grok/GROK-POR-OFAC-PACK.md](./grok/GROK-POR-OFAC-PACK.md) |
 | SQL datasets | [grok/GROK-SQL-DATASET-PACK.md](./grok/GROK-SQL-DATASET-PACK.md) |
 
-Related desk docs: [STATUS.md](./STATUS.md) · [ALPHA-FIVE-FORCES.md](./ALPHA-FIVE-FORCES.md) · [CREW-HANDOFF.md](./CREW-HANDOFF.md) · [MARKET-MAKER.md](./MARKET-MAKER.md) · [POR-OFAC-SEEDS.md](./POR-OFAC-SEEDS.md) · [DATA-AND-MEMORY.md](./DATA-AND-MEMORY.md) · [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) · [RISK-GATES.md](./RISK-GATES.md) · [FLEET-OS.md](./FLEET-OS.md)
+Related desk docs: [STATUS.md](./STATUS.md) · [ENGINE-FLOW.md](./ENGINE-FLOW.md) · [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) · [PATTERN-SETUPS.md](./PATTERN-SETUPS.md) · [ALPHA-FIVE-FORCES.md](./ALPHA-FIVE-FORCES.md) · [CREW-HANDOFF.md](./CREW-HANDOFF.md) · [MARKET-MAKER.md](./MARKET-MAKER.md) · [POR-OFAC-SEEDS.md](./POR-OFAC-SEEDS.md) · [DATA-AND-MEMORY.md](./DATA-AND-MEMORY.md) · [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) · [RISK-GATES.md](./RISK-GATES.md) · [FLEET-OS.md](./FLEET-OS.md)
