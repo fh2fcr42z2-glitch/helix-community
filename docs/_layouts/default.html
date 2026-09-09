@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12100e">
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/helix.svg' | relative_url }}" type="image/svg+xml">
+</head>
+<body class="page-{{ page.nav | default: 'other' }}">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="frame">
+    <header class="mast">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img class="mark" src="{{ '/assets/helix.svg' | relative_url }}" width="36" height="36" alt="">
+        <span class="brand-text">
+          <span class="name">Helix</span>
+          <span class="sub">Community desk</span>
+        </span>
+      </a>
+      <p class="stamp" title="Research and education only">Paper only</p>
+      <nav class="nav" aria-label="Docs">
+        <a href="{{ '/' | relative_url }}" {% if page.nav == 'home' %}aria-current="page"{% endif %}>About</a>
+        <a href="{{ '/concept/' | relative_url }}" {% if page.nav == 'concept' %}aria-current="page"{% endif %}>Concept</a>
+        <a href="{{ '/architecture/' | relative_url }}" {% if page.nav == 'architecture' %}aria-current="page"{% endif %}>Architecture</a>
+        <a href="{{ '/flow/' | relative_url }}" {% if page.nav == 'flow' %}aria-current="page"{% endif %}>FLOW</a>
+        <a href="{{ '/integrations/' | relative_url }}" {% if page.nav == 'integrations' %}aria-current="page"{% endif %}>Integrations</a>
+        <a href="{{ '/memory/' | relative_url }}" {% if page.nav == 'memory' %}aria-current="page"{% endif %}>Memory</a>
+        <a href="{{ '/note/' | relative_url }}" {% if page.nav == 'note' %}aria-current="page"{% endif %}>NOTE</a>
+        <a href="{{ '/contribute/' | relative_url }}" {% if page.nav == 'contribute' %}aria-current="page"{% endif %}>Contribute</a>
+        <a href="{{ '/roadmap/' | relative_url }}" {% if page.nav == 'roadmap' %}aria-current="page"{% endif %}>Roadmap</a>
+      </nav>
+    </header>
+
+    <div class="blotter">
+      <aside class="rail" aria-label="Desk reminder">
+        <p class="rail-kicker">Three legs</p>
+        <ol class="legs">
+          <li>Price tape</li>
+          <li>Search interest</li>
+          <li>Chatter</li>
+        </ol>
+        <p class="rail-kicker">FLOW</p>
+        <ol class="legs">
+          <li>Chain</li>
+          <li>DEX</li>
+          <li>Token</li>
+          <li>Wallets DARK</li>
+        </ol>
+        <p class="rail-kicker">Hats, not code</p>
+        <ul class="hats">
+          <li>Scout</li>
+          <li>Data Scout</li>
+          <li>Researcher</li>
+          <li>Market Ops</li>
+          <li>Alpha Writer</li>
+          <li>Sentinel</li>
+        </ul>
+        <p class="rail-note">Missing data is <strong>DARK</strong>. Kill switches halt promotion, not live orders. Do not paste a key. No auto-post.</p>
+      </aside>
+
+      <main id="main" class="paper">
+        {{ content }}
+      </main>
+    </div>
+
+    <footer class="colophon">
+      <p>Helix is a social-arbitrage <strong>research desk</strong>. Not a broker. Not financial advice. Not live trading.</p>
+      <p>
+        <a href="https://github.com/fh2fcr42z2-glitch/helix-community">Public repo</a>
+        ·
+        <a href="https://github.com/fh2fcr42z2-glitch/helix-cx">Private implementation</a>
+        ·
+        <a href="{{ '/contribute/' | relative_url }}">Contribute</a>
+        ·
+        <a href="https://github.com/fh2fcr42z2-glitch/helix-community/blob/main/CODE_OF_CONDUCT.md">Conduct</a>
+        ·
+        <a href="https://github.com/fh2fcr42z2-glitch/helix-community/blob/main/SECURITY.md">Security</a>
+      </p>
+      <p class="fine">Private implementation exists; this site does not reproduce it. Product names belong to their owners.</p>
+    </footer>
+  </div>
+</body>
+</html>

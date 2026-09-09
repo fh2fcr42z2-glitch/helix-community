@@ -1,0 +1,304 @@
+ada:
+  ADA:
+    addresses:
+      addr1qydl4v2ygtc52mstfhtfxrmtq23a3vmqpyge3zpgauyf45tdqlnd7es5uzp59um2ddjsjjyqfxt0wqcc7hx6xqq7dujq3ccfqf:
+        balance: 201040664984
+    total: '20104066498400'
+arbitrum:
+  ETH:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 47216913628581684737
+    total: '833874188124'
+  USDC:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 197570098172
+    total: '1722669918120'
+  USDT:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 434708589942
+    total: '99882583517397'
+avax:
+  AVAX:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 3310099821547730542472
+    total: '331009982154'
+  USDC:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 421401617599
+    total: '1722669918120'
+base:
+  ETH:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 51832272383812583505
+    total: '833874188124'
+  USDC:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 391559127717
+    total: '1722669918120'
+bch:
+  BCH:
+    addresses:
+      bitcoincash:qq6q4fy86z3jselmvwyuhqwdva4r84wl4cmqpngk4y:
+        balance: 63766059954
+      bitcoincash:qqqhpsshh0xhz6435hxfklmnfhvg5gh65s2qqh53x5:
+        balance: 9172
+    total: '63766069126'
+bsc:
+  BNB:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 288571287371695695981
+    total: '28857128737'
+  LOT:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 404706121995283596308381
+    total: '40470612199'
+  USDT:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 3147036512818419994098883
+    total: '99882583517397'
+cosmos:
+  ATOM:
+    addresses:
+      cosmos1a9plaqhjr8980t9u7dcnh6pnmtdq5aqucs5xrn:
+        balance: 2001265
+      cosmos1ya2d7kt7zwcuv22mu4edztdxpag4dg8g4myl2a:
+        balance: 1174623233
+    total: '1176624498'
+doge:
+  DOGE:
+    addresses:
+      DKB23DY7ifpqhzjnREQPT3RwKFUKzoR9YA:
+        balance: 10016610000
+      DMvYHLA6tFxi78TvZrTZW2QVZ8bi8S1PQW:
+        balance: 184493264841254
+    total: '1845032814512'
+dot:
+  DOT:
+    addresses:
+      14cPN7WietzkLwZynXw3ujJRFEerBwRrJrF2Y5CAd894fsha:
+        balance: 138985446149106
+    total: '1389854461491'
+eth:
+  AAVE:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 182180023275874771700
+    total: '18218002327'
+  APE:
+    addresses:
+      '0xEEA81C4416d71CeF071224611359F6F99A4c4294':
+        balance: 2575901098289651539
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 32871251964739778965431
+    total: '3287382786583'
+  AXS:
+    addresses:
+      '0xEEA81C4416d71CeF071224611359F6F99A4c4294':
+        balance: 399149830000000000
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 3150466019170000002048
+    total: '315086516900'
+  BMEX:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 73059643336838
+    total: '73059643336838'
+  CRO:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 1212433422949
+    total: '12124334229'
+  ETH:
+    addresses:
+      '0x5bb0030acf34d6c7f9e252386e9a69bf0efd215a':
+        balance: 49769720324938104
+      '0x6c6d0bb1388d9b18ee5c3a6488f0cd59af3de381':
+        balance: 172486141040878438
+      '0x75be957225c998add5c4e92722ab160e81ca406a':
+        balance: 93927877801193420
+      '0xEEA81C4416d71CeF071224611359F6F99A4c4294':
+        balance: 186409982693799383222
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 518680473167922968554
+    total: '833874188124'
+  FTR:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 14325355656522400000000000
+    total: '1432535565652'
+  LINK:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 5490844517576263939729
+    total: '549084451757'
+  MANA:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 45232846597170000000000
+    total: '4523284659717'
+  SAND:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 113330328555110000000000
+    total: '11333032855511'
+  SHIB:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 11103939388218819129561690747
+    total: '1110393938821881'
+  STLS:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 877192541189537417294048
+    total: '87719254118953'
+  SUSHI:
+    addresses:
+      '0xEEA81C4416d71CeF071224611359F6F99A4c4294':
+        balance: 1510000000000
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 23899808603739999999999
+    total: '2389980860524'
+  UNI:
+    addresses:
+      '0xEEA81C4416d71CeF071224611359F6F99A4c4294':
+        balance: 14472860091434793
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 1854749810335829881868
+    total: '185476428319'
+  USDC:
+    addresses:
+      '0x5bb0030acf34d6c7f9e252386e9a69bf0efd215a':
+        balance: 70
+      '0x6c6d0bb1388d9b18ee5c3a6488f0cd59af3de381':
+        balance: 0
+      '0x75be957225c998add5c4e92722ab160e81ca406a':
+        balance: 0
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 618700213441
+    total: '1722669918120'
+  USDT:
+    addresses:
+      '0x5bb0030acf34d6c7f9e252386e9a69bf0efd215a':
+        balance: 0
+      '0x6c6d0bb1388d9b18ee5c3a6488f0cd59af3de381':
+        balance: 11
+      '0x75be957225c998add5c4e92722ab160e81ca406a':
+        balance: 0
+      '0xEEA81C4416d71CeF071224611359F6F99A4c4294':
+        balance: 53636726041880
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 8886838143205
+    total: '99882583517397'
+  XAUT:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 3489694
+    total: '3489694'
+hyperevm:
+  HYPE:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 169573333363866626000
+    total: '16957333336'
+ltc:
+  LTC:
+    addresses:
+      ltc1qdxwg5hs99nff74fk9skeyx90yw76jamynwn8wq:
+        balance: 186293632614
+    total: '186293632614'
+near:
+  NEAR:
+    addresses:
+      d3921f9948d9fcf9e34796bd59f8b90c7eaf3b7254e60a57d3c6810905177bd0:
+        balance: 14685538856617995290138474674
+    total: '1468553885661'
+optimism:
+  ETH:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 29418362513115881089
+    total: '833874188124'
+  USDT:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 257348541422
+    total: '99882583517397'
+polygon:
+  POL:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 37071566643114966785651
+    total: '37071566643114'
+sol:
+  BONK:
+    addresses:
+      47qgBcQGEBuWqNsE7QZ8NsXoe6fm5xLV94TDoYJzhgUV:
+        balance: 552893040514787
+    total: '552893040514787'
+  SOL:
+    addresses:
+      47qgBcQGEBuWqNsE7QZ8NsXoe6fm5xLV94TDoYJzhgUV:
+        balance: 6053011053972
+      JnmCTvT4kewDDET2Yu3T1mJD6GAaTpmxBEPGKC7CMao:
+        balance: 10020008
+    total: '6053021073980'
+  USDC:
+    addresses:
+      47qgBcQGEBuWqNsE7QZ8NsXoe6fm5xLV94TDoYJzhgUV:
+        balance: 93438861121
+    total: '1722669918120'
+  USDT:
+    addresses:
+      47qgBcQGEBuWqNsE7QZ8NsXoe6fm5xLV94TDoYJzhgUV:
+        balance: 4433742877407
+    total: '99882583517397'
+sonic:
+  S:
+    addresses:
+      '0xfB8131c260749c7835a08ccBdb64728De432858E':
+        balance: 15772061769515428562626
+    total: '1577206176951'
+tron:
+  TRX:
+    addresses:
+      TU2wL7Vw2QM5KvMatsjjBKA6kKTntzCyyb:
+        balance: 497008249289
+      TXByfwCqw899fEPAWTuF3gkhPvfLMLvdr9:
+        balance: 967631339938
+    total: '1464639589227'
+  USDT:
+    addresses:
+      TU2wL7Vw2QM5KvMatsjjBKA6kKTntzCyyb:
+        balance: 9695794511162
+      TXByfwCqw899fEPAWTuF3gkhPvfLMLvdr9:
+        balance: 19390388299550
+    total: '99882583517397'
+xrp:
+  RLUSD:
+    addresses:
+      rpY2qHHTXiTqCZP56vvsxbvuazBKLWBX5z:
+        balance: 334
+    total: '334000000'
+  XRP:
+    addresses:
+      rWZSRkMfZzZERoQt1D3PaqNXQNqmCGaBs:
+        balance: 12000017
+      rpY2qHHTXiTqCZP56vvsxbvuazBKLWBX5z:
+        balance: 421337122431
+    total: '421349122448'
+xtz:
+  XTZ:
+    addresses:
+      tz1caUsZwd9E2UdZWA5W3xVnsi9nZKrRqtFG:
+        balance: 62635906793
+    total: '6263590679300'

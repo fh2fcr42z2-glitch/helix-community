@@ -1,0 +1,92 @@
+name: Adapter
+description: Propose a vendor adapter behind a named port (no keys).
+title: "adapter: vendor → port"
+labels: ["adapter"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paper-only. No live trading. **Do not paste API keys, cookies, or `.env` values.**
+        Read [docs/SENSITIVE-INTEGRATIONS.md](https://github.com/fh2fcr42z2-glitch/helix-community/blob/main/docs/SENSITIVE-INTEGRATIONS.md) first.
+  - type: dropdown
+    id: port
+    attributes:
+      label: Port
+      options:
+        - Tape
+        - SearchInterest
+        - Chatter
+        - ChainFlow
+        - DexVolume
+        - TokenBoard
+        - FundingOI (usually DARK / PAID)
+        - WhaleFlow (gated, read-only)
+        - OptionsEod (equity sidecar, not crypto)
+        - WalletIdentity (gated, read-only)
+        - CexFlow (gated, read-only)
+        - Other (describe below)
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Capability category
+      options:
+        - Spot / perp tape
+        - On-chain TVL / DEX
+        - Funding / OI
+        - Whale / flow
+        - Options / greeks (equity sidecar)
+        - Sentiment
+    validations:
+      required: true
+  - type: dropdown
+    id: scout_class
+    attributes:
+      label: Scout class
+      options:
+        - FREE (public / keyless)
+        - FREE-TIER (delayed dashboard, demo/RPC key, ~1y EOD, or geo-limited — not a firehose)
+        - PAID (private read-only key; DARK in this repo)
+        - DARK (do not invent)
+    validations:
+      required: true
+  - type: input
+    id: vendor
+    attributes:
+      label: Vendor
+      placeholder: CoinGecko, Helius, …
+    validations:
+      required: true
+  - type: textarea
+    id: unlocks
+    attributes:
+      label: What it unlocks (one sentence)
+      description: A research question, not a marketing line. Be honest if this stays DARK without a key.
+    validations:
+      required: true
+  - type: textarea
+    id: dark
+    attributes:
+      label: DARK / failure behavior
+      description: What the adapter returns when the key is missing, the pair is missing, or the vendor 429s.
+    validations:
+      required: true
+  - type: textarea
+    id: mocks
+    attributes:
+      label: Mock plan
+      description: What fixtures you will commit. CI must not need your laptop or a vendor account.
+    validations:
+      required: true
+  - type: checkboxes
+    id: pledges
+    attributes:
+      label: Pledges
+      options:
+        - label: I will not commit secrets or copy private helix-cx source.
+          required: true
+        - label: I will not add a live order, swap, or auto-post path.
+          required: true
+        - label: Any key this adapter might use is read-only research, and I will not paste it.
+          required: true

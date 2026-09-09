@@ -1,0 +1,92 @@
+name: Paper idea
+description: A social-arbitrage thesis for the paper book (not a trade rec).
+title: "paper: instrument / disagreement"
+labels: ["paper-idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Education / research only. **Not financial advice.** Do not size a live order. Do not paste secrets.
+        Name a FLOW rung ([docs/FLOW.md](https://github.com/fh2fcr42z2-glitch/helix-community/blob/main/docs/FLOW.md)). A NOTE is not an auto-post.
+        Skeleton: [docs/CONCEPT.md](https://github.com/fh2fcr42z2-glitch/helix-community/blob/main/docs/CONCEPT.md).
+  - type: input
+    id: instrument
+    attributes:
+      label: Instrument
+      description: Pair / market. Public names only.
+    validations:
+      required: true
+  - type: dropdown
+    id: flow_rung
+    attributes:
+      label: FLOW rung
+      options:
+        - Chain (stables / TVL / DEX vol)
+        - DEX (Llama volume + screener pair)
+        - Token (board + trending)
+        - Wallets (must be DARK unless you can cite a public, license-clean source — do not paste keys)
+    validations:
+      required: true
+  - type: textarea
+    id: tape
+    attributes:
+      label: Tape (price)
+      description: What printed, on which public venue. If you could not observe it, write DARK.
+    validations:
+      required: true
+  - type: textarea
+    id: search
+    attributes:
+      label: Search interest
+      description: Query / Trends series. Coarseness is OK if you label it.
+    validations:
+      required: true
+  - type: textarea
+    id: chatter
+    attributes:
+      label: Social / consumer chatter
+      description: Public talk only. What you refuse to count (bots, copied headlines).
+    validations:
+      required: true
+  - type: textarea
+    id: disagreement
+    attributes:
+      label: Disagreement (one sentence)
+      description: Who is early, late, or absent.
+    validations:
+      required: true
+  - type: textarea
+    id: invalidation
+    attributes:
+      label: Invalidation
+      description: What print, Trends turn, or silence kills the thesis.
+    validations:
+      required: true
+  - type: dropdown
+    id: paper_action
+    attributes:
+      label: Paper action
+      options:
+        - Watch list only
+        - Hypothetical paper entry (describe size as a fraction of a toy book)
+        - Explicit do not enter
+    validations:
+      required: true
+  - type: textarea
+    id: dark
+    attributes:
+      label: DARK list
+      description: Legs or feeds you could not observe (wallet flow, SIP, options, …).
+    validations:
+      required: true
+  - type: checkboxes
+    id: pledges
+    attributes:
+      label: Pledges
+      options:
+        - label: This is not a recommendation to buy or sell.
+          required: true
+        - label: I did not invent bars or wallet prints.
+          required: true
+        - label: I am not asking anyone to auto-post this to X or WordPress.
+          required: true

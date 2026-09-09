@@ -1,0 +1,19 @@
+title: Helix Community
+tagline: Social arbitrage research desk (paper-only)
+description: Public docs for Helix — social arbitrage research desk (paper-only). Not a broker. Not financial advice.
+url: https://fh2fcr42z2-glitch.github.io
+baseurl: /helix-community
+lang: en
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+relative_links:
+  enabled: true
+  collections: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
