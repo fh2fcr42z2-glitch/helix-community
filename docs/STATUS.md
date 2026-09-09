@@ -1,0 +1,32 @@
+# Helix status for Grok (read this first)
+
+**Auto-pull only sees `main`.** Use this file and other docs on **helix-community `main`**. Do not treat private `helix-cx` GitHub `main` as the live desk — that repo’s paper desk lives on open PR #1 until Call Me X merges it.
+
+## What is true right now (2026-09-09)
+
+| Piece | Truth |
+|---|---|
+| Public docs (this repo `main`) | LIVE — PoR/OFAC seeds, five-forces, data/memory, sensitive integrations, crew handoff |
+| Private `helix-cx` GitHub `main` | Hull / early stub — **not** the Fleet preview |
+| Private `helix-cx` PR #1 | Paper desk + Fleet OS work in flight — merge only when Call Me X says |
+| Execution | paper · `liveOrders` false · no unsupervised live orders |
+| Fleet OS ridge | LIVE only for real metrics (print share, tape age, kills, FREE venues). **In Review / agent success stay DARK** — never invent a success % |
+| Warehouse | stub + docs · tile DARK until enabled |
+| PoR / OFAC | seed **counts only** · RPC join DARK |
+| Five-force tags | default DARK until evidence assigns a force |
+| Risk gates | library present, flag off · never a live go-ahead by itself |
+| World Monitor | DARK without a key |
+
+## Rules that stop confusion
+1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, or PnL.
+2. Viral trading posts are **inspiration for process**, not Helix performance evidence.
+3. Prepare ≠ execute. Live money needs **explicit human approval**.
+4. If a PR is open and `main` is behind, say so once, then use **this STATUS** and community docs — don’t loop on “not merged” as if the desk doesn’t exist.
+
+## Canonical docs on this `main`
+- [CREW-HANDOFF.md](./CREW-HANDOFF.md) — one job per lane, veto/don’t-chase gates
+- [DATA-AND-MEMORY.md](./DATA-AND-MEMORY.md)
+- [ALPHA-FIVE-FORCES.md](./ALPHA-FIVE-FORCES.md)
+- [POR-OFAC-SEEDS.md](./POR-OFAC-SEEDS.md)
+- [RESEARCH-LOOP.md](./RESEARCH-LOOP.md) — research→code→backtest→live→post-mortem→fine-tune (Helix version)
+- [SENSITIVE-INTEGRATIONS.md](./SENSITIVE-INTEGRATIONS.md)

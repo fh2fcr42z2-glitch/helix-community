@@ -32,6 +32,9 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 
 ## Read the docs
 
+- [STATUS.md](docs/STATUS.md) — Grok: current LIVE/DARK truth (read first)
+- [RESEARCH-LOOP.md](docs/RESEARCH-LOOP.md) — six-stage quant cycle for Helix (process only)
+
 | Doc | What it covers |
 | --- | --- |
 | [Social arbitrage](docs/CONCEPT.md) | The gap between tape, Trends/search, and chatter |
