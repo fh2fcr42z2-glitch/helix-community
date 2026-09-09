@@ -100,6 +100,7 @@ If you want Helix to “just send the order,” this is the wrong community. Wri
 
 **Later (needs Lab / Fleet, still paper)**
 
+- Warehouse **quality gates** and ETL that persist DARK instead of inventing ([DATA-AND-MEMORY.md](DATA-AND-MEMORY.md))
 - Walk-forward harness
 - Isolated Fleet runs that cannot write the main book
 - Alpha Writer NOTE format in the wild (still no auto-post)

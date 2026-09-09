@@ -24,9 +24,9 @@ The same guide lives at the repository root as `CONTRIBUTING.md` (GitHub’s con
 | **Test** | Fixtures + DARK/timeout cases | Recorded HAR files with cookies |
 | **Docs** | Corrects a claim, marks DARK, adds a worked paper example | Vendor tutorial that is really a key drop |
 | **Paper idea** | Three legs + FLOW rung + invalidation + DARK list | “Buy this,” live sizing, guaranteed edge, auto-post |
-| **Interface RFC** | Short, named port, how mocks work | Rewrite the private tree |
+| **SQL / memory** | Warehouse/ETL/gate tests with mocks; DARK rows; no secrets | Invented bars in SQL; prompt dumps; keys in Parquet metadata |
 
-Architecture names live in [ARCHITECTURE.md](ARCHITECTURE.md). FLOW and NOTE: [FLOW.md](FLOW.md), [ALPHA-WRITER.md](ALPHA-WRITER.md). Scout catalog: [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
+Architecture names live in [ARCHITECTURE.md](ARCHITECTURE.md). FLOW and NOTE: [FLOW.md](FLOW.md), [ALPHA-WRITER.md](ALPHA-WRITER.md). Scout catalog: [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md). Memory layers: [DATA-AND-MEMORY.md](DATA-AND-MEMORY.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
 
 ## How to propose an adapter
 
@@ -45,6 +45,7 @@ Use a template when you can:
 
 - **Adapter** — a feed behind a port (include Scout class + category)
 - **Docs / catalog** — wrong FREE / FREE-TIER / PAID / DARK claim
+- **SQL / memory** — warehouse, quality gates, ETL, walk-forward — **no prompt dumps, no keys**
 - **Paper idea** — a social-arbitrage thesis, paper-only
 
 Search open issues first. If you are marking something DARK, say what we currently imply that we should not.

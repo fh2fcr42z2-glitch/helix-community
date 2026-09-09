@@ -39,6 +39,7 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 | [FLOW](docs/FLOW.md) | Chain → DEX → token → wallets DARK; kill switches |
 | [Alpha Writer NOTE](docs/ALPHA-WRITER.md) | Evidence-gated pipeline; no auto-post; WordPress draft-only future |
 | [Sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) | **Living Free Market Data Scout** catalog — FREE in Helix now vs Top-to-add, DARK list, GitHub shells; **no credentials** |
+| [Data and memory](docs/DATA-AND-MEMORY.md) | Flexible layers (agent/project memory, INVENTORY, cowork notes, SQL warehouse, Parquet cold); SQL/prompt discipline — DARK>invention, no secrets |
 | [Roadmap](docs/ROADMAP.md) | Public bars, no synthetics, walk-forward, paper-first |
 | [Contributing](CONTRIBUTING.md) | Adapters, issues, PR hygiene, secrets rules |
 | [Code of conduct](CODE_OF_CONDUCT.md) | Light-touch community rules |
@@ -58,6 +59,7 @@ Surfaces the community should recognize — names, not private source:
 - **Risk** — constraints, vetoes, kill switches (research halts)
 - **Fleet / Lab** — future isolated experiments
 - **Alpha Writer** — evidence-gated **NOTE**; no auto-post
+- **Memory** — agent/project notes, INVENTORY, cowork notes, SQL warehouse, Parquet cold (DARK>invention, no secrets)
 
 Roles are conceptual (Head of Desk, Scout, **Free Market Data Scout**, Researcher, Market Ops, Risk, Sentinel, Alpha Writer). See [architecture](docs/ARCHITECTURE.md), [FLOW](docs/FLOW.md), and the [Scout catalog](docs/SENSITIVE-INTEGRATIONS.md#free-market-data-scout-charter). Sentinel-gated execution stays **paper-first forever**. Swap/trading connectors stay off.
 

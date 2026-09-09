@@ -58,6 +58,10 @@ A thesis names all three, plus a DARK list for what you could not observe. Full 
     <p>Chain → DEX → token. Wallets DARK. Kill switches halt promotion.</p>
   </article>
   <article>
+    <h2>Memory</h2>
+    <p>Agent/project notes, INVENTORY, SQL warehouse, Parquet cold. DARK&gt;invention.</p>
+  </article>
+  <article>
     <h2>Alpha Writer</h2>
     <p>Evidence-gated NOTE. No X auto-post. WordPress draft-only future.</p>
   </article>
@@ -84,7 +88,7 @@ The living **Free Market Data Scout** catalog — FREE / FREE-TIER / PAID / DARK
 3. Add **tests** that go green without a vendor account.
 4. File a **paper strategy** idea with invalidation and a DARK list.
 
-Rules: [Contribute]({{ '/contribute/' | relative_url }}). North star: [Roadmap]({{ '/roadmap/' | relative_url }}) — real bars, kill synthetics, FLOW on free Llama, NOTE with no auto-post, Sentinel on.
+Rules: [Contribute]({{ '/contribute/' | relative_url }}). Memory contract: [Data and memory]({{ '/memory/' | relative_url }}). North star: [Roadmap]({{ '/roadmap/' | relative_url }}) — real bars, kill synthetics, FLOW on free Llama, NOTE with no auto-post, Sentinel on.
 
 ## Private implementation
 

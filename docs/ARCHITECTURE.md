@@ -52,6 +52,8 @@ Alpha Writer NOTE                   no auto-post; WordPress draft-only future
 4. **Paper book** — optional hypothetical entry. Marks come from the same real bars as intake, or the position is marked DARK. **No synthetic fill prices.**
 5. **Alpha Writer NOTE** — evidence-gated write-up. **No X auto-post.** WordPress, if ever, is draft-only. See [ALPHA-WRITER.md](ALPHA-WRITER.md).
 
+Facts the desk must remember (INVENTORY, cowork notes, SQL warehouse, Parquet cold) follow [DATA-AND-MEMORY.md](DATA-AND-MEMORY.md): **DARK > invention**, no secrets in any layer.
+
 Read-only research keys (wallet labels, Llama Pro bridge netflow, unpaid CEX entity feeds) attach at **intake only**, behind interfaces, in private environments. They do not change the paper book, Sentinel, or the no-auto-post rule. **Swap and trading connectors stay off.**
 
 ```
@@ -130,6 +132,7 @@ Exact type names are up to the language of the contribution. The rule is the sea
 
 - Private source, configs, and `.env` files from helix-cx
 - Vendor keys, cookies, session tokens, wallet seeds
+- Private Grok chats / SQL prompt dumps
 - Claims about unpublished performance
 - Encouragement to flip Sentinel off
 

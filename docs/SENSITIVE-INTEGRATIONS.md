@@ -131,7 +131,7 @@ These are **research reads** someone might bring to a *private* environment. The
 4. **Do not scrape** a delayed dashboard (UW free, Theta delayed EOD) to impersonate a paid or live API.
 5. **Do not “unlock” wallets, bridges, or entity labels** without a verified free source. Alchemy free tier does not count.
 
-Adapter issue template: label **FREE / FREE-TIER / PAID / DARK** and a capability category. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Adapter issue template: label **FREE / FREE-TIER / PAID / DARK** and a capability category. See [CONTRIBUTING.md](CONTRIBUTING.md). SQL warehouse / Parquet / prompt discipline: [DATA-AND-MEMORY.md](DATA-AND-MEMORY.md).
 
 ## Why API keys and paid feeds are gated
 
