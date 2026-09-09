@@ -6,7 +6,7 @@
 
 | Piece | Truth |
 |---|---|
-| Public docs (this repo `main`) | LIVE — PoR/OFAC (+Binance sample), five-forces, data/memory, crew, research loop, Market Maker, quant/risk/fleet, **Grok prompt packs** |
+| Public docs (this repo `main`) | LIVE — PoR/OFAC (+Binance sample), five-forces, data/memory, crew, research loop, Market Maker, quant/risk/fleet, TA / Chart shots / engine flow, **Grok prompt packs** |
 | Private `helix-cx` GitHub `main` | Hull / early stub — **not** the Fleet preview |
 | Private `helix-cx` PR #1 | Paper desk + Fleet OS work in flight — merge only when Call Me X says |
 | Execution | paper · `liveOrders` false · no unsupervised live orders |
@@ -17,6 +17,7 @@
 | Risk gates | library present, flag off · never a live go-ahead by itself |
 | World Monitor | DARK without a key |
 | Market Maker | LIVE authorized (X 2026-09-09) · fee_income only · principal locked · venue DARK blocks · **SOL primary · ETH try-now · HYPE DARK until adapter** · Scout 2026-09-09: **Phoenix SOL CLOB PASS · ETH CEX+gas PASS · HYPE HL WARN** · CX wiring on PR #1 |
+| Technical Analysis | TA critique **PASS**; Chart shots **DARK** until first SOL/ETH shot+as-of |
 
 ## Rules that stop confusion
 1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, or PnL.
@@ -24,9 +25,13 @@
 3. Prepare ≠ execute. Live money needs **explicit human approval** — MM tickets were authorized by X on 2026-09-09 (journal `approval_ref`; `needs_human_approval=false` for that path).
 4. If a PR is open and `main` is behind, say so once, then use **this STATUS** and community docs — don’t loop on “not merged” as if the desk doesn’t exist.
 5. Launchpad nature (mass mint / skip-as-edge) ≠ MM fee-vault loop — [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md). Unverified bot PnL stays DARK.
+6. TA critique pack lives on the desk box (`helix-cowork` briefs/notes — **may be unmounted**). Public contract: [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) + [PATTERN-SETUPS.md](./PATTERN-SETUPS.md). Do not invent the pack file. Pins: pivot **N=2**, VWAP **UTC day**, ATR **pack defaults**, **BOS alone ≠ confluent**. Missing sidecar → DARK metadata.
 
 ## Canonical docs on this `main`
 - [CREW-HANDOFF.md](./CREW-HANDOFF.md) — one job per lane, veto/don’t-chase gates
+- [ENGINE-FLOW.md](./ENGINE-FLOW.md) — anti-clog promotion (idea → cowork → Scout flag → CoS PR → warehouse/Fleet)
+- [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) — TA specialist, Chart shots; critique PASS; sidecar JSON; no invented levels; no orders
+- [PATTERN-SETUPS.md](./PATTERN-SETUPS.md) — `pattern_id` enum + setup_grade; invalidation required; hype PnL reject
 - [DATA-AND-MEMORY.md](./DATA-AND-MEMORY.md)
 - [ALPHA-FIVE-FORCES.md](./ALPHA-FIVE-FORCES.md)
 - [POR-OFAC-SEEDS.md](./POR-OFAC-SEEDS.md)

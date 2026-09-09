@@ -34,6 +34,9 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 
 - [STATUS.md](docs/STATUS.md) — Grok: current LIVE/DARK truth (read first)
 - [RESEARCH-LOOP.md](docs/RESEARCH-LOOP.md) — six-stage quant cycle for Helix (process only)
+- [ENGINE-FLOW.md](docs/ENGINE-FLOW.md) — anti-clog promotion path (idea → cowork → Scout flag → CoS PR → Fleet)
+- [TECHNICAL-ANALYSIS.md](docs/TECHNICAL-ANALYSIS.md) — TA specialist + Chart shots (critique PASS; sidecar JSON; no invented levels; no fake charts; no orders)
+- [PATTERN-SETUPS.md](docs/PATTERN-SETUPS.md) — `pattern_id` enum + setup_grade (invalidation required; hype PnL reject)
 - [MARKET-MAKER.md](docs/MARKET-MAKER.md) — LIVE-authorized (fee vault only; principal locked)
 - [MM-SOL-ETH-HYPE.md](docs/MM-SOL-ETH-HYPE.md) — multi-sleeve SOL / ETH / HYPE desk map (HYPE DARK until adapter)
 - [MEME-MARKET-NATURE.md](docs/MEME-MARKET-NATURE.md) — launchpad nature vs MM (mass mint; skip-as-edge; bot PnL DARK)

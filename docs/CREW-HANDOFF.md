@@ -14,6 +14,7 @@ Source inspiration: public multi-agent trading crew writeups (@immortalhowwl / G
 | Tape / Scout | TOKYO | Find fresh names where **volume builds before price**; pass evidence, not vibes |
 | Sentinel / Risk | PALERMO | **Block** entries without enough liquidity for a safe exit |
 | Plan / Setup | BERLIN | Write **exact conditions** that reset or re-arm the setup |
+| Technical Analysis | — | Chart shot + pattern + **invalidation**; never invent levels; no orders |
 | Entry timing | RIO | Catch **pullbacks**, mark **invalidation**; never chase a flying chart |
 | Alpha / Social | DENVER | Compare X/Telegram mentions to **on-chain volume**; filter paid noise |
 | Data quality | LISBON | Reject **stale** snapshots (holders, liquidity, bars); send setup back |
@@ -42,6 +43,7 @@ A signal advances **only after every filter**. If the chart flies without the cr
 - Wire these as named gates in Fleet OS / Ops Ridge (real counts only; DARK if unverified).
 - Reject handoffs missing: owner, evidence URL/as-of, invalidation, exit liquidity note.
 - Keep Money Heist names out of the product UI; Helix lane names above are enough.
+- Promotion of artifacts (idea → cowork → Scout flag → CoS PR → Fleet): [ENGINE-FLOW.md](./ENGINE-FLOW.md). Chart shots: [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md).
 
 ## Do not tell Grok / agents
 - That unsupervised live trading is allowed.

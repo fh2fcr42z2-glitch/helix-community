@@ -24,6 +24,7 @@ Private CX wiring may lag; use [STATUS.md](./STATUS.md) for LIVE/DARK truth.
 | **Alpha Writer** | `/api/alpha` evidence packet / last compose |
 | **Sentinel** | Desk `risk` + KillStrip flags from `/api/quotes` |
 | **Quant** (future) | DARK until risk-gates modules land (`brief-risk-gates-wf-dsr-kelly.md`) |
+| **Technical Analysis** | `chart-shots/` mtime + **sidecar JSON**. Critique PASS as doctrine. **DARK until first SOL/ETH shot+as-of** (missing sidecar → DARK metadata) |
 
 Prefer these labels over Klaus/Mara/Cole/Vince unless X asks otherwise.
 
@@ -86,6 +87,7 @@ Ridge “probability” visual: if you need a bar, use **only** ratios with know
 | Alpha Writer | Optional: last successful `/api/alpha` in-process cache age | Never composed this process → GAP |
 | Sentinel | Desk risk object present | Quotes failed → DARK with HTTP/error |
 | CoS | Optional: GitHub PR `#1` state if `gh`/token available | No GitHub → DARK `no repo status` |
+| Technical Analysis | `chart-shots/` readable **and** sidecar JSON present; show latest shot as-of | Path missing / no sidecar / no as-of → DARK metadata |
 
 UI copy: **“artifact as-of …”** — never claim agent presence.
 
@@ -115,6 +117,7 @@ HELIX_FLEET_GITHUB_REPO=fh2fcr42z2-glitch/helix-cx
 
 ```
 Tabs: CX | FLOW | Alpha | Fleet OS
+CX notes: Chart shots tab (TA; files under chart-shots/ + sidecar JSON; DARK until first SOL/ETH shot+as-of)
 Fleet OS (phase 1): Ops Ridge | Specialist row | Persistent Workspace
 (Defer graph/chord/full lattice/question pane to phase 2+ unless trivial DARK stubs)
 ```
