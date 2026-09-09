@@ -70,6 +70,30 @@ Same LIVE rails as [MARKET-MAKER.md](./MARKET-MAKER.md). Extra constraints per s
 
 Kill OFF → may rotate **that sleeve**. Kill ON → code stops new entries **on that sleeve** (and may halt all MM if the strip says so). Principal stays read-only on every sleeve.
 
+## Scout venue grades (2026-09-09)
+
+Public snapshot of **which books the Scout can actually read** for these sleeves. Grades are PASS / WARN / FAIL-DARK — **not** a depth table, **not** a quote, **not** “wired in Helix.” Full write-up lives on the desk box (`helix-market-data` / `INVENTORY`). **Do not invent numbers here** to fill a hole.
+
+Scout grade ≠ adapter. A PASS venue still **blocks** if that pair’s venue is DARK in the journal. **HYPE stays sleeve DARK until a mocked Hyperliquid adapter** even though the public book is WARN.
+
+| Grade | Venue | Honest note |
+|---|---|---|
+| **PASS** | **SOL CLOB** — Phoenix Eternal official L2 REST/WS | Perps book — **not** a spot AMM |
+| **PASS** | **ETH quote depth** — Coinbase + Kraken L2 | Public CEX L2 already in the Scout catalog |
+| **PASS** | **ETH gas** — public RPC `eth_gasPrice` / `eth_feeHistory` (+ Alchemy **FREE-TIER**) | Read-only fee as-of. Missing/stale gas → SKIP, never eat principal |
+| **WARN** | **SOL AMM** — Orca mid+balances (no L2); Meteora mid+reserves; Raydium **1–5 min stale** | Marks / inventory context — **not** live MM L2 |
+| **WARN** | **HYPE** — Hyperliquid `l2Book(HYPE)` | FREE, no key; **shared-IP 429** risk → WARN, not PASS |
+| **FAIL / DARK** | Blocknative gas (sunset), dead gas stations, scrapers | Do not backfill gas or depth from these |
+
+**Sleeve primaries** (where to look first — still fail-closed):
+
+- **SOL CLOB** → Phoenix
+- **SOL AMM marks** → Orca (+ Helius)
+- **ETH** → Coinbase / Kraken + RPC gas
+- **HYPE** → Hyperliquid `l2Book` with IP hygiene
+
+No BBO, no size ladder, no invented mid. If the desk-box write-up is missing, the field is DARK.
+
 ## Discovery / sniper six lanes — separate from MM
 
 The inspiration pack also describes a **six-lane discovery** (launch / volume-before-price / LP quality / social-vs-tape / wallet-copy / cross-venue dislocation — names vary). Helix may research those lanes. **They are not Market Maker.**
@@ -89,13 +113,14 @@ Not a promise that private `main` has these. Gaps stay DARK until wired.
 
 1. **PairProfile** — per-pair spread, size, fee, gas budget, venue, sleeve, DARK list. Quoter reads this; agents write it on the slow loop.
 2. **Quoter + skew** — inventory-aware two-sided quotes; skew is code on the fast path, policy on the slow path.
-3. **Scout inventory** — which sleeve/venue is actually FREE vs Top-to-add vs DARK. HYPE stays DARK here until the Hyperliquid adapter + mock exists.
+3. **Scout inventory** — which sleeve/venue is actually FREE vs Top-to-add vs DARK. Snapshot: [Scout venue grades (2026-09-09)](#scout-venue-grades-2026-09-09). HYPE **sleeve** stays DARK until the Hyperliquid adapter + mock exists (Scout grade is WARN, not PASS).
 4. **Fleet tile** — Ops Ridge cell: sleeve status LIVE|DARK|GAP, kill, fee_income as-of, **no invented PnL %**. See [FLEET-OS.md](./FLEET-OS.md).
 
 ## Do not tell Grok / agents
 
 - That @solst1ne (or any viral) PnL is a Helix backtest or live result.
 - That HYPE is quotable before a mocked Hyperliquid adapter.
+- That Scout PASS is a depth table, a BBO, or a live quote — grades only; full write-up is on the desk box.
 - That ETH can ignore gas and run the SOL loop.
 - That discovery/sniper tickets belong in the MM JSONL.
 - That Risk “usually agrees” with the quoter.

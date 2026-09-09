@@ -16,7 +16,7 @@
 | Five-force tags | default DARK until evidence assigns a force |
 | Risk gates | library present, flag off · never a live go-ahead by itself |
 | World Monitor | DARK without a key |
-| Market Maker | LIVE authorized (X 2026-09-09) · fee_income only · principal locked · venue DARK blocks · **SOL primary · ETH try-now · HYPE DARK until adapter** · CX wiring on PR #1 |
+| Market Maker | LIVE authorized (X 2026-09-09) · fee_income only · principal locked · venue DARK blocks · **SOL primary · ETH try-now · HYPE DARK until adapter** · Scout 2026-09-09: **Phoenix SOL CLOB PASS · ETH CEX+gas PASS · HYPE HL WARN** · CX wiring on PR #1 |
 
 ## Rules that stop confusion
 1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, or PnL.
@@ -31,7 +31,7 @@
 - [POR-OFAC-SEEDS.md](./POR-OFAC-SEEDS.md)
 - [RESEARCH-LOOP.md](./RESEARCH-LOOP.md) — research→code→backtest→live→post-mortem→fine-tune (Helix version)
 - [MARKET-MAKER.md](./MARKET-MAKER.md) — LIVE-authorized fee-vault rotate loop (X 2026-09-09; principal locked)
-- [MM-SOL-ETH-HYPE.md](./MM-SOL-ETH-HYPE.md) — multi-sleeve desk map (SOL primary · ETH try-now · HYPE DARK until adapter)
+- [MM-SOL-ETH-HYPE.md](./MM-SOL-ETH-HYPE.md) — multi-sleeve desk map (SOL primary · ETH try-now · HYPE DARK until adapter) · Scout venue grades 2026-09-09 (no invented depth)
 - [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) — R/Python/math confidence pack
 - [RISK-GATES.md](./RISK-GATES.md) — walk-forward / DSR / Kelly (paper)
 - [FLEET-OS.md](./FLEET-OS.md) — Ops Ridge REAL vs DARK
