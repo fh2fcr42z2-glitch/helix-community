@@ -70,3 +70,7 @@ Do not invent addresses. Do not claim whale identity. Helix is live-capable rese
 
 - Private desk: https://github.com/fh2fcr42z2-glitch/helix-cx
 - Public docs: https://github.com/fh2fcr42z2-glitch/helix-community
+
+
+### Additional sample (2026-09-09 republish)
+- [binance-hotcold-sample.csv](./samples/por/binance-hotcold-sample.csv) — truncated HotCold header + rows (full ZIP stays operator-local)
