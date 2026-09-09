@@ -102,7 +102,7 @@ The paper ledger. What we are hypothetically on, when it was opened, where the m
 
 Constraints on the paper book: gross, concentration, single-name, thesis age, drawdown of the *hypothetical* ledger. Risk may veto an entry that Process already likes. Paper risk is still risk to the research process — a book that can do anything teaches nothing.
 
-**Kill switches** (Market Ops; paper promotion only): stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX liquidity. Full table: [FLOW.md](FLOW.md). They never place orders.
+**Kill switches** (Market Ops; paper promotion only): stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX liquidity, geo 451/403. Full table: [FLOW.md](FLOW.md). They never place orders. **WF / DSR / Kelly** are research/paper gates only — [DATA-AND-MEMORY.md](DATA-AND-MEMORY.md).
 
 ### Sentinel
 

@@ -91,7 +91,10 @@ If you want Helix to “just send the order,” this is the wrong community. Wri
 
 - Document ports and DARK behavior (including the standing DARK list)
 - Keep the **living Free Market Data Scout** catalog moving (FREE in Helix now vs Top-to-add)
-- Top-to-add adapters **with mocks**: Binance/Bybit public (DARK on 451/403), Deribit public options, Hyperliquid, Fear & Greed
+- Top-to-add adapters **with mocks**: Binance/Bybit public (DARK on 451/403), Deribit public options, Hyperliquid, Fear & Greed, news RSS, PoR/OFAC seeds
+- Alchemy adapters **`eth_call` only** — not labels, not send
+- Geo egress honesty in cowork notes and CI
+- DuckDB warehouse **off-by-default**; WF / DSR / Kelly as **research** gates only
 - Wallets / bridges / entity labels stay **DARK** without a verified free source
 - Free-tier FLOW adapters with mocks (DefiLlama chain vol/TVL, Llama+screener DEX, token board/trending, Coinbase, Kraken, Trends)
 - Kill-switch tests: stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX — as *promotion halts*

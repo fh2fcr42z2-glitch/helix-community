@@ -79,7 +79,10 @@ Every catalog row belongs to one (or more) of these. Crypto-first CX does not ow
 | **Fear & Greed** | Sentiment | **FREE** public index (typical) | One number, not chatter. Do not treat it as the social leg |
 | **FRED** | Macro (equity/macro sidecar) | **FREE-TIER** (API key often required, no paywall) | **Not crypto tape.** Sidecar context only |
 | **EDGAR** | Filings (equity sidecar) | **FREE** public SEC filings | **Not crypto.** Not a whale feed |
-| **Alchemy free tier** | On-chain RPC | **FREE-TIER** | Raw reads, **not** entity labels, **not** bridges. Labels stay **DARK** |
+| **Alchemy free tier** | On-chain RPC | **FREE-TIER**, **`eth_call` only** | Read-only contract calls. **Not** `eth_send*`, **not** entity labels, **not** bridges. Labels stay **DARK** |
+| **News RSS** | Sentiment / chatter | **FREE** public feeds (typical) | Headlines, not a paid firehose. Cite the feed; do not scrape a paywall. Not wallet flow |
+| **PoR seeds** | Venue solvency context | **FREE** *if* the exchange publishes a public Proof-of-Reserves attestation | A published merkle/attestation page is not a wallet cluster. Missing PoR = **DARK**, not “insolvent” |
+| **OFAC seeds** | Public sanctions lists | **FREE** public Treasury SDN (and similar published lists) | Research seed only — not a compliance product, not live blocking, not a smart-money label |
 
 **Do not confuse these with FREE firehoses:**
 
@@ -88,7 +91,20 @@ Every catalog row belongs to one (or more) of these. Crypto-first CX does not ow
 | **Unusual Whales** | Whale / flow; crypto OHLC via **API** | Free dashboard = **delayed FREE-TIER**. API = **PAID + Bearer only** | The free dashboard is **delayed**. It is **not** a firehose and **not** Coinbase/Kraken. The **API is paid** and authenticates with a **Bearer token** in a *private* env. Without that key, UW is **DARK**. Never paste the Bearer |
 | **Theta Data** | Equity / options / indices | **Not crypto.** **FREE-TIER:** ~**1y EOD delayed**. **PAID:** intraday and Greeks | Equity sidecar only. Delayed EOD is not live greeks, not SIP, not a crypto perp or Deribit options tape. Using Theta as if it were Coinbase or Deribit is a bug |
 
-**Wallets, bridges, and entity labels** stay **DARK** until a *verified free* source exists — including after Alchemy, DefiLlama TVL, or a DEX screenshot. Paid labels (Nansen, Arkham, GMGN, Helius keyed, UW API) do not change that rule on this public bench.
+**Wallets, bridges, and entity labels** stay **DARK** until a *verified free* source exists — including after Alchemy **`eth_call`**, DefiLlama TVL, or a DEX screenshot. Paid labels (Nansen, Arkham, GMGN, Helius keyed, UW API) do not change that rule on this public bench. **PoR** and **OFAC** seeds are public lists/attestations, not wallet intelligence products.
+
+### Geo egress honesty
+
+“Public API” is not “reachable from every laptop and every CI.” Binance/Bybit-class venues **may 451/403** by geo or egress policy.
+
+| Rule | Honest behavior |
+| --- | --- |
+| Record the status | 200 vs 451/403 is part of the observation |
+| DARK on block | Do not backfill from CoinGecko, a delayed UW dashboard, or a synthetic perp |
+| Do not assume Helix geo | Community CI, GitHub Pages, and your home IP are different egress. A feed that works for you can be DARK in CI |
+| Cite shells, don’t fake reach | [ccxt/ccxt](https://github.com/ccxt/ccxt) and [nirholas/crypto-data-aggregator](https://github.com/nirholas/crypto-data-aggregator) are shapes for adapters — still mock; still DARK on 451 |
+
+Cowork notes must write the egress outcome. INVENTORY must not upgrade a geo-blocked venue to FREE-in-Helix-now.
 
 ### GitHub shells worth citing
 
@@ -103,9 +119,11 @@ Public repos the Scout can point at when proposing an adapter. **Citing ≠ ship
 | [visioneth/AlphaScope](https://github.com/visioneth/AlphaScope) | Research-scope layout for market context |
 | [hyperliquid-dex/hyperliquid-python-sdk](https://github.com/hyperliquid-dex/hyperliquid-python-sdk) | Official-class Hyperliquid python client for a future mocked adapter |
 
-### Wishlist — paid unlocks (one line each)
+Cowork + Scout should **keep citing these same shells** when proposing ETL, RSS ingest, or Hyperliquid/ccxt-shaped tape — not a new secret gist. **Citing ≠ shipping.**
 
-These are **research reads** someone might bring to a *private* environment. They do not live in this repo. Unpaid = **DARK**. Swap/trading connectors stay **off**.
+### Wishlist — research unlocks (one line each)
+
+Paid *or* public-but-unwired. Unpaid/unverified = **DARK**. Swap/trading connectors stay **off**. **DuckDB / SQL warehouse is off-by-default** ([DATA-AND-MEMORY.md](DATA-AND-MEMORY.md)).
 
 | Source | One-line unlock |
 | --- | --- |
@@ -120,6 +138,10 @@ These are **research reads** someone might bring to a *private* environment. The
 | **Birdeye** | Token-level analytics / possible wallet reads |
 | **GMGN** | Labeled-wallet style screens |
 | **Tiingo** | Equities/news-style paid coverage — sidecar, not crypto tape |
+| **News RSS (public)** | Headline ingest for the chatter/search gap — not a paid newswire; mocks required |
+| **PoR seeds** | Public Proof-of-Reserves attestations as context — not labeled wallets |
+| **OFAC seeds** | Public SDN (and similar) as a research seed — not a live compliance engine, not smart money |
+| **Alchemy `eth_call` only** | FREE-TIER read-only calls — never send, never treat as labels |
 
 ### How the community helps the Scout
 
@@ -129,9 +151,10 @@ These are **research reads** someone might bring to a *private* environment. The
 2. **Keep the living catalog moving** — FREE in Helix now vs Top-to-add vs PAID vs DARK. Cite a public page or a GitHub shell, not a screenshot of a key.
 3. **Never paste keys** into issues, PRs, or chat. Unusual Whales Bearer tokens, Theta logins, Alchemy keys, Coinglass Pro keys stay in local `.env` (gitignored) or nowhere.
 4. **Do not scrape** a delayed dashboard (UW free, Theta delayed EOD) to impersonate a paid or live API.
-5. **Do not “unlock” wallets, bridges, or entity labels** without a verified free source. Alchemy free tier does not count.
+5. **Do not “unlock” wallets, bridges, or entity labels** without a verified free source. Alchemy **`eth_call`** does not count. PoR/OFAC seeds are lists/attestations, not Nansen.
+6. **Geo egress honesty** — 451/403 is DARK. Do not invent a bar because ccxt has a Binance class.
 
-Adapter issue template: label **FREE / FREE-TIER / PAID / DARK** and a capability category. See [CONTRIBUTING.md](CONTRIBUTING.md). SQL warehouse / Parquet / prompt discipline: [DATA-AND-MEMORY.md](DATA-AND-MEMORY.md).
+Adapter issue template: label **FREE / FREE-TIER / PAID / DARK** and a capability category. See [CONTRIBUTING.md](CONTRIBUTING.md). SQL warehouse (DuckDB **off-by-default**) / Parquet / prompt discipline / research risk gates (WF, DSR, Kelly): [DATA-AND-MEMORY.md](DATA-AND-MEMORY.md).
 
 ## Why API keys and paid feeds are gated
 
@@ -158,8 +181,9 @@ Until an adapter + mock exists *and* (for gated rows) a read-only key exists in 
 
 | DARK item | Typical vendor / why | Public stance |
 | --- | --- | --- |
-| **Labeled wallets / entity labels** | Nansen, Arkham, GMGN, Helius keyed, UW API | **DARK** until a *verified free* source exists. Alchemy free tier ≠ labels |
+| **Labeled wallets / entity labels** | Nansen, Arkham, GMGN, Helius keyed, UW API | **DARK** until a *verified free* source exists. Alchemy **`eth_call` ≠ labels**. PoR/OFAC seeds ≠ Nansen |
 | **Bridge netflow** | DefiLlama **Pro** | Free Llama is chain stables + TVL + DEX vol only ([FLOW.md](FLOW.md)). **DARK** without verified free |
+| **Geo-blocked public tape** | Binance/Bybit-class 451/403 | **DARK**. Do not backfill. Record egress |
 | **CEX entity flow** | CryptoQuant, Glassnode **unpaid** | No implied exchange whales |
 | **Unusual Whales API** | **PAID + Bearer only** | Delayed free dashboard ≠ API; **DARK** without key |
 | **Funding / OI (in Helix now)** | Not wired; Binance/Bybit/Hyperliquid are Top-to-add | **DARK** until adapter + mock; 451/403 = DARK |

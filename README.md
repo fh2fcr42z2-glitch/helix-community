@@ -81,7 +81,9 @@ Do not paste API keys, cookies, wallet seeds, or vendor dashboards into issues o
 Helix would rather show **DARK** than a plausible fake.
 
 - **Free in Helix now:** Coinbase, Kraken, CoinGecko, DefiLlama free API, DEX Screener, GeckoTerminal, Google Trends.
-- **Top-to-add (not wired yet):** Binance/Bybit public (geo may 451/403 → DARK), Deribit public options, Hyperliquid, Fear & Greed, FRED / EDGAR / Alchemy **free tiers** (sidecar/RPC — **not** labels).
+- **Top-to-add (not wired yet):** Binance/Bybit public (geo may 451/403 → DARK), Deribit public options, Hyperliquid, Fear & Greed, FRED / EDGAR, Alchemy **`eth_call` only**, public **news RSS**, **PoR** / **OFAC** seeds (lists/attestations, not labels).
+- **Geo egress honesty:** 451/403 is DARK. Do not backfill. CI geo ≠ your laptop.
+- **Warehouse:** DuckDB **off-by-default**. Risk gates **WF / DSR / Kelly** are research/paper only.
 - **Not free firehoses:** Unusual Whales — delayed free dashboard; **API is paid + Bearer only**. Theta Data — **no crypto**; equity/options **~1y EOD delayed** FREE-TIER; **intraday/Greeks paid**.
 - **Standing DARK:** wallets, bridges, and entity labels without a *verified free* source; CEX entity flow unpaid; X auto-post; WordPress live publish.
 - **Synthetic bars are a temporary shame**, not a feature. The public roadmap is to kill them.

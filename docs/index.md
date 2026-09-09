@@ -77,7 +77,7 @@ A NOTE is assembled only after Scout → Researcher → Market Ops. Claims carry
 
 ## What is gated (and why that helps you)
 
-Standing DARK: wallets, bridges, and entity labels without a *verified free* source; CEX entity flow unpaid; UW API without Bearer; X auto-post; WordPress live publish. **FREE in Helix now:** Coinbase, Kraken, CoinGecko, DefiLlama free, DEX Screener, GeckoTerminal, Google Trends. **Top-to-add:** Binance/Bybit public (geo may 451/403), Deribit public options, Hyperliquid, Fear & Greed, FRED/EDGAR/Alchemy free tiers.
+Standing DARK: wallets, bridges, and entity labels without a *verified free* source; CEX entity flow unpaid; UW API without Bearer; X auto-post; WordPress live publish. **FREE in Helix now:** Coinbase, Kraken, CoinGecko, DefiLlama free, DEX Screener, GeckoTerminal, Google Trends. **Top-to-add:** Binance/Bybit public (geo may 451/403), Deribit public options, Hyperliquid, Fear & Greed, FRED/EDGAR, Alchemy **`eth_call` only**, news RSS, PoR/OFAC seeds. DuckDB warehouse **off-by-default**. WF/DSR/Kelly are **research** gates.
 
 The living **Free Market Data Scout** catalog — FREE / FREE-TIER / PAID / DARK, no credentials — is [Sensitive integrations]({{ '/integrations/' | relative_url }}). Unusual Whales: delayed free dashboard; **API paid + Bearer only**. Theta Data: **not crypto**; ~**1y EOD delayed** FREE-TIER; **intraday/Greeks paid**.
 

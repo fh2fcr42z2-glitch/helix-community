@@ -67,6 +67,7 @@ Public defaults the community should share:
 | **Stale BTC** | BTC tape is older than the desk will trust (or freshness is unmeasured) | Pause alt FLOW stories. If you cannot *say* how stale, treat the switch as **on** |
 | **Coinbase vs Kraken ≥ 25 bp** | Spot disagreement between those two public CEX tapes is at least **25 basis points** | Do not treat a single venue as “the tape.” Record both prints. Do not promote a NOTE that needs one fair price |
 | **Thin DEX liquidity** | Screener pair liquidity is too small to read volume as flow — or liquidity was not measured | Pair FLOW is DARK. Do not dress a thin pool up as chain capital movement |
+| **Geo egress 451/403** | Public venue refused this egress (Binance/Bybit class) | Field is **DARK**. Do not backfill. Write the status in cowork notes |
 
 Staleness windows and “how thin is thin” belong in documented config, not magic. Until a number is written down next to a mock test, **unmeasured counts as tripped**.
 
