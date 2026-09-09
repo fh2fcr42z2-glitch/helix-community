@@ -90,7 +90,9 @@ If you want Helix to “just send the order,” this is the wrong community. Wri
 **Near (community-shaped)**
 
 - Document ports and DARK behavior (including the standing DARK list)
-- Keep the **Free Market Data Scout** catalog honest (FREE / FREE-TIER / PAID / DARK)
+- Keep the **living Free Market Data Scout** catalog moving (FREE in Helix now vs Top-to-add)
+- Top-to-add adapters **with mocks**: Binance/Bybit public (DARK on 451/403), Deribit public options, Hyperliquid, Fear & Greed
+- Wallets / bridges / entity labels stay **DARK** without a verified free source
 - Free-tier FLOW adapters with mocks (DefiLlama chain vol/TVL, Llama+screener DEX, token board/trending, Coinbase, Kraken, Trends)
 - Kill-switch tests: stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX — as *promotion halts*
 - Paper thesis / NOTE template used in issues

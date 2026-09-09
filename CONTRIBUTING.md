@@ -10,7 +10,7 @@ If you only read one other file, read [docs/SENSITIVE-INTEGRATIONS.md](docs/SENS
 
 | Contribution | Good | Reject |
 | --- | --- | --- |
-| **Catalog** | Honest FREE / FREE-TIER / PAID / DARK row with a public citation | Treating UW delayed dashboard as a free API; Theta as crypto |
+| **Catalog** | Honest FREE / FREE-TIER / PAID / DARK row; FREE-now vs Top-to-add | UW delayed dashboard as API; Theta as crypto; filling a 451 with CoinGecko |
 | **Adapter** | One vendor, one port, DARK when unkeyed, tests with mocks | Kitchen-sink client, live key in CI, silent fake bars |
 | **Test** | Fixtures + DARK/timeout cases | Recorded HAR files with cookies |
 | **Docs** | Corrects a claim, marks DARK, adds a worked paper example | Vendor tutorial that is really a key drop |

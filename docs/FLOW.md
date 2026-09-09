@@ -77,7 +77,9 @@ Market Ops owns the check. Risk may still veto after a switch is clear. Sentinel
 - That DefiLlama TVL is CEX inflow.
 - That a screener’s volume column is informed flow.
 - That trending tokens have labeled wallets.
-- That Unusual Whales’ delayed dashboard is a Coinbase tape, or that Theta Data EOD options are crypto.
+- That Unusual Whales’ delayed dashboard is a Coinbase tape, or that Theta Data EOD options are crypto (or Deribit).
+- That a Binance/Bybit 451/403 is a hole you may fill from CoinGecko.
+- That Alchemy free-tier RPC is wallet labels or bridge netflow.
 - That funding/OI exists because spot volume exists.
 - That Llama Pro, GMGN, Helius, Birdeye, CryptoQuant, Glassnode, Coinglass Pro, or UW API are on because they appear in a sentence. **Named ≠ wired.** Absent a key and an adapter test, the field is DARK.
 

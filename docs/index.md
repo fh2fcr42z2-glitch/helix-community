@@ -73,9 +73,9 @@ A NOTE is assembled only after Scout → Researcher → Market Ops. Claims carry
 
 ## What is gated (and why that helps you)
 
-Standing DARK: bridge netflow (Llama Pro), labeled wallets (GMGN/Helius/Birdeye), CEX entity flow (CryptoQuant/Glassnode unpaid), X auto-post, WordPress live publish. The free desk still runs on Coinbase, Kraken, CoinGecko, DefiLlama, DEX Screener, GeckoTerminal, and Google Trends.
+Standing DARK: wallets, bridges, and entity labels without a *verified free* source; CEX entity flow unpaid; UW API without Bearer; X auto-post; WordPress live publish. **FREE in Helix now:** Coinbase, Kraken, CoinGecko, DefiLlama free, DEX Screener, GeckoTerminal, Google Trends. **Top-to-add:** Binance/Bybit public (geo may 451/403), Deribit public options, Hyperliquid, Fear & Greed, FRED/EDGAR/Alchemy free tiers.
 
-The matrix and **Free Market Data Scout** catalog — honest FREE / FREE-TIER / PAID / DARK, no credentials — is [Sensitive integrations]({{ '/integrations/' | relative_url }}). Unusual Whales API is **PAID** (Bearer); its delayed dashboard is not a free firehose. Theta Data is **not crypto** (equity sidecar, ~30d EOD options FREE-TIER).
+The living **Free Market Data Scout** catalog — FREE / FREE-TIER / PAID / DARK, no credentials — is [Sensitive integrations]({{ '/integrations/' | relative_url }}). Unusual Whales: delayed free dashboard; **API paid + Bearer only**. Theta Data: **not crypto**; ~**1y EOD delayed** FREE-TIER; **intraday/Greeks paid**.
 
 ## How to help this week
 

@@ -78,7 +78,7 @@ Hunts disagreements across tape, search, and chatter, on a named **FLOW** rung. 
 
 ### Free Market Data Scout
 
-Continuously catalogs sources as **FREE / FREE-TIER / PAID / DARK** across tape, TVL/DEX, funding/OI, whale/flow, options/greeks (equity sidecar), and sentiment. Owns the honesty of [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md). Does not invent data. Does not collect keys. A delayed dashboard is not a firehose.
+Continuously catalogs sources as **FREE / FREE-TIER / PAID / DARK**. Owns the **living inventory** in [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md) — FREE in Helix now vs Top-to-add. Does not invent data. Does not collect keys. Delayed dashboards and geo 451/403 are not firehoses. Wallets, bridges, and entity labels stay DARK without a verified free source.
 
 ### Researcher
 

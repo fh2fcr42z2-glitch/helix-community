@@ -38,7 +38,7 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 | [Architecture](docs/ARCHITECTURE.md) | Desk surfaces, FLOW intake, specialist hats (conceptual) |
 | [FLOW](docs/FLOW.md) | Chain → DEX → token → wallets DARK; kill switches |
 | [Alpha Writer NOTE](docs/ALPHA-WRITER.md) | Evidence-gated pipeline; no auto-post; WordPress draft-only future |
-| [Sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) | **Free Market Data Scout** catalog (FREE / FREE-TIER / PAID / DARK), standing DARK list — no credentials |
+| [Sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) | **Living Free Market Data Scout** catalog — FREE in Helix now vs Top-to-add, DARK list, GitHub shells; **no credentials** |
 | [Roadmap](docs/ROADMAP.md) | Public bars, no synthetics, walk-forward, paper-first |
 | [Contributing](CONTRIBUTING.md) | Adapters, issues, PR hygiene, secrets rules |
 | [Code of conduct](CODE_OF_CONDUCT.md) | Light-touch community rules |
@@ -78,13 +78,14 @@ Do not paste API keys, cookies, wallet seeds, or vendor dashboards into issues o
 
 Helix would rather show **DARK** than a plausible fake.
 
-- **Free public APIs** can support a thin, honest FLOW desk: Coinbase, Kraken, CoinGecko, DefiLlama free API, DEX Screener, GeckoTerminal (spot tape + TVL/DEX). Google Trends covers the search/sentiment leg.
-- **Not free firehoses:** Unusual Whales API needs a Bearer key (delayed free dashboard ≠ API). Theta Data is US stocks/options/indices (~30d EOD options FREE-TIER) — **not crypto**, equity sidecar only.
-- **Standing DARK:** bridge netflow (Llama Pro), labeled wallets, CEX entity flow unpaid, funding/OI (unless adapted), X auto-post, WordPress live publish.
+- **Free in Helix now:** Coinbase, Kraken, CoinGecko, DefiLlama free API, DEX Screener, GeckoTerminal, Google Trends.
+- **Top-to-add (not wired yet):** Binance/Bybit public (geo may 451/403 → DARK), Deribit public options, Hyperliquid, Fear & Greed, FRED / EDGAR / Alchemy **free tiers** (sidecar/RPC — **not** labels).
+- **Not free firehoses:** Unusual Whales — delayed free dashboard; **API is paid + Bearer only**. Theta Data — **no crypto**; equity/options **~1y EOD delayed** FREE-TIER; **intraday/Greeks paid**.
+- **Standing DARK:** wallets, bridges, and entity labels without a *verified free* source; CEX entity flow unpaid; X auto-post; WordPress live publish.
 - **Synthetic bars are a temporary shame**, not a feature. The public roadmap is to kill them.
 - **Read-only research keys** (private env only) may light a gated port. They never go in this repo. Swap/trading connectors remain off.
 
-A placeholder matrix and the **Free Market Data Scout** catalog live in [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md).
+A living **Free Market Data Scout** catalog (inventory continues) lives in [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md). Propose adapters with mocks; never paste keys.
 
 ## Private implementation
 

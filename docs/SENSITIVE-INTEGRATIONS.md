@@ -15,26 +15,27 @@ If you found a key in a commit, gist, or log, see [SECURITY.md](https://github.c
 
 ## Free Market Data Scout (charter)
 
-Helix keeps a dedicated **Free Market Data Scout** hat: someone (or a rotation) who **continuously catalogs** market sources for the public bench.
+Helix keeps a **living Free Market Data Scout**: a dedicated hat (person or rotation) whose job is to **keep cataloging**. This page is the public snapshot. The inventory **continues** — vendors change tiers, geos start returning 451, “free” dashboards stay delayed. When that happens, patch *this* file. Do not freeze a stale class because last week’s NOTE used it.
 
-The job is classification, not collection of logins.
+The job is classification, not collection of logins. **Named ≠ wired.** An entry in Top-to-add is a research lead, not an adapter in Helix.
 
 | The Scout does | The Scout does not |
 | --- | --- |
-| Label each source **FREE**, **FREE-TIER**, **PAID**, or **DARK** | Invent a bar, a whale, or a greek to fill a hole |
-| Map sources onto capability categories (below) | Treat a delayed dashboard as a live API |
-| Cite public vendor docs when a class changes | Paste Bearer tokens, cookies, or `.env` values |
-| Prefer the **already-free stack** for crypto-first CX | Wire Unusual Whales or Theta Data as if they were Coinbase |
+| Keep the inventory moving: **FREE**, **FREE-TIER**, **PAID**, or **DARK** | Invent a bar, a whale, a bridge, or a greek to fill a hole |
+| Separate **FREE in Helix now** from **Top-to-add** | Treat a delayed dashboard as a live API |
+| Cite public vendor docs and public GitHub shells | Paste Bearer tokens, cookies, or `.env` values |
+| Prefer the already-free Helix stack for crypto-first CX | Wire Unusual Whales or Theta Data as if they were Coinbase |
 | File adapter issues with **mocked tests** | Ask anyone for a key “just to try” |
+| Mark wallets / bridges / entity labels **DARK** until a *verified free* source exists | Infer labels from Alchemy, TVL, or a DEX screenshot |
 
-This catalog lives in *this* file. If a vendor changes a tier, open a docs PR. Named ≠ wired. Paper-only. Not a broker. Not financial advice.
+Paper-only. Not a broker. Not financial advice. If a vendor changes a tier, open a docs PR — that *is* Scout work.
 
 ### Classification vocabulary
 
 | Class | Meaning on this bench |
 | --- | --- |
 | **FREE** | Public / keyless endpoint, within vendor terms and rate limits. Default crypto desk. |
-| **FREE-TIER** | Signup, demo key, delay, or a short EOD window. Useful, **not** a firehose. Adapters must still DARK when the free window does not cover the question. |
+| **FREE-TIER** | Signup, demo/RPC key, **delay** (dashboard or ~1y EOD), or a public venue that may 451/403. Useful, **not** a firehose. DARK when the window or geo does not cover the question. |
 | **PAID** | Subscription or API credential (often a Bearer token) in a *private* environment. **DARK here** until a read-only key exists privately *and* an adapter + mock exists. |
 | **DARK** | Not observed, not licensed, not crypto-first, or unpaid. Do not interpolate. |
 
@@ -46,33 +47,61 @@ Every catalog row belongs to one (or more) of these. Crypto-first CX does not ow
 
 | Category | What the desk is asking | Crypto-first default |
 | --- | --- | --- |
-| **Spot / perp tape** | What printed, on which venue | **Spot FREE** (Coinbase, Kraken). **Perp / funding tape DARK** on the current free stack |
-| **On-chain TVL / DEX** | Chain stables, TVL, DEX volume, pair stats | **FREE** (DefiLlama free, DEX Screener, GeckoTerminal) |
-| **Funding / OI** | Perp funding, open interest, liquidations | **DARK** unless a named FREE adapter exists; Coinglass Pro is wishlist **PAID** |
-| **Whale / flow** | Labeled wallets, CEX entity flow, “unusual” prints | **DARK** without a read-only key |
-| **Options / greeks** | Equity/index options, greeks, EOD chains | **Equity sidecar only.** Not crypto. Theta Data is **FREE-TIER** EOD, not a SIP firehose |
-| **Sentiment** | Search interest and public chatter | **FREE** for Google Trends; social firehoses otherwise **DARK** |
+| **Spot / perp tape** | What printed, on which venue | **Spot FREE in Helix now** (Coinbase, Kraken). Perp tape is **Top-to-add** (Binance/Bybit/Hyperliquid public) — still **DARK** until an adapter + mock exists; geo 451/403 stays DARK |
+| **On-chain TVL / DEX** | Chain stables, TVL, DEX volume, pair stats | **FREE in Helix now** (DefiLlama free, DEX Screener, GeckoTerminal). Bridges/labels still **DARK** |
+| **Funding / OI** | Perp funding, open interest, liquidations | **DARK in Helix now.** Public perp venues are Top-to-add; Coinglass Pro is wishlist **PAID** |
+| **Whale / flow** | Labeled wallets, CEX entity flow, “unusual” prints | **DARK** without a *verified free* source. UW API is **PAID**+Bearer |
+| **Options / greeks** | Options prints and greeks | **Deribit public** = crypto options **Top-to-add**. **Theta Data** = equity sidecar, **not crypto** (FREE-TIER delayed EOD; intraday/Greeks **PAID**) |
+| **Sentiment** | Search interest and public chatter | **FREE in Helix now:** Google Trends. **Fear & Greed** is Top-to-add. Social firehoses otherwise **DARK** |
 
-### Catalog (honest rows)
+### Catalog (Scout findings — living)
 
-**Already FREE in the stack** (crypto-first default desk):
+**FREE in Helix now** (crypto-first default desk — public/keyless, already the community baseline):
 
 | Source | Categories | Class | Honest note |
 | --- | --- | --- | --- |
 | **Coinbase** | Spot tape | **FREE** | Public CEX spot prints and product metadata. Not perps-as-tape unless a separate adapter says so |
 | **Kraken** | Spot tape | **FREE** | Second public CEX tape for cross-check (including the ≥25 bp kill switch) |
 | **CoinGecko** | Spot tape (aggregated), universe | **FREE** | Caps, identity, public prices — not a matching engine |
-| **DefiLlama (free API)** | On-chain TVL / DEX | **FREE** | Stables, TVL, DEX volume aggregates. **Not** bridge netflow |
+| **DefiLlama (free API)** | On-chain TVL / DEX | **FREE** | Stables, TVL, DEX volume aggregates. **Not** bridge netflow, **not** wallets |
 | **DEX Screener** | On-chain TVL / DEX | **FREE** | Public pair stats / liquidity. Not labeled whales |
 | **GeckoTerminal** | On-chain TVL / DEX, spot-like DEX OHLCV | **FREE** | Public pool series. Thin liquidity still trips a kill switch |
 | **Google Trends** | Sentiment | **FREE** | Search-interest leg. Coarse, delayed, still citable |
+
+**Top-to-add** (public or free-tier leads — **not** Helix adapters until a PR with mocks lands). Inventory continues; this list will grow and shrink.
+
+| Source | Categories | Class | Honest note |
+| --- | --- | --- | --- |
+| **Binance public** | Spot / perp tape, funding/OI | **FREE** *if* the public REST/WS answers | **Geo may 451/403.** On block, the field is **DARK** — do not backfill from CoinGecko |
+| **Bybit public** | Spot / perp tape, funding/OI | **FREE** *if* the public REST/WS answers | Same geo caveat as Binance. 451/403 = DARK, not a synthetic perp |
+| **Deribit public** | Crypto options | **FREE** public options (crypto) | Not Theta. Not equity. Not greeks-from-nowhere. Adapter + mocks before it is “in Helix” |
+| **Hyperliquid** | Perp tape / DEX | **FREE** public perp DEX (typical) | Cite the public API / [python SDK](https://github.com/hyperliquid-dex/hyperliquid-python-sdk). Still DARK in Helix until mocked |
+| **Fear & Greed** | Sentiment | **FREE** public index (typical) | One number, not chatter. Do not treat it as the social leg |
+| **FRED** | Macro (equity/macro sidecar) | **FREE-TIER** (API key often required, no paywall) | **Not crypto tape.** Sidecar context only |
+| **EDGAR** | Filings (equity sidecar) | **FREE** public SEC filings | **Not crypto.** Not a whale feed |
+| **Alchemy free tier** | On-chain RPC | **FREE-TIER** | Raw reads, **not** entity labels, **not** bridges. Labels stay **DARK** |
 
 **Do not confuse these with FREE firehoses:**
 
 | Source | Categories | Class | Honest note |
 | --- | --- | --- | --- |
-| **Unusual Whales** | Whale / flow; crypto OHLC via **API** | **PAID** for API. Delayed **FREE-TIER** dashboard is **not** the API | Crypto whale prints and OHLC on the **API need a Bearer token** in a private env. The free dashboard is **delayed**. It is **not** a free firehose and **not** a substitute for Coinbase/Kraken tapes. Without the key, UW is **DARK** |
-| **Theta Data** | Options / greeks (US stocks, options, indices) | **FREE-TIER** (~30d EOD options) | **Not crypto.** Equity sidecar only. A public window on the order of **~30 days of EOD options** is not live greeks, not SIP, not a crypto perp tape. Using Theta as if it were Coinbase is a bug |
+| **Unusual Whales** | Whale / flow; crypto OHLC via **API** | Free dashboard = **delayed FREE-TIER**. API = **PAID + Bearer only** | The free dashboard is **delayed**. It is **not** a firehose and **not** Coinbase/Kraken. The **API is paid** and authenticates with a **Bearer token** in a *private* env. Without that key, UW is **DARK**. Never paste the Bearer |
+| **Theta Data** | Equity / options / indices | **Not crypto.** **FREE-TIER:** ~**1y EOD delayed**. **PAID:** intraday and Greeks | Equity sidecar only. Delayed EOD is not live greeks, not SIP, not a crypto perp or Deribit options tape. Using Theta as if it were Coinbase or Deribit is a bug |
+
+**Wallets, bridges, and entity labels** stay **DARK** until a *verified free* source exists — including after Alchemy, DefiLlama TVL, or a DEX screenshot. Paid labels (Nansen, Arkham, GMGN, Helius keyed, UW API) do not change that rule on this public bench.
+
+### GitHub shells worth citing
+
+Public repos the Scout can point at when proposing an adapter. **Citing ≠ shipping.** Check their licenses. Do not copy secrets from their issues. Do not treat examples as Helix.
+
+| Shell | Why cite it |
+| --- | --- |
+| [ccxt/ccxt](https://github.com/ccxt/ccxt) | Venue-shaped public CEX/DEX clients (Binance/Bybit/Deribit class). Still mock in CI; still DARK on 451/403 |
+| [nirholas/crypto-data-aggregator](https://github.com/nirholas/crypto-data-aggregator) | Aggregation patterns for multi-venue crypto data |
+| [eliasfire617/crypto-market-data-mcp](https://github.com/eliasfire617/crypto-market-data-mcp) | MCP-shaped market-data surface — interface ideas, not a key vault |
+| [aitrading-bot/nestor](https://github.com/aitrading-bot/nestor) | Bot/data-plumbing patterns; **paper-only here** — no live-order copy |
+| [visioneth/AlphaScope](https://github.com/visioneth/AlphaScope) | Research-scope layout for market context |
+| [hyperliquid-dex/hyperliquid-python-sdk](https://github.com/hyperliquid-dex/hyperliquid-python-sdk) | Official-class Hyperliquid python client for a future mocked adapter |
 
 ### Wishlist — paid unlocks (one line each)
 
@@ -83,7 +112,7 @@ These are **research reads** someone might bring to a *private* environment. The
 | **Helius** | Solana RPC / richer on-chain reads — wallet *possibility* with a read-only key |
 | **Nansen** | Labeled wallets / smart-money-style attribution |
 | **Arkham** | Entity / wallet intelligence (PII-adjacent) |
-| **Unusual Whales API** | Crypto whale prints + OHLC (Bearer). Delayed free dashboard ≠ this row |
+| **Unusual Whales API** | Crypto whale prints + OHLC. **PAID + Bearer only.** Delayed free dashboard ≠ this row |
 | **Glassnode** | Broader on-chain indicator set |
 | **CryptoQuant** | CEX entity flow / exchange metrics |
 | **Coinglass Pro** | Perp funding, OI, liquidation aggregates |
@@ -94,10 +123,13 @@ These are **research reads** someone might bring to a *private* environment. The
 
 ### How the community helps the Scout
 
-1. **Propose an adapter** with **mocked tests** — one vendor, one category, DARK when unkeyed or out of window. CI must not need your laptop.
-2. **Correct this catalog** when a vendor’s public docs change a tier. Cite the public page, not a screenshot of a key.
-3. **Never paste keys** into issues, PRs, or chat. Unusual Whales Bearer tokens, Theta logins, Coinglass Pro keys, and everything else stay in local `.env` (gitignored) or nowhere.
-4. **Do not scrape** a delayed dashboard to impersonate a paid API.
+**Contributor rule:** propose adapters with **mocks**; **never paste keys**.
+
+1. **Propose an adapter** with **mocked tests** — one vendor, one category. DARK when unkeyed, geo-blocked (451/403), or out of the free window. CI must not need your laptop.
+2. **Keep the living catalog moving** — FREE in Helix now vs Top-to-add vs PAID vs DARK. Cite a public page or a GitHub shell, not a screenshot of a key.
+3. **Never paste keys** into issues, PRs, or chat. Unusual Whales Bearer tokens, Theta logins, Alchemy keys, Coinglass Pro keys stay in local `.env` (gitignored) or nowhere.
+4. **Do not scrape** a delayed dashboard (UW free, Theta delayed EOD) to impersonate a paid or live API.
+5. **Do not “unlock” wallets, bridges, or entity labels** without a verified free source. Alchemy free tier does not count.
 
 Adapter issue template: label **FREE / FREE-TIER / PAID / DARK** and a capability category. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -126,12 +158,12 @@ Until an adapter + mock exists *and* (for gated rows) a read-only key exists in 
 
 | DARK item | Typical vendor / why | Public stance |
 | --- | --- | --- |
-| **Bridge netflow** | DefiLlama **Pro** | Free Llama is chain stables + TVL + DEX vol only ([FLOW.md](FLOW.md)) |
-| **Labeled wallets** | GMGN, Helius, Birdeye (also Nansen, Arkham) | Wallet rung of FLOW stays DARK |
+| **Labeled wallets / entity labels** | Nansen, Arkham, GMGN, Helius keyed, UW API | **DARK** until a *verified free* source exists. Alchemy free tier ≠ labels |
+| **Bridge netflow** | DefiLlama **Pro** | Free Llama is chain stables + TVL + DEX vol only ([FLOW.md](FLOW.md)). **DARK** without verified free |
 | **CEX entity flow** | CryptoQuant, Glassnode **unpaid** | No implied exchange whales |
-| **Unusual Whales API** | Bearer-keyed crypto whales / OHLC | Delayed free dashboard ≠ API; **DARK** without key |
-| **Funding / OI** | Not in the FREE stack; Coinglass Pro is wishlist | **DARK** until a named FREE or keyed adapter exists |
-| **Theta Data as crypto** | US stocks/options/indices only | Never a crypto tape. Equity sidecar **FREE-TIER** EOD only |
+| **Unusual Whales API** | **PAID + Bearer only** | Delayed free dashboard ≠ API; **DARK** without key |
+| **Funding / OI (in Helix now)** | Not wired; Binance/Bybit/Hyperliquid are Top-to-add | **DARK** until adapter + mock; 451/403 = DARK |
+| **Theta Data as crypto** | US stocks/options/indices only | Never a crypto tape. **FREE-TIER ~1y EOD delayed**; **intraday/Greeks PAID** |
 | **X auto-post** | Twitter/X posting API | Off. No community bot |
 | **WordPress publish** | Live CMS / application passwords | Draft-only future; not in this repo |
 
@@ -163,12 +195,12 @@ If a pair or topic is absent from these sources, the honest output is **not list
 
 Bring-your-own **read-only research** key in a **private** environment. Do not commit the key. Do not ask maintainers to paste theirs. If the key can swap, withdraw, or post, it does not belong here.
 
-Theta Data’s ~30d EOD options window is **FREE-TIER** and **not crypto** — listed here so it is not filed as a Coinbase-class FREE tape.
+Theta Data is **not crypto**. **FREE-TIER:** about **one year of delayed EOD** equity/options. **PAID:** intraday and Greeks. Listed here so it is not filed as a Coinbase- or Deribit-class FREE tape.
 
 | Source | What it unlocks |
 | --- | --- |
-| **Unusual Whales API** | Crypto whale prints and OHLC — **Bearer key** in a private env. Delayed free dashboard is **not** this unlock |
-| **Theta Data** | US stocks / options / indices EOD (free window ~30d options). **Not crypto.** Equity sidecar only |
+| **Unusual Whales API** | Crypto whale prints and OHLC — **PAID + Bearer only**. Delayed free dashboard is **not** this unlock |
+| **Theta Data** | Equity/options/indices. **~1y EOD delayed FREE-TIER**; **intraday/Greeks PAID**. **Not crypto** |
 | **Coinglass Pro** | Perp funding, OI, liquidation aggregates — unpaid = **DARK** |
 | **DefiLlama Pro** | Bridge netflow and other Pro-only FLOW — still DARK on the free bench |
 | **Helius** | Solana RPC / richer on-chain reads — wallet-level *possibility* when a **read-only** key exists |
@@ -194,8 +226,9 @@ Do not fill these with fiction. The standing list above plus:
 - Synthetic OHLCV used as if it printed
 - Bridge netflow inferred from TVL
 - Unusual Whales treated as a free Coinbase replacement
-- Theta Data bars used on a crypto FLOW rung
-- Funding/OI invented from spot tape
+- Theta Data bars used on a crypto FLOW rung (or as Deribit)
+- Funding/OI invented from spot tape or filled in after a 451/403
+- Wallet, bridge, or entity labels inferred from Alchemy, TVL, or a screener
 
 Unknown is a first-class state. **DARK** is more useful than a pretty chart.
 
@@ -248,7 +281,9 @@ HELIUS_API_KEY=        # optional / paid / read-only
 DEFILLAMA_PRO_KEY=     # optional; bridge netflow stays DARK if blank
 GMGN_API_KEY=          # optional; labeled wallets stay DARK if blank
 UNUSUAL_WHALES_API_KEY=  # optional Bearer in private env; delayed dashboard ≠ this
-THETA_DATA_API_KEY=    # optional; equity sidecar EOD only — not crypto
+THETA_DATA_API_KEY=    # optional; ~1y EOD delayed equity sidecar — not crypto; Greeks paid
+ALCHEMY_API_KEY=       # optional free-tier RPC; not labels
+FRED_API_KEY=          # optional free-tier macro sidecar
 COINGLASS_API_KEY=     # optional; funding/OI stays DARK if blank
 # do not add swap, trading, X, or WordPress secrets — not even blank "for later"
 ```

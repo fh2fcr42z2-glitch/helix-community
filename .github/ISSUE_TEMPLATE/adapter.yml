@@ -46,7 +46,7 @@ body:
       label: Scout class
       options:
         - FREE (public / keyless)
-        - FREE-TIER (delayed, demo key, or short EOD window — not a firehose)
+        - FREE-TIER (delayed dashboard, demo/RPC key, ~1y EOD, or geo-limited — not a firehose)
         - PAID (private read-only key; DARK in this repo)
         - DARK (do not invent)
     validations:
