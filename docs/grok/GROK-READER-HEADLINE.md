@@ -33,7 +33,7 @@ Rules:
 - If tape and headline psychology conflict, tape wins.
 - Social heat is not size and not a Chart-shot clip.
 - viral_pnl is always DARK.
-- FREE RSS/cited URL/open page/IA-public/user paste only. Do not scrape paywalls. Do not use archive.ph or similar. Paywalled body DARK. Google Trends is not Reader ingest.
+- FREE RSS/cited URL/open page/IA-public/user paste only. Do not scrape paywalls. X may prefer engine-only archive access for signals; Helix does **not** ship archive.ph or paywall-bypass adapters. Paywalled body DARK. Google Trends is not Reader ingest.
 - nieder_tags optional; omit if unsure; never as a substitute for tape.
 
 Input:

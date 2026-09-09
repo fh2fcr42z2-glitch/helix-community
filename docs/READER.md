@@ -104,7 +104,9 @@ How a lede is allowed onto the desk. **No automated paywall bypass.**
 | **IA-public** — Internet Archive captures of **already-public** pages | Using IA or a mirror to fetch a **paywalled body** the free bench cannot read |
 | **User paste** — a human pastes a headline they actually saw, with source + as-of (+ URL if they have one) | Reconstructing a lede from memory, a vibe, or “typical CoinDesk” |
 
-**Paywalled body = DARK.** Title-class RSS is still ingestible. The gated article text is not Observed, not Corroborated, and not a Writer claim until a license-clean open source exists. Do not run a bot at archive.ph (or similar) to “complete” Reader JSON.
+**Paywalled body = DARK.** Title-class RSS is still ingestible. The gated article text is not Observed, not Corroborated, and not a Writer claim until a license-clean open source exists.
+
+**X prefers engine-only archive access for signals** — if a historical **already-public** page is needed, use a Helix engine / **IA-public** path, not a scrape. That preference is **not** a bypass grant. Helix **does not ship** `archive.ph`, 12ft, outline.com, or any paywall-bypass adapter (not this repo, not a Scout PASS, not a LIVE CX ingest). Do not run a bot at archive.ph (or similar) to “complete” Reader JSON. **Paywalled body stays DARK.**
 
 A Nitter URL, a stolen cookie, or a paywall-bypass screenshot in a cowork note is a scrap, not a LIVE adapter.
 
@@ -255,7 +257,7 @@ Omit the tag if unsure. **Unknown → no tag**, not a guessed `nieder_*`. These 
 | **Social heat ≠ size** | Loud ≠ clip, fill, Kelly, or `fee_income` |
 | **Tape over psychology** | Conflicting FOMO/fear does not override a real bar |
 | **FREE RSS first** | Do not scrape a paywall; do not treat Nitter / HTML steal as PASS |
-| **No paywall bypass** | No automated **archive.ph** (or similar). Paywalled body stays **DARK**. User paste of a seen title is not a bypass |
+| **No paywall bypass** | Helix **does not ship** `archive.ph` / paywall-bypass adapters. X’s engine-only archive preference ≠ a scrape grant. Paywalled body stays **DARK**. User paste of a seen title is not a bypass |
 | **No book excerpts** | Niederhoffer **titles** only. No copyrighted chapters, quotes, or tables |
 | **No auto-post** | Reader does not tweet. Writer does not auto-post. Read ≠ publish |
 | **No secrets** | No Bearer tokens, cookies, CSE keys, or MCP tokens in this repo |
@@ -275,6 +277,7 @@ A bay that cannot show DARK, rhetoric flags, and tape-check status is not ready.
 - To paste copyrighted excerpts from *The Education of a Speculator* or *Practical Speculation*.
 - That `nieder_*` themes override tape or counts.
 - To fetch a paywalled body via **archive.ph** (or similar) so JSON looks complete.
+- That X preferring **engine-only** archive access means Helix ships an archive.ph or paywall-bypass adapter. It does **not**. Paywalled body stays DARK.
 - To invent a second venture-nature pack because the meme pack exists.
 - That World Monitor / X API / CSE is LIVE without a private key + adapter.
 - Secrets, cookies, or private helix-cx paths.
