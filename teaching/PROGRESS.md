@@ -7,7 +7,7 @@ Plan: [docs/LEARNING-PATH.md](../docs/LEARNING-PATH.md).
 | --- | --- |
 | **Milestone** | Phase 2 FLOW + Scout catalog — **PASS** (session 2) |
 | **Next** | Phase 3 NOTE + five forces |
-| **Checkpoint** | Fictional NOTE skeleton: FLOW, three legs, kill switches, DARK list, invalidation. World Monitor DARK. No auto-post. |
+| **Checkpoint** | Fictional NOTE skeleton: FLOW, three legs, kill switches, DARK list, invalidation. World Monitor DARK. No auto-post. Core later remains [CORE-FIT.md](../docs/CORE-FIT.md) — not this phase. |
 | **Pace** | One scored phase per session file. Session 1 and 2 landed the same day to start the loop. |
 | **Blocked by** | Nothing named. Binance **adapter** deferred (mocks later). Paid APIs stay DARK. |
 

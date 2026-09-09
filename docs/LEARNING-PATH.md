@@ -85,13 +85,15 @@ Do not add a ninth core doc to this list without dropping one.
 
 **Checkpoint:** no Helix-held keys. Viral PnL DARK.
 
-### 8. Ship a public-safe PR
+### 8. Ship a public-safe PR, then core later
 
-**Outcome:** one docs (or mocked adapter) PR against `main`.
+**Outcome:** one docs (or mocked adapter) PR against community `main`. **Core implementation** is a later helix-cx **PR #1** job against [CORE-FIT.md](./CORE-FIT.md) — not this tree.
 
-**Practice:** contract markdown + STATUS row + README link. Fetch `origin/main` first.
+**Practice:** contract markdown + STATUS row + README link + Grok pack if the surface is CX. Fetch `origin/main` first.
 
-**Checkpoint:** checklist in `.github/PULL_REQUEST_TEMPLATE.md` is honest. No helix-cx dump.
+**Checkpoint:** checklist in `.github/PULL_REQUEST_TEMPLATE.md` is honest. No helix-cx dump. Do not tell Grok the community merge *is* the desk.
+
+Grok copy-paste when implementing CX: [GROK-CORE-FIT.md](./grok/GROK-CORE-FIT.md) · Trench: [GROK-TRENCH-NARRATIVE.md](./grok/GROK-TRENCH-NARRATIVE.md).
 
 ## Rubric (use with `run-learning-retrospective`)
 

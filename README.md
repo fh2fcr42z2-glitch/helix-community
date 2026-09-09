@@ -33,6 +33,8 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 ## Read the docs
 
 - [STATUS.md](docs/STATUS.md) — Grok: current LIVE/DARK truth (read first)
+- [CORE-FIT.md](docs/CORE-FIT.md) — Grok later: public contracts → helix-cx PR #1 (not this repo’s code)
+- [GROK-PROMPTS.md](docs/GROK-PROMPTS.md) — Grok copy-paste packs (core fit + Trench + Reader + MM + …)
 - [RESEARCH-LOOP.md](docs/RESEARCH-LOOP.md) — six-stage quant cycle for Helix (process only)
 - [ENGINE-FLOW.md](docs/ENGINE-FLOW.md) — anti-clog promotion path (idea → cowork → Scout flag → CoS PR → Fleet)
 - [TECHNICAL-ANALYSIS.md](docs/TECHNICAL-ANALYSIS.md) — TA specialist + Chart shots (critique PASS; readable cards; five-force spine; sidecar JSON; no invented levels; no fake charts; no orders)
@@ -49,7 +51,6 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 - [LEARNING-PATH.md](docs/LEARNING-PATH.md) — teaching skill: Helix desk onboarding (phases + rubric; no secrets)
 - [teaching/](teaching/) — live teaching loop (sessions + PROGRESS; next = NOTE skeleton)
 - [AGENTS.md](AGENTS.md) — continual-learning memory (public-safe bullets only)
-- [GROK-PROMPTS.md](docs/GROK-PROMPTS.md) — Grok copy-paste packs
 - [QUANT-CONFIDENCE.md](docs/QUANT-CONFIDENCE.md) · [RISK-GATES.md](docs/RISK-GATES.md) · [FLEET-OS.md](docs/FLEET-OS.md)
 
 | Doc | What it covers |
@@ -60,6 +61,8 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 | [FLOW](docs/FLOW.md) | Chain → DEX → token → wallets DARK; kill switches |
 | [Alpha Writer NOTE](docs/ALPHA-WRITER.md) | Evidence-gated pipeline; no auto-post; WordPress draft-only future |
 | [Helix Reader](docs/READER.md) | Upstream of Alpha Writer: headline ingest → five forces → rhetoric/myth filter → tape check → READER JSON; tape over psychology; FREE RSS first; Grok pack [GROK-READER-HEADLINE.md](docs/grok/GROK-READER-HEADLINE.md) |
+| [Trench Narrative](docs/TRENCH-NARRATIVE.md) | Chatter/headline **display**; same desk chrome; RSS first; pack [GROK-TRENCH-NARRATIVE.md](docs/grok/GROK-TRENCH-NARRATIVE.md) |
+| [Core fit](docs/CORE-FIT.md) | Grok later: community contract → helix-cx PR #1; pack [GROK-CORE-FIT.md](docs/grok/GROK-CORE-FIT.md) |
 | [Five-force lens](docs/ALPHA-FIVE-FORCES.md) | Dalio five-force **tags** for NOTEs, Reader, and Chart bot; DARK if unclear; evidence required; World Monitor MCP future Pro/API; Grok pack [GROK-ALPHA-FIVE-FORCES.md](docs/grok/GROK-ALPHA-FIVE-FORCES.md) |
 | [Sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) | **Living Free Market Data Scout** catalog — FREE in Helix now vs Top-to-add, DARK list, GitHub shells; **no credentials** |
 | [Data and memory](docs/DATA-AND-MEMORY.md) | Flexible layers (agent/project memory, INVENTORY, cowork notes, SQL warehouse, Parquet cold); SQL/prompt discipline — DARK>invention, no secrets |

@@ -6,7 +6,7 @@
 
 | Piece | Truth |
 |---|---|
-| Public docs (this repo `main`) | LIVE — PoR/OFAC (+Binance sample), five-forces, data/memory, crew, research loop, Market Maker, quant/risk/fleet, TA / Chart shots / Chart bot / engine flow, wallet login, PnL honesty, Trench Narrative, **Reader**, **Grok prompt packs**, ta-learning contract (empty log), **AGENTS.md** + learning path |
+| Public docs (this repo `main`) | LIVE — PoR/OFAC (+Binance sample), five-forces, data/memory, crew, research loop, Market Maker, quant/risk/fleet, TA / Chart shots / Chart bot / engine flow, wallet login, PnL honesty, Trench Narrative, **Reader**, **Grok prompt packs** (incl. core fit + Trench), **CORE-FIT**, ta-learning contract (empty log), **AGENTS.md** + teaching loop |
 | Private `helix-cx` GitHub `main` | Hull / early stub — **not** the Fleet preview |
 | Private `helix-cx` PR #1 | Paper desk + Fleet OS work in flight — merge only when Call Me X says |
 | Execution | paper · `liveOrders` false · no unsupervised live orders |
@@ -21,7 +21,8 @@
 | Chart bot | readable annotations + five-force spine · learning via ta-learning retros · CX tab on PR #1 · [CHART-BOT.md](./CHART-BOT.md) · log [`ta-learning/PATTERN-EDGE-LOG.md`](../ta-learning/PATTERN-EDGE-LOG.md) (empty — no fabricated edges) |
 | Wallet login | wiring on helix-cx PR #1 · connect+DEX view · HYPE DARK · no key custody |
 | PnL panel | wiring on helix-cx PR #1 · Coinbase+wallets · viral PnL DARK · no fabricated totals |
-| Trench Narrative | wiring on helix-cx PR #1 · RSS free first · X API paid for scale · social heat ≠ size |
+| Trench Narrative | wiring on helix-cx PR #1 · RSS free first · X API paid for scale · social heat ≠ size · contract [TRENCH-NARRATIVE.md](./TRENCH-NARRATIVE.md) · pack [GROK-TRENCH-NARRATIVE.md](./grok/GROK-TRENCH-NARRATIVE.md) |
+| Core fit | public contract → later CX PR #1 · Grok reads community `main` · [CORE-FIT.md](./CORE-FIT.md) · pack [GROK-CORE-FIT.md](./grok/GROK-CORE-FIT.md) · teaching PASS ≠ CX LIVE |
 | Reader | doctrine + CX bay on PR #1 · five-force + myth filter · FREE ingest map · Alpha handoff · open ingest (X engine-only archive pref; Helix **does not ship** archive.ph) · `nieder_*` themes (titles only) · Grok republish **not before** 2026-09-14 |
 | Agent learning | continual-learning → [AGENTS.md](../AGENTS.md) · teaching loop [`teaching/`](../teaching/) (Phase 2 PASS; next NOTE skeleton) · plan [LEARNING-PATH.md](./LEARNING-PATH.md) · Chart bot stays in [`ta-learning/`](../ta-learning/) · no secrets |
 
@@ -33,6 +34,7 @@
 5. Launchpad nature (mass mint / skip-as-edge) ≠ MM fee-vault loop — [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md). Unverified bot PnL stays DARK.
 6. TA critique pack lives on the desk box (`helix-cowork` briefs/notes — **may be unmounted**). Chart shots live under `helix-cowork/chart-shots/` (**may be unmounted** — do not invent PNGs or overlays). Public contract: [CHART-BOT.md](./CHART-BOT.md) + [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) + [PATTERN-SETUPS.md](./PATTERN-SETUPS.md). Do not invent the pack file. Pins: pivot **N=2**, VWAP **UTC day**, ATR **pack defaults**, **BOS alone ≠ confluent**. Missing sidecar → DARK metadata. Guest candles+volume = **sketch**, never `setup`/`confluent`. Readable cards need **levels**, **invalidation**, **thesis_blurb**. Unclear macro → **DARK**. Learning is file-based (`ta-learning/` + PATTERN-EDGE-LOG), not silent weights. Viral PnL is never a training label.
 7. **Reader** judges cited headlines only — ingest → five forces → myth filter → tape check → JSON, then Alpha Writer. **FREE ingest map** + **Alpha handoff rules** + **open ingest** (no archive.ph; paywalled body DARK) live on [READER.md](./READER.md) (Cowork fold; desk notes may be unmounted). **No fake headlines.** Tape and counts win vs psychology and vs `nieder_*` themes. Social heat ≠ size. Viral PnL DARK. CX bay on PR #1. **Grok republish not before 2026-09-14**; this STATUS on `main` is live now.
+8. **Core later:** Grok implements desk code on helix-cx **PR #1** against [CORE-FIT.md](./CORE-FIT.md). Teaching PASS and community merges do **not** mark a CX tab LIVE.
 
 ## Canonical docs on this `main`
 - [CREW-HANDOFF.md](./CREW-HANDOFF.md) — one job per lane, veto/don’t-chase gates
@@ -51,6 +53,7 @@
 - [PNL.md](./PNL.md) — cross-source PnL (Coinbase + wallets + optional MM fee_income, labeled separate); incomplete badge; viral PnL DARK
 - [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md) — launchpad nature vs MM (skip-as-edge; bot PnL DARK)
 - [TRENCH-NARRATIVE.md](./TRENCH-NARRATIVE.md) — Trench hull = desk chrome; Narrative panel (posts/headlines); RSS free first; X API paid; social heat ≠ clip/size; no invented tweets
+- [CORE-FIT.md](./CORE-FIT.md) — Grok: community contract → helix-cx PR #1 later; teaching ≠ CX LIVE
 - [READER.md](./READER.md) — headline ingest → five forces → rhetoric/myth filter → tape check → READER JSON; FREE ingest map; Alpha handoff rules; optional `nieder_*` themes (no book excerpts); upstream of Alpha Writer; CX bay on PR #1; no fake headlines
 - [LEARNING-PATH.md](./LEARNING-PATH.md) — teaching skill: desk onboarding phases + rubric (not ta-learning weights)
 - [`teaching/`](../teaching/) — file-based teaching sessions + [PROGRESS](../teaching/PROGRESS.md) (Phase 2 PASS; next NOTE skeleton)
@@ -58,5 +61,5 @@
 - [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) — R/Python/math confidence pack
 - [RISK-GATES.md](./RISK-GATES.md) — walk-forward / DSR / Kelly (paper)
 - [FLEET-OS.md](./FLEET-OS.md) — Ops Ridge REAL vs DARK
-- [GROK-PROMPTS.md](./GROK-PROMPTS.md) — copy-paste Grok packs (`docs/grok/`)
+- [GROK-PROMPTS.md](./GROK-PROMPTS.md) — copy-paste Grok packs (`docs/grok/`) including **core fit** + Trench
 - [SENSITIVE-INTEGRATIONS.md](./SENSITIVE-INTEGRATIONS.md)

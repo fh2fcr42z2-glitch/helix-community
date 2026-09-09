@@ -27,3 +27,4 @@ Public-safe agent memory. **No secrets.** Live desk truth is [docs/STATUS.md](do
 - Wallet login is SIWS/SIWE view-only. Helix never holds keys.
 - Grok republish of Reader packs is not before 2026-09-14; STATUS on `main` is live now.
 - Continual-learning skill + `agents-memory-updater` own this file. Teaching loop: [docs/LEARNING-PATH.md](docs/LEARNING-PATH.md) and `teaching/` (file sessions). Cadence state is gitignored under `.cursor/hooks/state/`.
+- Grok implements CX later from [docs/CORE-FIT.md](docs/CORE-FIT.md) on helix-cx PR #1; community `main` is the contract, not the core binary.

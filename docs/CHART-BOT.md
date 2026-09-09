@@ -56,4 +56,4 @@ Not silent weight magic. After a thesis resolves, file a retro. Append PATTERN-E
 - Call BOS alone `confluent`.
 - Train on influencer / Discord / bot PnL.
 
-Sleeves: **SOL / ETH** primary. **HYPE** DARK until a mocked adapter. Critique pins stay frozen (pivot N=2, VWAP UTC day, ATR pack defaults).
+Sleeves: **SOL / ETH** primary. **HYPE** DARK until a mocked adapter. Critique pins stay frozen (pivot N=2, VWAP UTC day, ATR pack defaults). CX tab later: [CORE-FIT.md](./CORE-FIT.md).

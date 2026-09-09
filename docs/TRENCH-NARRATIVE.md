@@ -110,6 +110,16 @@ Do **not** add X posting tokens, WordPress passwords, or scrape-session cookies 
 - To invent tweets, follower counts, verified badges, viral PnL, or headlines for Reader.
 - Secrets, cookies, or private helix-cx paths.
 
-Headlines that need a force tag, myth filter, and tape check: [READER.md](./READER.md).
+Headlines that need a force tag, myth filter, and tape check: [READER.md](./READER.md). Grok packs: [GROK-TRENCH-NARRATIVE.md](./grok/GROK-TRENCH-NARRATIVE.md) · [GROK-CORE-FIT.md](./grok/GROK-CORE-FIT.md). Later CX hull: [CORE-FIT.md](./CORE-FIT.md) (helix-cx PR #1; this file is the contract, not the client).
 
-Paper-only language for research. Not financial advice. Not a broker.
+## Core later (helix-cx PR #1)
+
+This markdown is what Grok implements **later in the core**. Do not copy CX here.
+
+| Later in CX | Stays community |
+| --- | --- |
+| Trench hull + Narrative panel, same desk chrome | This contract + Grok pack |
+| `Chatter` adapters (RSS first; X API when keyed) | Scout catalog class; mocks |
+| DARK stamps on 401/429/451/empty | Teaching sessions in `teaching/` |
+
+Acceptance: [CORE-FIT.md](./CORE-FIT.md) checklist. Teaching PASS does not mark this panel LIVE.

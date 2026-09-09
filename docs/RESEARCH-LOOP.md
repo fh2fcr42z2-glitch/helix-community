@@ -19,4 +19,4 @@ Inspiration: public writeups on the quant cycle (e.g. @antpalkin).
 - Do not import third-party SaaS as required deps from a tweet; map ideas onto Helix CX + FREE sources first.
 
 ## Fit with crew handoff
-Crew gates (liquidity veto, freshness, don’t-chase, one brief) sit **inside** stages 1 and 4 prep. See [CREW-HANDOFF.md](./CREW-HANDOFF.md). Artifact promotion (idea → cowork note → Scout INVENTORY flag → CoS Cloud Agent PR → warehouse/Fleet) is [ENGINE-FLOW.md](./ENGINE-FLOW.md) — skip/veto first-class; Grok reads community `main` only.
+Crew gates (liquidity veto, freshness, don’t-chase, one brief) sit **inside** stages 1 and 4 prep. See [CREW-HANDOFF.md](./CREW-HANDOFF.md). Artifact promotion (idea → cowork note → Scout INVENTORY flag → CoS Cloud Agent PR → warehouse/Fleet) is [ENGINE-FLOW.md](./ENGINE-FLOW.md) — skip/veto first-class; Grok reads community `main` only. **Code in the core** later is helix-cx PR #1 against [CORE-FIT.md](./CORE-FIT.md); a community docs PR is not that merge.

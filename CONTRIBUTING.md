@@ -17,12 +17,12 @@ If you only read one other file, read [docs/SENSITIVE-INTEGRATIONS.md](docs/SENS
 | **Paper idea** | Three legs + FLOW rung + invalidation + DARK list | “Buy this,” live sizing, guaranteed edge, auto-post |
 | **SQL / memory** | Warehouse/ETL/gate tests with mocks; DARK rows; no secrets | Invented bars in SQL; prompt dumps; keys in Parquet metadata |
 
-Architecture names live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). FLOW, Reader, and NOTE: [docs/FLOW.md](docs/FLOW.md), [docs/READER.md](docs/READER.md), [docs/ALPHA-WRITER.md](docs/ALPHA-WRITER.md), [docs/ALPHA-FIVE-FORCES.md](docs/ALPHA-FIVE-FORCES.md). Chart bot: [docs/CHART-BOT.md](docs/CHART-BOT.md), [docs/TECHNICAL-ANALYSIS.md](docs/TECHNICAL-ANALYSIS.md). Scout catalog: [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md). Memory layers: [docs/DATA-AND-MEMORY.md](docs/DATA-AND-MEMORY.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
+Architecture names live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). FLOW, Reader, Trench, and NOTE: [docs/FLOW.md](docs/FLOW.md), [docs/READER.md](docs/READER.md), [docs/TRENCH-NARRATIVE.md](docs/TRENCH-NARRATIVE.md), [docs/ALPHA-WRITER.md](docs/ALPHA-WRITER.md), [docs/ALPHA-FIVE-FORCES.md](docs/ALPHA-FIVE-FORCES.md). Chart bot: [docs/CHART-BOT.md](docs/CHART-BOT.md), [docs/TECHNICAL-ANALYSIS.md](docs/TECHNICAL-ANALYSIS.md). Scout catalog: [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md). Memory layers: [docs/DATA-AND-MEMORY.md](docs/DATA-AND-MEMORY.md). Grok later in core: [docs/CORE-FIT.md](docs/CORE-FIT.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
 
 ## How to propose an adapter
 
 1. **Open an issue** with the Adapter template (or a short issue titled `adapter: <vendor> → <port>`).
-2. State the **port**: `Tape`, `SearchInterest`, `Chatter`, `ChainFlow`, `DexVolume`, `TokenBoard`, or a gated read-only port (`WalletIdentity`, `CexFlow`, `WhaleFlow`, `FundingOI`, `OptionsEod`). There is no community `Swap` / `CreateOrder` port.
+2. State the **port**: `Tape`, `SearchInterest`, `Chatter`, `ChainFlow`, `DexVolume`, `TokenBoard`, or a gated read-only port (`WalletIdentity`, `CexFlow`, `WhaleFlow`, `FundingOI`, `OptionsEod`). There is no community `Swap` / `CreateOrder` port. Trench chatter FREE-first paths: [docs/TRENCH-NARRATIVE.md](docs/TRENCH-NARRATIVE.md).
 3. State the **Scout class**: `FREE`, `FREE-TIER`, `PAID`, or `DARK`, plus a capability category (spot/perp tape, on-chain TVL/DEX, funding/OI, whale/flow, options/greeks, sentiment).
 4. State **DARK behavior** when the key is missing, the pair is missing, or the vendor 429s.
 5. Wait for a maintainer or another contributor to say the port shape is right — then PR.
