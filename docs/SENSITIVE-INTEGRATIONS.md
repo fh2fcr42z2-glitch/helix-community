@@ -142,6 +142,7 @@ Paid *or* public-but-unwired. Unpaid/unverified = **DARK**. Swap/trading connect
 | **PoR seeds** | Public Proof-of-Reserves attestations as context — not labeled wallets |
 | **OFAC seeds** | Public SDN (and similar) as a research seed — not a live compliance engine, not smart money |
 | **Alchemy `eth_call` only** | FREE-TIER read-only calls — never send, never treat as labels |
+| **World Monitor MCP** | Future optional evidence substrate for five-force tags — **Pro/API**, DARK unpaid; never paste MCP tokens |
 
 ### How the community helps the Scout
 

@@ -63,7 +63,7 @@ A thesis names all three, plus a DARK list for what you could not observe. Full 
   </article>
   <article>
     <h2>Alpha Writer</h2>
-    <p>Evidence-gated NOTE. No X auto-post. WordPress draft-only future.</p>
+    <p>Evidence-gated NOTE. Optional five-force tags; DARK if unclear. No X auto-post.</p>
   </article>
 </div>
 
@@ -73,7 +73,7 @@ Roles (Scout, Researcher, Market Ops, Sentinel, Alpha Writer, and the rest) are 
 
 Crypto-first CX climbs **chain → DEX → token** on free DefiLlama + screener data. Wallets stay DARK until a read-only research key exists privately. Kill switches (stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX liquidity) halt *promotion*, not live orders.
 
-A NOTE is assembled only after Scout → Researcher → Market Ops. Claims carry verification levels. **No auto-post.**
+A NOTE is assembled only after Scout → Researcher → Market Ops. Claims carry verification levels. Optional [five-force tags]({{ '/forces/' | relative_url }}) need evidence; unclear force = **DARK**. **No auto-post.**
 
 ## What is gated (and why that helps you)
 

@@ -33,13 +33,13 @@ Parquet cold        replay / walk-forward
 | **Agent memory** | What did *this* agent pass just learn? | Ephemeral working context: last FLOW rung, open DARK list, next mock to write | Keys, Bearer tokens, private helix-cx paths, live-order intent |
 | **Project memory** | What should the *desk* still know next week? | Durable public-safe facts: ports, kill-switch defaults, “FREE in Helix now” | Secrets, unpublished P&L, Grok transcripts |
 | **INVENTORY** | What sources exist, and how are they classed? | Living Scout catalog: FREE / FREE-TIER / PAID / DARK, Top-to-add | Pretending Top-to-add is wired; vendor passwords |
-| **Cowork notes** | What did a human and an agent decide together? | Research scraps, NOTE drafts, “we tripped stale BTC” | Pasted `.env`, private chat dumps, wallet seeds |
+| **Cowork notes** | What did a human and an agent decide together? | Research scraps, NOTE drafts, optional force tags (`force:DARK` if unclear), “we tripped stale BTC” | Pasted `.env`, private chat dumps, wallet seeds, World Monitor tokens |
 | **SQL warehouse** | What can we *query* without lying? | Quality-gated facts: venue, timestamp, class, DARK flags. **DuckDB off-by-default** | Invented bars, unlabeled synthetics, connection strings in git, always-on warehouse in CI |
 | **Parquet cold** | What can we *replay* later? | Sealed historical files for walk-forward / Lab | Hot secrets, a second silent tape that disagrees with SQL |
 
 **INVENTORY** is the Scout’s living list — the public snapshot is [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md). Memory does not get to override a DARK class because a NOTE sounded better.
 
-**Cowork notes** are how agents and humans leave a trail (Scout findings, egress 451s, “PoR page was 404”). They are not a license to paste Grok threads or helix-cx internals into this repo. When cowork learns a class, **patch INVENTORY in the same PR** so these two docs do not lag.
+**Cowork notes** are how agents and humans leave a trail (Scout findings, egress 451s, “PoR page was 404”). They are not a license to paste Grok threads or helix-cx internals into this repo. When cowork learns a class, **patch INVENTORY in the same PR** so these two docs do not lag. Optional five-force tags on NOTE drafts: [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md) — **DARK if unclear**, no World Monitor tokens.
 
 **SQL warehouse (DuckDB or similar) is off-by-default.** A contributor must opt in locally. Default-off means CI and fresh clones do not silently persist a warehouse. When on: still no secrets, still DARK>invention, still paper-only.
 

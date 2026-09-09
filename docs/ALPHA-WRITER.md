@@ -62,6 +62,7 @@ Do not invent extra levels (“alpha confirmed”, “high conviction”) that s
 5. **DARK list** — including the standing public list (bridge netflow, labeled wallets, unpaid CEX entity flow, X auto-post, WordPress live publish).
 6. **Paper action** — watch, hypothetical book, or explicit do-not-enter. Never a live instruction.
 7. **Invalidation** — what would make the NOTE wrong.
+8. **Force tags (optional)** — Dalio five-force lens; **DARK if unclear**; each tag needs evidence. See [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md).
 
 If a draft is missing (4) or (5), it is not a NOTE yet. It is a Scout scrap.
 

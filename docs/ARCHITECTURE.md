@@ -110,7 +110,7 @@ The permanent execution gate. **Sentinel’s job is to keep Helix paper-first**,
 
 ### Alpha Writer
 
-Publishes after the cycle, not during it. Output is a **NOTE**: FLOW rung, claims with verification levels, kill-switch status, DARK list, paper action. Audience is other researchers. **No auto-post** to X. WordPress is draft-only future. Not a blast of tickers. Full page: [ALPHA-WRITER.md](ALPHA-WRITER.md).
+Publishes after the cycle, not during it. Output is a **NOTE**: FLOW rung, claims with verification levels, kill-switch status, DARK list, paper action, optional five-force tags (**DARK if unclear**; evidence required). Audience is other researchers. **No auto-post** to X. WordPress is draft-only future. Not a blast of tickers. Full page: [ALPHA-WRITER.md](ALPHA-WRITER.md). Lens: [ALPHA-FIVE-FORCES.md](ALPHA-FIVE-FORCES.md).
 
 ### Fleet / Lab *(future)*
 
