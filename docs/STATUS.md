@@ -16,7 +16,7 @@
 | Five-force tags | default DARK until evidence assigns a force |
 | Risk gates | library present, flag off · never a live go-ahead by itself |
 | World Monitor | DARK without a key |
-| Market Maker | paper design LIVE in docs · gate checklist + journal schema clarified · CX paper loop in flight · live DARK until X approval |
+| Market Maker | paper design · gate checklist clarified · CX paper loop · live DARK until X approval |
 
 ## Rules that stop confusion
 1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, or PnL.
