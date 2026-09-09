@@ -18,9 +18,11 @@
 | World Monitor | DARK without a key |
 | Market Maker | LIVE authorized (X 2026-09-09) · fee_income only · principal locked · venue DARK blocks · **SOL primary · ETH try-now · HYPE DARK until adapter** · Scout 2026-09-09: **Phoenix SOL CLOB PASS · ETH CEX+gas PASS · HYPE HL WARN** · CX wiring on PR #1 |
 | Technical Analysis | TA critique **PASS**; first SOL/ETH Chart shot pack on desk (4 shots: SOL/ETH × 1h/4h) · all `setup_grade` **sketch** (TradingView guest = candles+volume only; SuperTrend/%B/RSI/VWAP **DARK**) · not `setup`/`confluent` · **HYPE** still DARK · CX Chart shots tab still wiring on helix-cx PR #1 · contract [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) · files `helix-cowork/chart-shots/` (**may be unmounted**) |
+| Wallet login | wiring on helix-cx PR #1 · connect+DEX view · HYPE DARK · no key custody |
+| PnL panel | wiring on helix-cx PR #1 · Coinbase+wallets · viral PnL DARK · no fabricated totals |
 
 ## Rules that stop confusion
-1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, or PnL.
+1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, PnL, or balances.
 2. Viral trading posts are **inspiration for process**, not Helix performance evidence.
 3. Prepare ≠ execute. Live money needs **explicit human approval** — MM tickets were authorized by X on 2026-09-09 (journal `approval_ref`; `needs_human_approval=false` for that path).
 4. If a PR is open and `main` is behind, say so once, then use **this STATUS** and community docs — don’t loop on “not merged” as if the desk doesn’t exist.
@@ -38,6 +40,8 @@
 - [RESEARCH-LOOP.md](./RESEARCH-LOOP.md) — research→code→backtest→live→post-mortem→fine-tune (Helix version)
 - [MARKET-MAKER.md](./MARKET-MAKER.md) — LIVE-authorized fee-vault rotate loop (X 2026-09-09; principal locked)
 - [MM-SOL-ETH-HYPE.md](./MM-SOL-ETH-HYPE.md) — multi-sleeve desk map (SOL primary · ETH try-now · HYPE DARK until adapter) · Scout venue grades 2026-09-09 (no invented depth)
+- [WALLET-LOGIN.md](./WALLET-LOGIN.md) — SIWS/SIWE connect; propose→popup; DEX panel real-or-DARK; no key custody
+- [PNL.md](./PNL.md) — cross-source PnL (Coinbase + wallets + optional MM fee_income, labeled separate); incomplete badge; viral PnL DARK
 - [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md) — launchpad nature vs MM (skip-as-edge; bot PnL DARK)
 - [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) — R/Python/math confidence pack
 - [RISK-GATES.md](./RISK-GATES.md) — walk-forward / DSR / Kelly (paper)
