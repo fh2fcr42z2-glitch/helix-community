@@ -52,7 +52,7 @@ Every catalog row belongs to one (or more) of these. Crypto-first CX does not ow
 | **Funding / OI** | Perp funding, open interest, liquidations | **DARK in Helix now.** Public perp venues are Top-to-add; Coinglass Pro is wishlist **PAID** |
 | **Whale / flow** | Labeled wallets, CEX entity flow, “unusual” prints | **DARK** without a *verified free* source. UW API is **PAID**+Bearer |
 | **Options / greeks** | Options prints and greeks | **Deribit public** = crypto options **Top-to-add**. **Theta Data** = equity sidecar, **not crypto** (FREE-TIER delayed EOD; intraday/Greeks **PAID**) |
-| **Sentiment** | Search interest and public chatter | **FREE in Helix now:** Google Trends. **Fear & Greed** is Top-to-add. Social firehoses otherwise **DARK** |
+| **Sentiment** | Search interest and public chatter | **FREE in Helix now:** Google Trends. **Fear & Greed** and **news RSS** are Top-to-add. Social firehoses otherwise **DARK** |
 
 ### Catalog (Scout findings — living)
 

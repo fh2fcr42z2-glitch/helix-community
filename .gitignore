@@ -10,3 +10,6 @@ vendor/bundle/
 *.key
 .DS_Store
 node_modules/
+*.duckdb
+*.duckdb.wal
+
