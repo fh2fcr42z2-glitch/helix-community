@@ -3,7 +3,7 @@
 Labels for [Technical Analysis](./TECHNICAL-ANALYSIS.md) and Chart shots.  
 **Not a buy list. Not a strategy dump. Viral / hype PnL stays DARK — and is a Chart shot `reject`.**
 
-**TA critique pack = PASS.** Pins and `pattern_id` enum below are doctrine. Chart shots remain **DARK** until the first SOL/ETH shot + as-of — [STATUS.md](./STATUS.md).
+**TA critique pack = PASS.** Pins and `pattern_id` enum below are doctrine. First SOL/ETH pack is **sketch** (not `setup`/`confluent`; overlays DARK) — [STATUS.md](./STATUS.md).
 
 Every setup needs **invalidation**. No invalidation → not a setup → **DARK** / `sketch`.  
 Levels and overlays need **evidence + as-of**. Unclear → `dark_discretionary`. No orders. No fake charts.
@@ -92,4 +92,4 @@ Full table: [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md#reject-first-class).
 
 This page does not catalog harmonic patterns, ICT jargon, or a 20-rule playbook. Do not grow the enum from tweets. A new id needs a later critique **PASS**, not a Discord nickname.
 
-CX wiring: Chart shots tab on helix-cx PR #1. Shots DARK until first SOL/ETH shot+as-of — [STATUS.md](./STATUS.md).
+CX wiring: Chart shots tab on helix-cx PR #1. First SOL/ETH pack **sketch**; overlays DARK — [STATUS.md](./STATUS.md).

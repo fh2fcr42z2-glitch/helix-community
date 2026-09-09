@@ -5,7 +5,7 @@
 
 Paper-only language for patterns. MM live rails stay in [MARKET-MAKER.md](./MARKET-MAKER.md). Unknown → **DARK**. No secrets. **No fake charts.**
 
-**TA critique pack = PASS** (doctrine). Chart shots stay **DARK** until the first **SOL / ETH** shot + as-of. Desk truth: [STATUS.md](./STATUS.md).
+**TA critique pack = PASS** (doctrine). First SOL/ETH Chart shot pack is **sketch** only (TradingView guest = candles+volume; SuperTrend/%B/RSI/VWAP **DARK**) — not `setup` / not `confluent`. Desk truth: [STATUS.md](./STATUS.md).
 
 ## Job
 
@@ -55,7 +55,7 @@ Viral chart PnL and “I called the wick” posts are **DARK** — not Helix evi
 
 CX **notes** tab labeled **Chart shots**. Wiring lives on private **helix-cx PR #1** (desk code). This community repo documents the contract; it does **not** ship candles.
 
-**Files** live under `chart-shots/` on the desk workspace (cowork / CX allowlist — not this public git tree). Sidecar sits next to the image: `chart-shots/<stem>.json` (same stem as the PNG/WebP). Do not commit PNGs here. Do not paste broker UI, keys, or account balances into a shot.
+**Files** live under `helix-cowork/chart-shots/` on the desk workspace (cowork / CX allowlist — **may be unmounted**; not this public git tree). Sidecar sits next to the image: `chart-shots/<stem>.json` (same stem as the PNG/WebP). Do not commit PNGs here. Do not paste broker UI, keys, or account balances into a shot. Do not invent a chart if the dir is missing.
 
 **Missing sidecar → DARK metadata.** A pretty PNG without JSON is not a Chart shot. Grade is not `setup` or `confluent`. The tab may still list the file; the contract is DARK until the sidecar exists.
 
@@ -157,8 +157,8 @@ Sleeve map matches MM: **SOL primary · ETH try-now · HYPE DARK until adapter**
 ## CX / Fleet
 
 - **Notes tab:** Chart shots (CX PR #1).
-- **Fleet card (when wired):** artifact as-of on `chart-shots/` **and** sidecar presence — never “TA online.” Missing dir or missing sidecar → DARK. See [FLEET-OS.md](./FLEET-OS.md).
-- Critique **PASS**; shots **DARK until first SOL/ETH shot+as-of**. [STATUS.md](./STATUS.md).
+- **Fleet card (when wired):** artifact as-of on `helix-cowork/chart-shots/` **and** sidecar presence — never “TA online.” Missing dir or missing sidecar → DARK. See [FLEET-OS.md](./FLEET-OS.md).
+- Critique **PASS**; first SOL/ETH pack **sketch** (overlays DARK). CX tab still wiring on PR #1. [STATUS.md](./STATUS.md).
 
 ## Do not tell Grok / agents
 
