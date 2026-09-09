@@ -16,7 +16,7 @@
 | Five-force tags | default DARK until evidence assigns a force |
 | Risk gates | library present, flag off · never a live go-ahead by itself |
 | World Monitor | DARK without a key |
-| Market Maker | paper design LIVE in docs · gate checklist + journal schema clarified · CX paper loop in flight · live DARK until X approval |
+| Market Maker | LIVE authorized by X 2026-09-09 · gate checklist + journal schema · CX loop in flight · venue DARK until adapter · PnL DARK until reconciled |
 
 ## Rules that stop confusion
 1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, or PnL.
@@ -30,7 +30,7 @@
 - [ALPHA-FIVE-FORCES.md](./ALPHA-FIVE-FORCES.md)
 - [POR-OFAC-SEEDS.md](./POR-OFAC-SEEDS.md)
 - [RESEARCH-LOOP.md](./RESEARCH-LOOP.md) — research→code→backtest→live→post-mortem→fine-tune (Helix version)
-- [MARKET-MAKER.md](./MARKET-MAKER.md) — fee-vault rotate loop (paper-first fork)
+- [MARKET-MAKER.md](./MARKET-MAKER.md) — fee-vault rotate loop (LIVE; X 2026-09-09)
 - [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) — R/Python/math confidence pack
 - [RISK-GATES.md](./RISK-GATES.md) — walk-forward / DSR / Kelly (paper)
 - [FLEET-OS.md](./FLEET-OS.md) — Ops Ridge REAL vs DARK
