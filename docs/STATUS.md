@@ -22,7 +22,7 @@
 | Wallet login | wiring on helix-cx PR #1 · connect+DEX view · HYPE DARK · no key custody |
 | PnL panel | wiring on helix-cx PR #1 · Coinbase+wallets · viral PnL DARK · no fabricated totals |
 | Trench Narrative | wiring on helix-cx PR #1 · RSS free first · X API paid for scale · social heat ≠ size |
-| Reader | doctrine + CX bay on PR #1 · five-force + myth filter · FREE ingest map · Alpha handoff · open ingest (no archive.ph) · `nieder_*` themes (titles only) · Grok republish **not before** 2026-09-14 |
+| Reader | doctrine + CX bay on PR #1 · five-force + myth filter · FREE ingest map · Alpha handoff · open ingest (X engine-only archive pref; Helix **does not ship** archive.ph) · `nieder_*` themes (titles only) · Grok republish **not before** 2026-09-14 |
 
 ## Rules that stop confusion
 1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, PnL, or balances.
