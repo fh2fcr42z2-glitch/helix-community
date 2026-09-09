@@ -26,4 +26,4 @@ Public-safe agent memory. **No secrets.** Live desk truth is [docs/STATUS.md](do
 - World Monitor and X auto-post stay DARK / off without the matching private key (read ≠ publish).
 - Wallet login is SIWS/SIWE view-only. Helix never holds keys.
 - Grok republish of Reader packs is not before 2026-09-14; STATUS on `main` is live now.
-- Continual-learning skill + `agents-memory-updater` own this file. Teaching path: [docs/LEARNING-PATH.md](docs/LEARNING-PATH.md). Cadence state is gitignored under `.cursor/hooks/state/`.
+- Continual-learning skill + `agents-memory-updater` own this file. Teaching loop: [docs/LEARNING-PATH.md](docs/LEARNING-PATH.md) and `teaching/` (file sessions). Cadence state is gitignored under `.cursor/hooks/state/`.

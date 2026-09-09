@@ -2,6 +2,8 @@
 
 Teaching output (`create-learning-path`) for Grok, Cloud Agents, and public contributors. **Not a buy list. Not a bot. No secrets.**
 
+**Now (2026-09-09):** Phase 2 **PASS**. Next = Phase 3 (NOTE skeleton). File loop: [`teaching/`](../teaching/) · [PROGRESS.md](../teaching/PROGRESS.md).
+
 Baseline: you can read Markdown and GitHub PRs. You have not internalized LIVE vs DARK on this desk.
 
 Target: ship honest public docs (and mocked adapters) that survive [STATUS.md](./STATUS.md) without inventing tape, tweets, or PnL.
