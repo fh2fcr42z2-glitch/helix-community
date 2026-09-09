@@ -1,6 +1,6 @@
 # Grok prompt packs (public)
 
-Copy-paste packs for main Grok / operators. **No secrets. Paper unless Call Me X approves live.**
+Copy-paste packs for main Grok / operators. **No secrets.** Market Maker is LIVE-authorized (fee vault only). Other packs stay paper unless Call Me X approves live.
 
 | Pack | Path |
 |------|------|

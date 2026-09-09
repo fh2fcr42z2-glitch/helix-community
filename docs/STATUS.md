@@ -16,12 +16,12 @@
 | Five-force tags | default DARK until evidence assigns a force |
 | Risk gates | library present, flag off · never a live go-ahead by itself |
 | World Monitor | DARK without a key |
-| Market Maker | paper design LIVE in docs · gate checklist + journal schema clarified · CX paper loop in flight · live DARK until X approval |
+| Market Maker | LIVE authorized (X 2026-09-09) · fee_income only · principal locked · venue DARK blocks · CX wiring on PR #1 |
 
 ## Rules that stop confusion
 1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, or PnL.
 2. Viral trading posts are **inspiration for process**, not Helix performance evidence.
-3. Prepare ≠ execute. Live money needs **explicit human approval**.
+3. Prepare ≠ execute. Live money needs **explicit human approval** — MM tickets were authorized by X on 2026-09-09 (journal `approval_ref`; `needs_human_approval=false` for that path).
 4. If a PR is open and `main` is behind, say so once, then use **this STATUS** and community docs — don’t loop on “not merged” as if the desk doesn’t exist.
 
 ## Canonical docs on this `main`
@@ -30,7 +30,7 @@
 - [ALPHA-FIVE-FORCES.md](./ALPHA-FIVE-FORCES.md)
 - [POR-OFAC-SEEDS.md](./POR-OFAC-SEEDS.md)
 - [RESEARCH-LOOP.md](./RESEARCH-LOOP.md) — research→code→backtest→live→post-mortem→fine-tune (Helix version)
-- [MARKET-MAKER.md](./MARKET-MAKER.md) — fee-vault rotate loop (paper-first fork)
+- [MARKET-MAKER.md](./MARKET-MAKER.md) — LIVE-authorized fee-vault rotate loop (X 2026-09-09; principal locked)
 - [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) — R/Python/math confidence pack
 - [RISK-GATES.md](./RISK-GATES.md) — walk-forward / DSR / Kelly (paper)
 - [FLEET-OS.md](./FLEET-OS.md) — Ops Ridge REAL vs DARK

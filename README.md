@@ -14,7 +14,7 @@ Helix studies a specific gap:
 
 Those three streams disagree all the time. Sometimes the tape has already moved and search is late. Sometimes people are talking and nobody has bid. Sometimes Google is already asking and the book is quiet. Helix is a research desk for writing those disagreements down, testing them on a **paper book**, and being honest when the data is missing.
 
-It is **not a broker**. It is **not financial advice**. It does not place live orders. Nothing here is an invitation to trade.
+It is **not a broker**. It is **not financial advice**. Nothing here is an invitation to trade. **Market Maker is LIVE-authorized (fee vault only)** — principal stays locked; venue/liq/holders/fees DARK still block.
 
 **Crypto-first.** The customer experience is built around crypto markets first: **FLOW** (chain → DEX → token, wallets DARK) plus the three social-arbitrage legs, then an evidence-gated **NOTE**. Equities are a future sidecar, not the present desk. Swap and trading connectors stay **off**.
 
@@ -34,9 +34,9 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 
 - [STATUS.md](docs/STATUS.md) — Grok: current LIVE/DARK truth (read first)
 - [RESEARCH-LOOP.md](docs/RESEARCH-LOOP.md) — six-stage quant cycle for Helix (process only)
-- [MARKET-MAKER.md](docs/MARKET-MAKER.md)
+- [MARKET-MAKER.md](docs/MARKET-MAKER.md) — LIVE-authorized (fee vault only; principal locked)
 - [GROK-PROMPTS.md](docs/GROK-PROMPTS.md) — Grok copy-paste packs
-- [QUANT-CONFIDENCE.md](docs/QUANT-CONFIDENCE.md) · [RISK-GATES.md](docs/RISK-GATES.md) · [FLEET-OS.md](docs/FLEET-OS.md) — fee-vault rotate loop (paper-first fork)
+- [QUANT-CONFIDENCE.md](docs/QUANT-CONFIDENCE.md) · [RISK-GATES.md](docs/RISK-GATES.md) · [FLEET-OS.md](docs/FLEET-OS.md)
 
 | Doc | What it covers |
 | --- | --- |
