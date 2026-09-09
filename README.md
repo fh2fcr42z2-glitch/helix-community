@@ -38,7 +38,7 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 | [Architecture](docs/ARCHITECTURE.md) | Desk surfaces, FLOW intake, specialist hats (conceptual) |
 | [FLOW](docs/FLOW.md) | Chain → DEX → token → wallets DARK; kill switches |
 | [Alpha Writer NOTE](docs/ALPHA-WRITER.md) | Evidence-gated pipeline; no auto-post; WordPress draft-only future |
-| [Sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) | Standing DARK list, capability matrix — no credentials |
+| [Sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) | **Free Market Data Scout** catalog (FREE / FREE-TIER / PAID / DARK), standing DARK list — no credentials |
 | [Roadmap](docs/ROADMAP.md) | Public bars, no synthetics, walk-forward, paper-first |
 | [Contributing](CONTRIBUTING.md) | Adapters, issues, PR hygiene, secrets rules |
 | [Code of conduct](CODE_OF_CONDUCT.md) | Light-touch community rules |
@@ -59,7 +59,7 @@ Surfaces the community should recognize — names, not private source:
 - **Fleet / Lab** — future isolated experiments
 - **Alpha Writer** — evidence-gated **NOTE**; no auto-post
 
-Roles are conceptual (Head of Desk, Scout, Researcher, Market Ops, Risk, Sentinel, Alpha Writer). See [architecture](docs/ARCHITECTURE.md) and [FLOW](docs/FLOW.md). Sentinel-gated execution stays **paper-first forever**. Swap/trading connectors stay off.
+Roles are conceptual (Head of Desk, Scout, **Free Market Data Scout**, Researcher, Market Ops, Risk, Sentinel, Alpha Writer). See [architecture](docs/ARCHITECTURE.md), [FLOW](docs/FLOW.md), and the [Scout catalog](docs/SENSITIVE-INTEGRATIONS.md#free-market-data-scout-charter). Sentinel-gated execution stays **paper-first forever**. Swap/trading connectors stay off.
 
 ## What this repo needs
 
@@ -69,7 +69,7 @@ The private build cannot grow a public bench if the only artifacts are closed. T
 
 1. **Adapters behind interfaces** — one vendor, one module, mockable.
 2. **Tests with mocks** — no live keys in CI.
-3. **Docs** — correct a capability claim, mark a feed DARK, write a worked example.
+3. **Docs** — correct a capability claim, mark a feed DARK, write a worked example. **Scout catalog** PRs (FREE / FREE-TIER / PAID / DARK) are first-class.
 4. **Paper strategy ideas** — a thesis, the three legs (tape / search / chatter), how you would invalidate it.
 
 Do not paste API keys, cookies, wallet seeds, or vendor dashboards into issues or pull requests. Read [sensitive integrations](docs/SENSITIVE-INTEGRATIONS.md) and [CONTRIBUTING.md](CONTRIBUTING.md) first.
@@ -78,12 +78,13 @@ Do not paste API keys, cookies, wallet seeds, or vendor dashboards into issues o
 
 Helix would rather show **DARK** than a plausible fake.
 
-- **Free public APIs** can support a thin, honest FLOW desk: Coinbase, Kraken, CoinGecko, DefiLlama (stables/TVL/DEX vol), DEX Screener, GeckoTerminal, Google Trends.
-- **Standing DARK:** bridge netflow (Llama Pro), labeled wallets (GMGN/Helius/Birdeye), CEX entity flow (CryptoQuant/Glassnode unpaid), X auto-post, WordPress live publish. Full SIP tape and options flow stay DARK on this crypto-first bench.
+- **Free public APIs** can support a thin, honest FLOW desk: Coinbase, Kraken, CoinGecko, DefiLlama free API, DEX Screener, GeckoTerminal (spot tape + TVL/DEX). Google Trends covers the search/sentiment leg.
+- **Not free firehoses:** Unusual Whales API needs a Bearer key (delayed free dashboard ≠ API). Theta Data is US stocks/options/indices (~30d EOD options FREE-TIER) — **not crypto**, equity sidecar only.
+- **Standing DARK:** bridge netflow (Llama Pro), labeled wallets, CEX entity flow unpaid, funding/OI (unless adapted), X auto-post, WordPress live publish.
 - **Synthetic bars are a temporary shame**, not a feature. The public roadmap is to kill them.
 - **Read-only research keys** (private env only) may light a gated port. They never go in this repo. Swap/trading connectors remain off.
 
-A placeholder matrix (what each feed *would* unlock, not what is secretly shipped) lives in [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md).
+A placeholder matrix and the **Free Market Data Scout** catalog live in [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md).
 
 ## Private implementation
 

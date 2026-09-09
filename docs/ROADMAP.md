@@ -90,6 +90,7 @@ If you want Helix to “just send the order,” this is the wrong community. Wri
 **Near (community-shaped)**
 
 - Document ports and DARK behavior (including the standing DARK list)
+- Keep the **Free Market Data Scout** catalog honest (FREE / FREE-TIER / PAID / DARK)
 - Free-tier FLOW adapters with mocks (DefiLlama chain vol/TVL, Llama+screener DEX, token board/trending, Coinbase, Kraken, Trends)
 - Kill-switch tests: stale BTC, Coinbase vs Kraken ≥ 25 bp, thin DEX — as *promotion halts*
 - Paper thesis / NOTE template used in issues

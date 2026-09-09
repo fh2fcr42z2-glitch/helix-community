@@ -76,6 +76,10 @@ Owns the queue. Decides what gets time this week, what is parked, and what is ne
 
 Hunts disagreements across tape, search, and chatter, on a named **FLOW** rung. Surfaces candidates with sources and a DARK list. Does not size the book. Does not hide a missing wallet leg behind a blended score.
 
+### Free Market Data Scout
+
+Continuously catalogs sources as **FREE / FREE-TIER / PAID / DARK** across tape, TVL/DEX, funding/OI, whale/flow, options/greeks (equity sidecar), and sentiment. Owns the honesty of [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md). Does not invent data. Does not collect keys. A delayed dashboard is not a firehose.
+
 ### Researcher
 
 Turns a Scout scrap into a thesis. Attaches evidence and a **verification level** to each claim ([ALPHA-WRITER.md](ALPHA-WRITER.md)). If the reason changed, that is a new thesis, not a quiet edit.
@@ -114,7 +118,7 @@ Fleet: many small research runs that cannot write the main book. Lab: harder val
 
 Community adapters should look like this, even if the private code does not:
 
-- **Ports** — `Tape`, `SearchInterest`, `Chatter`, `ChainFlow`, `DexVolume`, `TokenBoard`; later, only with read-only keys, `WalletIdentity`, `CexFlow`, `EquitySip`, `OptionsFlow`. No `Swap` / `CreateOrder` ports in this community.
+- **Ports** — `Tape`, `SearchInterest`, `Chatter`, `ChainFlow`, `DexVolume`, `TokenBoard`; later `FundingOI` (usually DARK / PAID); equity-sidecar `OptionsEod`; gated read-only `WalletIdentity`, `CexFlow`, `WhaleFlow`. No `Swap` / `CreateOrder` ports in this community.
 - **One vendor per adapter** — `coingecko_tape.py` is fine; `everything.py` is not.
 - **Mocks in tests** — the port is satisfied by a fixture. CI never holds a vendor key.
 - **DARK on failure** — timeout, 401, missing key, unsupported pair: return a labeled empty/DARK, do not interpolate a bar.

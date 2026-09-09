@@ -75,13 +75,13 @@ A NOTE is assembled only after Scout → Researcher → Market Ops. Claims carry
 
 Standing DARK: bridge netflow (Llama Pro), labeled wallets (GMGN/Helius/Birdeye), CEX entity flow (CryptoQuant/Glassnode unpaid), X auto-post, WordPress live publish. The free desk still runs on Coinbase, Kraken, CoinGecko, DefiLlama, DEX Screener, GeckoTerminal, and Google Trends.
 
-The matrix — one line per vendor, no credentials — is [Sensitive integrations]({{ '/integrations/' | relative_url }}).
+The matrix and **Free Market Data Scout** catalog — honest FREE / FREE-TIER / PAID / DARK, no credentials — is [Sensitive integrations]({{ '/integrations/' | relative_url }}). Unusual Whales API is **PAID** (Bearer); its delayed dashboard is not a free firehose. Theta Data is **not crypto** (equity sidecar, ~30d EOD options FREE-TIER).
 
 ## How to help this week
 
-1. Propose an **adapter** behind a named port, with mocks.
-2. Add **tests** that go green without a vendor account.
-3. Fix **docs** that over-claim a capability.
+1. Propose an **adapter** behind a named port, with **mocked tests**.
+2. Correct a **Scout catalog** class (FREE / FREE-TIER / PAID / DARK) — no keys.
+3. Add **tests** that go green without a vendor account.
 4. File a **paper strategy** idea with invalidation and a DARK list.
 
 Rules: [Contribute]({{ '/contribute/' | relative_url }}). North star: [Roadmap]({{ '/roadmap/' | relative_url }}) — real bars, kill synthetics, FLOW on free Llama, NOTE with no auto-post, Sentinel on.

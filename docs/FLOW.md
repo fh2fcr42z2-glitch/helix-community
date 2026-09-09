@@ -77,6 +77,8 @@ Market Ops owns the check. Risk may still veto after a switch is clear. Sentinel
 - That DefiLlama TVL is CEX inflow.
 - That a screener’s volume column is informed flow.
 - That trending tokens have labeled wallets.
-- That Llama Pro, GMGN, Helius, Birdeye, CryptoQuant, or Glassnode are on because they appear in a sentence. **Named ≠ wired.** Absent a key and an adapter test, the field is DARK.
+- That Unusual Whales’ delayed dashboard is a Coinbase tape, or that Theta Data EOD options are crypto.
+- That funding/OI exists because spot volume exists.
+- That Llama Pro, GMGN, Helius, Birdeye, CryptoQuant, Glassnode, Coinglass Pro, or UW API are on because they appear in a sentence. **Named ≠ wired.** Absent a key and an adapter test, the field is DARK.
 
 Next: evidence-gated publication is [ALPHA-WRITER.md](ALPHA-WRITER.md). Adapter rules: [SENSITIVE-INTEGRATIONS.md](SENSITIVE-INTEGRATIONS.md).

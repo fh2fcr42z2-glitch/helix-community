@@ -4,25 +4,26 @@ This is the **public** Helix repo. You are helping other researchers see the des
 
 **Paper-only. Not a broker. Not financial advice. No secrets in issues or PRs.**
 
-If you only read one other file, read [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md).
+If you only read one other file, read [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md) (Free Market Data Scout catalog).
 
 ## What we want
 
 | Contribution | Good | Reject |
 | --- | --- | --- |
+| **Catalog** | Honest FREE / FREE-TIER / PAID / DARK row with a public citation | Treating UW delayed dashboard as a free API; Theta as crypto |
 | **Adapter** | One vendor, one port, DARK when unkeyed, tests with mocks | Kitchen-sink client, live key in CI, silent fake bars |
 | **Test** | Fixtures + DARK/timeout cases | Recorded HAR files with cookies |
 | **Docs** | Corrects a claim, marks DARK, adds a worked paper example | Vendor tutorial that is really a key drop |
 | **Paper idea** | Three legs + FLOW rung + invalidation + DARK list | “Buy this,” live sizing, guaranteed edge, auto-post |
 | **Interface RFC** | Short, named port, how mocks work | Rewrite the private tree |
 
-Architecture names live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). FLOW and NOTE: [docs/FLOW.md](docs/FLOW.md), [docs/ALPHA-WRITER.md](docs/ALPHA-WRITER.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
+Architecture names live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). FLOW and NOTE: [docs/FLOW.md](docs/FLOW.md), [docs/ALPHA-WRITER.md](docs/ALPHA-WRITER.md). Scout catalog: [docs/SENSITIVE-INTEGRATIONS.md](docs/SENSITIVE-INTEGRATIONS.md). Use them even if you dislike the metaphors — the community needs a shared floor plan.
 
 ## How to propose an adapter
 
 1. **Open an issue** with the Adapter template (or a short issue titled `adapter: <vendor> → <port>`).
-2. State the **port**: `Tape`, `SearchInterest`, `Chatter`, `ChainFlow`, `DexVolume`, `TokenBoard`, or a gated read-only port (`WalletIdentity`, `CexFlow`, `EquitySip`, `OptionsFlow`). There is no community `Swap` / `CreateOrder` port.
-3. State the **vendor** and whether it is free or optional/paid.
+2. State the **port**: `Tape`, `SearchInterest`, `Chatter`, `ChainFlow`, `DexVolume`, `TokenBoard`, or a gated read-only port (`WalletIdentity`, `CexFlow`, `WhaleFlow`, `FundingOI`, `OptionsEod`). There is no community `Swap` / `CreateOrder` port.
+3. State the **Scout class**: `FREE`, `FREE-TIER`, `PAID`, or `DARK`, plus a capability category (spot/perp tape, on-chain TVL/DEX, funding/OI, whale/flow, options/greeks, sentiment).
 4. State **DARK behavior** when the key is missing, the pair is missing, or the vendor 429s.
 5. Wait for a maintainer or another contributor to say the port shape is right — then PR.
 6. In the PR: adapter + mock fixtures + a README paragraph. No live calls required to merge.
@@ -33,9 +34,9 @@ Do not implement five vendors in one PR. Do not add a live order, swap, or auto-
 
 Use a template when you can:
 
-- **Adapter** — a feed behind a port
+- **Adapter** — a feed behind a port (include Scout class + category)
+- **Docs / catalog** — wrong FREE / FREE-TIER / PAID / DARK claim
 - **Paper idea** — a social-arbitrage thesis, paper-only
-- **Docs** — wrong, missing, or over-claimed
 
 Search open issues first. If you are marking something DARK, say what we currently imply that we should not.
 

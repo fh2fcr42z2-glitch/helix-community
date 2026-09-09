@@ -19,11 +19,36 @@ body:
         - ChainFlow
         - DexVolume
         - TokenBoard
+        - FundingOI (usually DARK / PAID)
+        - WhaleFlow (gated, read-only)
+        - OptionsEod (equity sidecar, not crypto)
         - WalletIdentity (gated, read-only)
         - CexFlow (gated, read-only)
-        - EquitySip (gated)
-        - OptionsFlow (gated)
         - Other (describe below)
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Capability category
+      options:
+        - Spot / perp tape
+        - On-chain TVL / DEX
+        - Funding / OI
+        - Whale / flow
+        - Options / greeks (equity sidecar)
+        - Sentiment
+    validations:
+      required: true
+  - type: dropdown
+    id: scout_class
+    attributes:
+      label: Scout class
+      options:
+        - FREE (public / keyless)
+        - FREE-TIER (delayed, demo key, or short EOD window — not a firehose)
+        - PAID (private read-only key; DARK in this repo)
+        - DARK (do not invent)
     validations:
       required: true
   - type: input
@@ -31,15 +56,6 @@ body:
     attributes:
       label: Vendor
       placeholder: CoinGecko, Helius, …
-    validations:
-      required: true
-  - type: dropdown
-    id: tier
-    attributes:
-      label: Tier
-      options:
-        - Free / public
-        - Optional / paid (bring-your-own key, private env)
     validations:
       required: true
   - type: textarea
