@@ -38,7 +38,7 @@ Scout  →  Researcher  →  Market Ops  →  Alpha Writer
 
 Head of Desk still owns the queue. Risk may veto the paper book. Sentinel forbids live execution. Alpha Writer does not outrank any of them.
 
-Detail on FLOW and switches: [FLOW.md](FLOW.md). Headline judge: [READER.md](READER.md). Desk map: [ARCHITECTURE.md](ARCHITECTURE.md).
+Detail on FLOW and switches: [FLOW.md](FLOW.md). Headline judge, FREE ingest map, Alpha handoff rules: [READER.md](READER.md). Desk map: [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Claim verification levels
 

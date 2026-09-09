@@ -22,7 +22,7 @@
 | Wallet login | wiring on helix-cx PR #1 · connect+DEX view · HYPE DARK · no key custody |
 | PnL panel | wiring on helix-cx PR #1 · Coinbase+wallets · viral PnL DARK · no fabricated totals |
 | Trench Narrative | wiring on helix-cx PR #1 · RSS free first · X API paid for scale · social heat ≠ size |
-| Reader | doctrine + CX bay on PR #1 · five-force + myth filter · handoff to Alpha Writer · Grok republish 2026-09-14 |
+| Reader | doctrine + CX bay on PR #1 · five-force + myth filter · FREE ingest map · Alpha handoff rules · Grok republish **not before** 2026-09-14 |
 
 ## Rules that stop confusion
 1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, PnL, or balances.
@@ -31,7 +31,7 @@
 4. If a PR is open and `main` is behind, say so once, then use **this STATUS** and community docs — don’t loop on “not merged” as if the desk doesn’t exist.
 5. Launchpad nature (mass mint / skip-as-edge) ≠ MM fee-vault loop — [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md). Unverified bot PnL stays DARK.
 6. TA critique pack lives on the desk box (`helix-cowork` briefs/notes — **may be unmounted**). Chart shots live under `helix-cowork/chart-shots/` (**may be unmounted** — do not invent PNGs or overlays). Public contract: [CHART-BOT.md](./CHART-BOT.md) + [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) + [PATTERN-SETUPS.md](./PATTERN-SETUPS.md). Do not invent the pack file. Pins: pivot **N=2**, VWAP **UTC day**, ATR **pack defaults**, **BOS alone ≠ confluent**. Missing sidecar → DARK metadata. Guest candles+volume = **sketch**, never `setup`/`confluent`. Readable cards need **levels**, **invalidation**, **thesis_blurb**. Unclear macro → **DARK**. Learning is file-based (`ta-learning/` + PATTERN-EDGE-LOG), not silent weights. Viral PnL is never a training label.
-7. **Reader** judges cited headlines only — ingest → five forces → myth filter → tape check → JSON, then Alpha Writer. **No fake headlines.** Tape wins vs conflicting psychology. Social heat ≠ size. Viral PnL DARK. CX bay on PR #1. Grok may republish around **2026-09-14**; this STATUS on `main` is live now. [READER.md](./READER.md).
+7. **Reader** judges cited headlines only — ingest → five forces → myth filter → tape check → JSON, then Alpha Writer. **FREE ingest map** + **Alpha handoff rules** + **open ingest** (no archive.ph; paywalled body DARK) live on [READER.md](./READER.md) (Cowork fold; desk notes may be unmounted). **No fake headlines.** Tape and counts win vs psychology and vs `nieder_*` themes. Social heat ≠ size. Viral PnL DARK. CX bay on PR #1. **Grok republish not before 2026-09-14**; this STATUS on `main` is live now.
 
 ## Canonical docs on this `main`
 - [CREW-HANDOFF.md](./CREW-HANDOFF.md) — one job per lane, veto/don’t-chase gates
@@ -50,7 +50,7 @@
 - [PNL.md](./PNL.md) — cross-source PnL (Coinbase + wallets + optional MM fee_income, labeled separate); incomplete badge; viral PnL DARK
 - [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md) — launchpad nature vs MM (skip-as-edge; bot PnL DARK)
 - [TRENCH-NARRATIVE.md](./TRENCH-NARRATIVE.md) — Trench hull = desk chrome; Narrative panel (posts/headlines); RSS free first; X API paid; social heat ≠ clip/size; no invented tweets
-- [READER.md](./READER.md) — headline ingest → five forces → rhetoric/myth filter → tape check → READER JSON; upstream of Alpha Writer; CX bay on PR #1; no fake headlines
+- [READER.md](./READER.md) — headline ingest → five forces → rhetoric/myth filter → tape check → READER JSON; FREE ingest map; Alpha handoff rules; optional `nieder_*` themes (no book excerpts); upstream of Alpha Writer; CX bay on PR #1; no fake headlines
 - [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) — R/Python/math confidence pack
 - [RISK-GATES.md](./RISK-GATES.md) — walk-forward / DSR / Kelly (paper)
 - [FLEET-OS.md](./FLEET-OS.md) — Ops Ridge REAL vs DARK
