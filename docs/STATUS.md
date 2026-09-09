@@ -20,6 +20,7 @@
 | Technical Analysis | TA critique **PASS**; first SOL/ETH Chart shot pack on desk (4 shots: SOL/ETH × 1h/4h) · all `setup_grade` **sketch** (TradingView guest = candles+volume only; SuperTrend/%B/RSI/VWAP **DARK**) · not `setup`/`confluent` · **HYPE** still DARK · CX Chart shots tab still wiring on helix-cx PR #1 · contract [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md) · files `helix-cowork/chart-shots/` (**may be unmounted**) |
 | Wallet login | wiring on helix-cx PR #1 · connect+DEX view · HYPE DARK · no key custody |
 | PnL panel | wiring on helix-cx PR #1 · Coinbase+wallets · viral PnL DARK · no fabricated totals |
+| Trench Narrative | wiring on helix-cx PR #1 · RSS free first · X API paid for scale · social heat ≠ size |
 
 ## Rules that stop confusion
 1. Unknown → **DARK / NULL**. Never invent metrics, whale labels, PnL, or balances.
@@ -43,6 +44,7 @@
 - [WALLET-LOGIN.md](./WALLET-LOGIN.md) — SIWS/SIWE connect; propose→popup; DEX panel real-or-DARK; no key custody
 - [PNL.md](./PNL.md) — cross-source PnL (Coinbase + wallets + optional MM fee_income, labeled separate); incomplete badge; viral PnL DARK
 - [MEME-MARKET-NATURE.md](./MEME-MARKET-NATURE.md) — launchpad nature vs MM (skip-as-edge; bot PnL DARK)
+- [TRENCH-NARRATIVE.md](./TRENCH-NARRATIVE.md) — Trench hull = desk chrome; Narrative panel (posts/headlines); RSS free first; X API paid; social heat ≠ clip/size; no invented tweets
 - [QUANT-CONFIDENCE.md](./QUANT-CONFIDENCE.md) — R/Python/math confidence pack
 - [RISK-GATES.md](./RISK-GATES.md) — walk-forward / DSR / Kelly (paper)
 - [FLEET-OS.md](./FLEET-OS.md) — Ops Ridge REAL vs DARK

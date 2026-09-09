@@ -42,6 +42,7 @@ If a number did not come from a real bar, a real API, or a labeled mock in a tes
 - [WALLET-LOGIN.md](docs/WALLET-LOGIN.md) — SIWS/SIWE connect + DEX view (no key custody; HYPE DARK)
 - [PNL.md](docs/PNL.md) — cross-source PnL honesty (Coinbase + wallets; viral PnL DARK; no fabricated totals)
 - [MEME-MARKET-NATURE.md](docs/MEME-MARKET-NATURE.md) — launchpad nature vs MM (mass mint; skip-as-edge; bot PnL DARK)
+- [TRENCH-NARRATIVE.md](docs/TRENCH-NARRATIVE.md) — Trench hull + Narrative panel (RSS free first; X API paid; social heat ≠ size; no secrets)
 - [GROK-PROMPTS.md](docs/GROK-PROMPTS.md) — Grok copy-paste packs
 - [QUANT-CONFIDENCE.md](docs/QUANT-CONFIDENCE.md) · [RISK-GATES.md](docs/RISK-GATES.md) · [FLEET-OS.md](docs/FLEET-OS.md)
 
