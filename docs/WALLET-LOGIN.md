@@ -52,7 +52,7 @@ Do not show a HYPE book, HYPE inventory, or HYPE `fee_income` because SIWE/SIWS 
 
 ## Portfolio / DEX panel
 
-The panel is a **read**. It is not a tape, not a whale label, and not a PnL card.
+The panel is a **read**. It is not a tape and not a whale label. Cross-source **PnL** (Coinbase + wallets + optional MM `fee_income`, labeled separate) is [PNL.md](./PNL.md) — never invent; incomplete badge when any source is DARK.
 
 | Field | Honest source | If missing |
 |---|---|---|
@@ -105,4 +105,4 @@ Propose → popup is the only v1 path that can move `fee_income`. Sentinel still
 
 Connect + DEX view wiring: **helix-cx PR #1**. Public `helix-community` does not copy that client. If private GitHub `main` is still a hull, say so once and use [STATUS.md](./STATUS.md).
 
-Desk truth: [STATUS.md](./STATUS.md). MM process: [MARKET-MAKER.md](./MARKET-MAKER.md). Sleeves: [MM-SOL-ETH-HYPE.md](./MM-SOL-ETH-HYPE.md).
+Desk truth: [STATUS.md](./STATUS.md). PnL honesty: [PNL.md](./PNL.md). MM process: [MARKET-MAKER.md](./MARKET-MAKER.md). Sleeves: [MM-SOL-ETH-HYPE.md](./MM-SOL-ETH-HYPE.md).
