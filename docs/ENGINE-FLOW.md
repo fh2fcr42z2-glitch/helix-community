@@ -39,7 +39,7 @@ Prepare ≠ execute. Live money still needs explicit human approval (MM path: [M
 
 ## What each hop is for
 
-**Cowork note** — durable enough for another hat to read tomorrow. Template: owner, claim, evidence URL/as-of, DARK list, next owner. Chart shots use the notes tab + `chart-shots/` metadata — [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md). Not a Grok paste.
+**Cowork note** — durable enough for another hat to read tomorrow. Template: owner, claim, evidence URL/as-of, DARK list, next owner. Chart shots use the notes tab + `chart-shots/` **sidecar JSON** — [TECHNICAL-ANALYSIS.md](./TECHNICAL-ANALYSIS.md). Missing sidecar → DARK metadata. TA critique pack is desk `helix-cowork` (may be unmounted); community docs are the public contract. Not a Grok paste.
 
 **Scout INVENTORY flag** — classification, not collection of keys. When cowork learns a class, **patch INVENTORY in the same promotion** so catalog and note do not lag. Named ≠ wired.
 
